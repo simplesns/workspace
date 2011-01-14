@@ -1,0 +1,7 @@
+package codegears.DEPuzzles;
+
+import freehand.neandroid.Screen;
+
+public class MenuScreen extends Screen {
+
+}
