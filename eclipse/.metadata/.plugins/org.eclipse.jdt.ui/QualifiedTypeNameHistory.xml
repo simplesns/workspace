@@ -1,4 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="freehand.neandroid.GameActivity"/>
+<fullyQualifiedTypeName name="freehand.neandroid.GameSurfaceView"/>
+<fullyQualifiedTypeName name="freehand.neandroid.ui.ButtonUI"/>
+<fullyQualifiedTypeName name="freehand.neandroid.ui.TextUI"/>
+<fullyQualifiedTypeName name="freehand.neandroid.ui.BorderTextUI"/>
+<fullyQualifiedTypeName name="android.graphics.Paint"/>
+<fullyQualifiedTypeName name="freehand.neandroid.Input.InputSystem"/>
+<fullyQualifiedTypeName name="freehand.neandroid.Input.InputKey"/>
+<fullyQualifiedTypeName name="android.view.KeyEvent"/>
+<fullyQualifiedTypeName name="freehand.neandroid.Input.InputTouch"/>
+<fullyQualifiedTypeName name="android.graphics.Typeface"/>
+<fullyQualifiedTypeName name="android.content.Context"/>
 </qualifiedTypeNameHistroy>

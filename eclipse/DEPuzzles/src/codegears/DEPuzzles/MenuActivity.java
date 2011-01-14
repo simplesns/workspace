@@ -1,7 +1,7 @@
 package codegears.DEPuzzles;
 
 import freehand.neandroid.GameActivity;
-import android.app.Activity;
+import freehand.neandroid.GameSurfaceView;
 import android.os.Bundle;
 
 public class MenuActivity extends GameActivity {
@@ -11,8 +11,10 @@ public class MenuActivity extends GameActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main);
+        setContentView(R.layout.surface);
+        SharedResource.init(this);
         screen = new MenuScreen(this);
+        this.set((GameSurfaceView)this.findViewById(R.id.surface), screen);
     }
 
 	@Override
