@@ -17,11 +17,11 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -30,39 +30,21 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-<part id="1"/>
-<part id="2"/>
-<part id="3"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuScreen.java" partName="MenuScreen.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java" title="MenuScreen.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="719" selectionTopPixel="0"/>
-</editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuActivity.java" partName="MenuActivity.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/MenuActivity.java" title="MenuActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/MenuActivity.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/MenuActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="545" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Drawable.java" partName="Drawable.java" path="C:/workspace/eclipse/NeAndroid/src/freehand/neandroid/ui/Drawable.java" title="Drawable.java" tooltip="NeAndroid/src/freehand/neandroid/ui/Drawable.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NeAndroid/src/freehand/neandroid/ui/Drawable.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="192" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TextUI.java" partName="TextUI.java" path="C:/workspace/eclipse/NeAndroid/src/freehand/neandroid/ui/TextUI.java" title="TextUI.java" tooltip="NeAndroid/src/freehand/neandroid/ui/TextUI.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NeAndroid/src/freehand/neandroid/ui/TextUI.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="644" selectionTopPixel="554"/>
-</editor>
 </editors>
 <views>
+<view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Errors (1 item)"/>
-<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (7 items)"/>
 <category IMemento.internal.id="Warnings"/>
+<category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -110,7 +92,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -174,6 +156,7 @@
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
+<view id="org.eclipse.ui.views.PropertySheet"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -198,12 +181,14 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.25" ratioLeft="250" ratioRight="750" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.8126984" ratioLeft="512" ratioRight="118" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.6936508" ratioLeft="437" ratioRight="193" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
 <page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<page content="org.eclipse.ui.views.PropertySheet" label="Properties"/>
 <page content="org.eclipse.search.ui.views.SearchView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ProgressView" label="LabelNotFound"/>
@@ -212,17 +197,16 @@
 <part id="1"/>
 <part id="2"/>
 <part id="3"/>
+<part id="4"/>
+<part id="5"/>
 </presentation>
 </folder>
 </info>
 <info folder="true" part="right" ratio="0.7493333" ratioLeft="562" ratioRight="188" relationship="2" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<folder appearance="2" expanded="2">
 <page content="org.eclipse.ui.texteditor.TemplatesView" label="LabelNotFound"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </mainWindow>
@@ -230,175 +214,18 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/MenuActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NeAndroid/src/freehand/neandroid/ui/ImageUI.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NeAndroid/src/freehand/neandroid/ui/TextUI.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NeAndroid/src/freehand/neandroid/ui/AnimationUI.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NeAndroid/src/freehand/neandroid/ui/ImageTransformUI.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NeAndroid/src/freehand/neandroid/ui/ToggleButtonUI.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NeAndroid/src/freehand/neandroid/Input/InputKey.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NeAndroid/src/freehand/neandroid/Input/InputSystem.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/SharedResource.java"/>
-</editors>
-<item historyLabel="AnimationUI.java" index="4">
-<position info="not_deleted" x="4681" y="8"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="471" y="0"/>
-</item>
-<item historyLabel="ImageTransformUI.java" index="5">
-<position info="not_deleted" x="183" y="0"/>
-</item>
-<item historyLabel="ImageUI.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ImageTransformUI.java" index="5">
-<position info="not_deleted" x="358" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="471" y="0"/>
-</item>
-<item historyLabel="ToggleButtonUI.java" index="6">
-<position info="not_deleted" x="611" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="471" y="0"/>
-</item>
-<item historyLabel="InputKey.java" index="7">
-<position info="not_deleted" x="316" y="0"/>
-</item>
-<item historyLabel="MenuActivity.java" index="0">
-<position info="not_deleted" x="527" y="0"/>
-</item>
-<item historyLabel="InputKey.java" index="7">
-<position info="not_deleted" x="316" y="0"/>
-</item>
-<item historyLabel="InputSystem.java" index="8">
-<position info="not_deleted" x="309" y="11"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="28" y="0"/>
-</item>
-<item historyLabel="InputSystem.java" index="8">
-<position info="not_deleted" x="197" y="7"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="28" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="470" y="0"/>
-</item>
-<item historyLabel="InputSystem.java" index="8">
-<position info="not_deleted" x="309" y="11"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="721" y="0"/>
-</item>
-<item historyLabel="InputSystem.java" index="8">
-<position info="not_deleted" x="390" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="721" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="607" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="593" y="8"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="655" y="1"/>
-</item>
-<item historyLabel="InputKey.java" index="7">
-<position info="not_deleted" x="381" y="8"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="721" y="0"/>
-</item>
-<item historyLabel="InputKey.java" index="7">
-<position info="not_deleted" x="439" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="721" y="0"/>
-</item>
-<item historyLabel="InputKey.java" index="7">
-<position info="not_deleted" x="254" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="721" y="0"/>
-</item>
-<item historyLabel="TextUI.java" index="3">
-<position info="not_deleted" x="644" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="721" y="0"/>
-</item>
-<item historyLabel="InputKey.java" index="7">
-<position info="not_deleted" x="714" y="5"/>
-</item>
-<item historyLabel="InputSystem.java" index="8">
-<position info="not_deleted" x="828" y="0"/>
-</item>
-<item historyLabel="InputKey.java" index="7">
-<position info="not_deleted" x="648" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="626" y="0"/>
-</item>
-<item historyLabel="MenuActivity.java" index="0">
-<position info="not_deleted" x="527" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="728" y="0"/>
-</item>
-<item historyLabel="SharedResource.java" index="9">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="SharedResource.java" index="9">
-<position/>
-</item>
-<item historyLabel="SharedResource.java" index="9">
-<position/>
-</item>
-<item historyLabel="SharedResource.java" index="9">
-<position info="not_deleted" x="431" y="0"/>
-</item>
-<item historyLabel="SharedResource.java" index="9">
-<position info="not_deleted" x="357" y="13"/>
-</item>
-<item historyLabel="SharedResource.java" index="9">
-<position info="not_deleted" x="567" y="0"/>
-</item>
-<item historyLabel="SharedResource.java" index="9">
-<position info="not_deleted" x="286" y="0"/>
-</item>
-<item historyLabel="MenuActivity.java" index="0">
-<position info="not_deleted" x="527" y="0"/>
-</item>
-<item historyLabel="MenuActivity.java" index="0">
-<position info="not_deleted" x="451" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="1">
-<position info="not_deleted" x="719" y="0"/>
-</item>
-<item historyLabel="MenuActivity.java" index="0">
-<position info="not_deleted" x="451" y="0"/>
-</item>
-<item historyLabel="SharedResource.java" index="9">
-<position info="not_deleted" x="569" y="0"/>
-</item>
-<item active="true" historyLabel="MenuActivity.java" index="0">
-<position info="not_deleted" x="451" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="right"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -406,10 +233,23 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClickListener.java" tooltip="NeAndroid/src/freehand/neandroid/widget/ClickListener.java">
+<persistable path="/NeAndroid/src/freehand/neandroid/widget/ClickListener.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClickListener.java" tooltip="NeAndroid/src/freehand/neandroid/ui/ClickListener.java">
+<persistable path="/NeAndroid/src/freehand/neandroid/ui/ClickListener.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="test/res/layout/main.xml">
+<persistable path="/test/res/layout/main.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="test/src/com/test/Main.java">
+<persistable path="/test/src/com/test/Main.java"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SharedResource.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/SharedResource.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/SharedResource.java"/>
 </file>
@@ -442,18 +282,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ColorRectUI.java" tooltip="NeAndroid/src/freehand/neandroid/ui/ColorRectUI.java">
 <persistable path="/NeAndroid/src/freehand/neandroid/ui/ColorRectUI.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Drawable.java" tooltip="NeAndroid/src/freehand/neandroid/ui/Drawable.java">
-<persistable path="/NeAndroid/src/freehand/neandroid/ui/Drawable.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ButtonUI.java" tooltip="NeAndroid/src/freehand/neandroid/ui/ButtonUI.java">
-<persistable path="/NeAndroid/src/freehand/neandroid/ui/ButtonUI.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Surface.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/Surface.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/Surface.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Timer.java" tooltip="NeAndroid/src/freehand/neandroid/util/Timer.java">
-<persistable path="/NeAndroid/src/freehand/neandroid/util/Timer.java"/>
 </file>
 </mruList>
 </workbench>

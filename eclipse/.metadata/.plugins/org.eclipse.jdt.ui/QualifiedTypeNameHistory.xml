@@ -12,4 +12,11 @@
 <fullyQualifiedTypeName name="freehand.neandroid.Input.InputTouch"/>
 <fullyQualifiedTypeName name="android.graphics.Typeface"/>
 <fullyQualifiedTypeName name="android.content.Context"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="android.widget.CompoundButton.OnCheckedChangeListener"/>
+<fullyQualifiedTypeName name="freehand.neandroid.widget.ToggleButtonGroup"/>
+<fullyQualifiedTypeName name="android.widget.ToggleButton"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
+<fullyQualifiedTypeName name="android.view.View"/>
 </qualifiedTypeNameHistroy>
