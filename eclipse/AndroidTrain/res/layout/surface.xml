@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout android:id="@+id/LinearLayout01"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	android:background="#696969" android:orientation="vertical">
+
+	<ImageView android:id="@+id/bghead" android:layout_gravity="top"
+		android:layout_width="fill_parent" android:background="#cccccc"
+		android:layout_height="50dip" />
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_gravity="bottom" android:layout_width="320dip"
+		android:layout_height="fill_parent">
+		<LinearLayout android:id="@+id/LinearLayout02"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:orientation="vertical">
+			<!--
+				<TextView android:id="@+id/options"
+				android:layout_height="wrap_content" android:textColor="#FFFFFF"
+				android:text="OPTIONS" android:layout_marginLeft="10dip"
+				android:layout_marginTop="5dip" android:textSize="20dip"
+				android:layout_width="fill_parent"></TextView> <LinearLayout
+				android:id="@+id/LinearLayout03" android:orientation="vertical"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"> <LinearLayout
+				android:id="@+id/LinearLayout04"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_marginTop="5dip">
+				<TextView android:layout_height="wrap_content"
+				android:id="@+id/puzzletime" android:textColor="#000000"
+				android:text="Puzzle timer" android:textSize="20dip"
+				android:layout_width="fill_parent" android:layout_weight="1"
+				android:layout_gravity="center_vertical"
+				android:layout_marginLeft="20dip"></TextView> <ToggleButton
+				android:id="@+id/toggletime" android:textSize="15px"
+				android:layout_height="wrap_content" android:text="toggletimebutton"
+				android:layout_width="fill_parent" android:layout_weight="3"
+				android:layout_marginRight="20dip"></ToggleButton> </LinearLayout>
+				<LinearLayout android:id="@+id/LinearLayout05"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"> <TextView
+				android:layout_height="wrap_content" android:id="@+id/bgmusic"
+				android:textColor="#000000" android:text="Background Music"
+				android:textSize="20dip" android:layout_gravity="center_vertical"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:layout_marginLeft="20dip"></TextView> <ToggleButton
+				android:textSize="15px" android:layout_height="wrap_content"
+				android:id="@+id/bgmusicbutton" android:text="bgmusicbutton"
+				android:layout_width="fill_parent" android:layout_weight="3"
+				android:layout_marginRight="20dip"></ToggleButton> </LinearLayout>
+				<LinearLayout android:id="@+id/LinearLayout06"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_marginBottom="5dip"> <TextView
+				android:layout_height="wrap_content" android:id="@+id/soundfx"
+				android:textColor="#000000" android:text="Sound FX"
+				android:textSize="20dip" android:layout_gravity="center_vertical"
+				android:layout_weight="1" android:layout_width="fill_parent"
+				android:layout_marginLeft="20dip"></TextView> <ToggleButton
+				android:textSize="15px" android:layout_height="wrap_content"
+				android:text="soundfxbutton" android:id="@+id/soundfxbutton"
+				android:layout_weight="3" android:layout_width="fill_parent"
+				android:layout_marginRight="20dip"></ToggleButton> </LinearLayout>
+
+
+				</LinearLayout> <TextView android:id="@+id/music"
+				android:layout_height="wrap_content" android:textSize="20dip"
+				android:textColor="#FFFFFF" android:text="SELECT BACKGROUND MUSIC"
+				android:layout_marginLeft="10dip" android:layout_marginTop="10dip"
+				android:layout_width="fill_parent"></TextView> <RadioGroup
+				android:id="@+id/bgmusic" android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:orientation="vertical">
+				<LinearLayout android:id="@+id/LinearLayout07"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_marginBottom="-5dip" android:layout_marginTop="5dip">
+				<TextView android:layout_height="wrap_content"
+				android:id="@+id/mupop" android:text="Pop" android:textSize="20dip"
+				android:textColor="#000000" android:layout_width="fill_parent"
+				android:layout_weight="1"
+				android:layout_marginLeft="20dip"></TextView> <RadioButton
+				android:id="@+id/pop" android:layout_height="wrap_content"
+				android:layout_weight="3" android:layout_marginRight="20dip"
+				android:layout_width="fill_parent" /> </LinearLayout> <LinearLayout
+				android:id="@+id/LinearLayout08"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_marginTop="-10dip"
+				android:layout_marginBottom="-5dip"> <TextView
+				android:layout_height="wrap_content" android:id="@+id/mujazz"
+				android:textColor="#000000" android:text="Jazzy loop"
+				android:textSize="20dip" android:layout_weight="1"
+				android:layout_marginLeft="20dip"
+				android:layout_width="fill_parent"></TextView> <RadioButton
+				android:layout_height="wrap_content" android:id="@+id/jazz"
+				android:layout_width="fill_parent" android:layout_weight="3"
+				android:layout_marginRight="20dip" /> </LinearLayout> <LinearLayout
+				android:id="@+id/LinearLayout09"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent" android:layout_marginTop="-10dip"
+				android:layout_marginBottom="-5dip"> <TextView
+				android:layout_height="wrap_content" android:id="@+id/muspace"
+				android:textColor="#000000" android:text="Space"
+				android:textSize="20dip" android:layout_width="fill_parent"
+				android:layout_weight="1"
+				android:layout_marginLeft="20dip"></TextView> <RadioButton
+				android:layout_height="wrap_content" android:id="@+id/space"
+				android:layout_width="fill_parent" android:layout_weight="3"
+				android:layout_marginRight="20dip" /> </LinearLayout> <LinearLayout
+				android:id="@+id/LinearLayout10"
+				android:layout_height="wrap_content"
+				android:layout_marginBottom="-5dip"
+				android:layout_marginTop="-10dip"
+				android:layout_width="fill_parent"> <TextView
+				android:layout_height="wrap_content" android:id="@+id/muacoustic"
+				android:textColor="#000000" android:text="Acoustic guitar"
+				android:textSize="20dip" android:layout_width="fill_parent"
+				android:layout_weight="1"
+				android:layout_marginLeft="20dip"></TextView> <RadioButton
+				android:layout_height="wrap_content" android:id="@+id/acoustic"
+				android:layout_width="fill_parent" android:layout_weight="3"
+				android:layout_marginRight="20dip" /> </LinearLayout> <LinearLayout
+				android:id="@+id/LinearLayout11"
+				android:layout_height="wrap_content"
+				android:layout_width="fill_parent"
+				android:layout_marginTop="-10dip"> <TextView
+				android:layout_height="wrap_content" android:id="@+id/muhappy"
+				android:textColor="#000000" android:text="Happy tune"
+				android:textSize="20dip" android:layout_width="fill_parent"
+				android:layout_weight="1"
+				android:layout_marginLeft="20dip"></TextView> <RadioButton
+				android:layout_height="wrap_content" android:id="@+id/happy"
+				android:layout_width="fill_parent"
+				android:layout_marginRight="20dip" android:layout_weight="3" />
+
+
+				</LinearLayout> </RadioGroup>
+			-->
+			<TextView android:id="@+id/copyright" android:layout_height="wrap_content"
+				android:layout_marginLeft="10dip" android:textSize="20dip"
+				android:textColor="#FFFFFF" android:text="COPYRIGHT"
+				android:layout_marginTop="10dip" android:layout_width="fill_parent"></TextView>
+			
+			<TextView android:id="@+id/TextView01" android:layout_width="fill_parent" android:layout_marginLeft="20dip" android:layout_marginRight="20dip" android:layout_height="wrap_content" android:text="@string/copyright" android:height="200dip"></TextView>
+			<TextView android:id="@+id/thanks" android:layout_width="wrap_content"
+				android:layout_height="wrap_content" android:layout_marginLeft="10dip"
+				android:textSize="20dip" android:textColor="#FFFFFF" android:text="SPECIAL THANKS"></TextView>
+			<ImageView android:id="@+id/thankstxt"
+				android:layout_marginTop="5dip" android:background="@drawable/bgbuttom2"
+				android:layout_height="250dip" android:layout_width="wrap_content"></ImageView>
+			<TextView android:id="@+id/wiredproducts"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_marginLeft="10dip" android:textSize="20dip"
+				android:textColor="#FFFFFF" android:layout_marginTop="-20dip"
+				android:text="WIRED PRODUCTS"></TextView>
+			<ImageView android:id="@+id/wiredproductsname"
+				android:layout_marginTop="5dip" android:background="@drawable/bgbuttom2"
+				android:layout_height="250dip" android:layout_width="wrap_content"></ImageView>
+
+
+
+
+
+
+
+
+		
+
+
+
+
+
+
+
+
+</LinearLayout>
+	</ScrollView>
+</LinearLayout>

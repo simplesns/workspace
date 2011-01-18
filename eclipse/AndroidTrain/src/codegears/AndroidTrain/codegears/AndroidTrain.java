@@ -1,0 +1,14 @@
+package codegears.AndroidTrain.codegears;
+
+import codegears.AndroidTrain.R;
+import android.app.Activity;
+import android.os.Bundle;
+
+public class AndroidTrain extends Activity {
+    /** Called when the activity is first created. */
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.surface);
+    }
+}
