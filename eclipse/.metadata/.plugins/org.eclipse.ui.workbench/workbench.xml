@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="18" version="2.0">
+<workbench progressCount="13" version="2.0">
 <workbenchAdvisor/>
 <window height="738" maximized="true" width="1024" x="175" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -30,7 +30,10 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+<part id="1"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
@@ -42,8 +45,6 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
-<category IMemento.internal.id="Warnings (7 items)"/>
-<category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
@@ -92,7 +93,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="com.android.ide.eclipse.editors.layout.LayoutEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -214,18 +215,42 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/NeAndroid/res/layout/ui_custombutton.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/ui_custombutton.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CustomToggleButton.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="" path="/DEPuzzles/res/layout/ui_customtogglebutton.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/ui_customtogglebutton.xml"/>
+</editors>
+<item historyLabel="ui_custombutton.xml" index="0"/>
+<item historyLabel="ui_custombutton.xml" index="1"/>
+<item historyLabel="CustomToggleButton.java" index="2">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CustomToggleButton.java" index="2">
+<position info="not_deleted" x="219" y="12"/>
+</item>
+<item historyLabel="CustomToggleButton.java" index="2">
+<position info="not_deleted" x="334" y="3"/>
+</item>
+<item historyLabel="CustomToggleButton.java" index="2">
+<position info="not_deleted" x="192" y="18"/>
+</item>
+<item historyLabel="ui_customtogglebutton.xml" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ui_customtogglebutton.xml" index="4"/>
+<item historyLabel="CustomToggleButton.java" index="2">
+<position info="not_deleted" x="330" y="0"/>
+</item>
+<item active="true" historyLabel="ui_custombutton.xml" index="1"/>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
-<trimArea IMemento.internal.id="16384">
-<trimItem IMemento.internal.id="left"/>
-</trimArea>
-<trimArea IMemento.internal.id="131072">
-<trimItem IMemento.internal.id="right"/>
-</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -233,11 +258,22 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
-<trimItem IMemento.internal.id="bottom"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_customtogglebutton.xml" tooltip="DEPuzzles/res/layout/ui_customtogglebutton.xml">
+<persistable path="/DEPuzzles/res/layout/ui_customtogglebutton.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CustomToggleButton.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/CustomToggleButton.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/CustomToggleButton.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_custombutton.xml" tooltip="DEPuzzles/res/layout/ui_custombutton.xml">
+<persistable path="/DEPuzzles/res/layout/ui_custombutton.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_custombutton.xml" tooltip="NeAndroid/res/layout/ui_custombutton.xml">
+<persistable path="/NeAndroid/res/layout/ui_custombutton.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClickListener.java" tooltip="NeAndroid/src/freehand/neandroid/widget/ClickListener.java">
 <persistable path="/NeAndroid/src/freehand/neandroid/widget/ClickListener.java"/>
 </file>
@@ -270,18 +306,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AnimationListener.java" tooltip="NeAndroid/src/freehand/neandroid/ui/AnimationListener.java">
 <persistable path="/NeAndroid/src/freehand/neandroid/ui/AnimationListener.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="AnimationUI.java" tooltip="NeAndroid/src/freehand/neandroid/ui/AnimationUI.java">
-<persistable path="/NeAndroid/src/freehand/neandroid/ui/AnimationUI.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="BorderTextUI.java" tooltip="NeAndroid/src/freehand/neandroid/ui/BorderTextUI.java">
-<persistable path="/NeAndroid/src/freehand/neandroid/ui/BorderTextUI.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="TextUI.java" tooltip="NeAndroid/src/freehand/neandroid/ui/TextUI.java">
-<persistable path="/NeAndroid/src/freehand/neandroid/ui/TextUI.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ColorRectUI.java" tooltip="NeAndroid/src/freehand/neandroid/ui/ColorRectUI.java">
-<persistable path="/NeAndroid/src/freehand/neandroid/ui/ColorRectUI.java"/>
 </file>
 </mruList>
 </workbench>
