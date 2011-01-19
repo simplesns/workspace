@@ -2,7 +2,11 @@ package codegears.DEPuzzles;
 
 import freehand.neandroid.GameActivity;
 import freehand.neandroid.GameSurfaceView;
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 
 public class MenuActivity extends GameActivity {
     
@@ -10,11 +14,33 @@ public class MenuActivity extends GameActivity {
 	
     @Override
     public void onCreate(Bundle savedInstanceState) {
+    	Button options,puzzle;
+    	
         super.onCreate(savedInstanceState);
         setContentView(R.layout.mainmenu);
         //SharedResource.init(this);
         screen = new MenuScreen(this);
         //this.set((GameSurfaceView)this.findViewById(R.id.surface), screen);
+        
+        options = (Button) findViewById(R.id.ButtonOptions);
+        options.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent i = new Intent(MenuActivity.this,OptionActivity.class);
+				startActivity(i);
+			}
+		});
+        
+        puzzle = (Button) findViewById(R.id.ButtonPuzzleSelect);
+        puzzle.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				Intent i = new Intent(MenuActivity.this, PuzzleSelectActivity.class);
+				startActivity(i);
+			}
+		});
     }
 
 	@Override
