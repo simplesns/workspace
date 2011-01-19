@@ -12,7 +12,19 @@
             </intent-filter>
         </activity>
 
-    </application>
+    <activity android:name="OptionActivity">
+    	<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+    </activity>
+	<activity android:name="PuzzleSelectActivity">
+		<intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+	</activity>
+</application>
     <uses-sdk android:minSdkVersion="7" />
 
 </manifest> 

@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="hello">Hello World, MenuActivity!</string>
-    <string name="app_name">D.E.Puzzles</string>
+	<string name="hello">Hello World, AndroidTrain!</string>
+	<string name="app_name">AndroidTrain</string>
+<string name="copyright">Saily Express Puzzles Ⓒ 2010 Wired Production Ltd. The Daily Express name and logo are registered trademarks or trademarks and copyright of Northen &amp; Shell Worldwide Limited acting through its branch Northrn &amp; Shell Worldwide - Luxembourg and used under licence by North &amp; Shell. Puzzle content is licensed from P.A Puzzles, part of the Press Associstion. Design and code are copyright of Wired Productions Ltd. All rights reserved.</string>
+<string name="specialthanks">Farzad Jamal and Robert Desmond at Northen and Shell, and Ben Halabi and Peter Stirling at the Press Association.</string>
 </resources>

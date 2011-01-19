@@ -11,10 +11,10 @@ public class MenuActivity extends GameActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.surface);
-        SharedResource.init(this);
+        setContentView(R.layout.mainmenu);
+        //SharedResource.init(this);
         screen = new MenuScreen(this);
-        this.set((GameSurfaceView)this.findViewById(R.id.surface), screen);
+        //this.set((GameSurfaceView)this.findViewById(R.id.surface), screen);
     }
 
 	@Override
