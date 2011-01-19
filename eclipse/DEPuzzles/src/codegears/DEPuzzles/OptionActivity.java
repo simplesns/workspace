@@ -114,6 +114,6 @@ public class OptionActivity extends Activity implements ClickListener {
 	public void onClick(View view) {
 		if(togglepop.equals(view)){
 			// toogleop clicked
-		} else if()
+		}
 	}
 }
