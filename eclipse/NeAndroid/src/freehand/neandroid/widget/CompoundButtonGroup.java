@@ -30,7 +30,9 @@ public class CompoundButtonGroup implements OnClickListener {
 			button.setChecked(false);
 		}
 		((CompoundButton) view).setChecked(true);
-		listener.onClick(view);
+		if(listener != null){
+			listener.onClick(view);
+		}
 	}
 
 }

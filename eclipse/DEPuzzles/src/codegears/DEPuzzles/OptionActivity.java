@@ -1,18 +1,27 @@
 package codegears.DEPuzzles;
 
 import codegears.DEPuzzles.data.OptionData;
+import freehand.neandroid.widget.ClickListener;
+import freehand.neandroid.widget.CompoundButtonGroup;
 import android.app.Activity;
-import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
+import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
-public class OptionActivity extends Activity {
+public class OptionActivity extends Activity implements ClickListener {
 	
-	private static boolean timer, bgmusic, sound;
-	private ToggleButton timerbt, bgmusicbt, soundbt;
+	private ToggleButton timerbt;
+	private ToggleButton bgmusicbt;
+	private ToggleButton soundbt;
+	private ToggleButton togglepop;
+	private ToggleButton togglejazz;
+	private ToggleButton togglespace;
+	private ToggleButton toggleacoustic;
+	private ToggleButton togglehappy;
 	private OptionData data;
+	private CompoundButtonGroup togglegroup;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -20,29 +29,35 @@ public class OptionActivity extends Activity {
 		setContentView(R.layout.options);
 		
 		data = new OptionData();
-		data.load();
-
-		//----- get Data from SharedPreferences ----// 
-//		SharedPreferences saveoptions = getSharedPreferences("Options", 0);
-//		boolean svtimer = saveoptions.getBoolean("time", false);
-//		boolean svbgmusic = saveoptions.getBoolean("bgmusic", false);
-//		boolean svsound = saveoptions.getBoolean("sound", false);
-
+		data.load(this);
 		timerbt = (ToggleButton) findViewById(R.id.toggletime);
 		bgmusicbt = (ToggleButton) findViewById(R.id.bgmusicbutton);
 		soundbt = (ToggleButton) findViewById(R.id.soundfxbutton);
+		togglepop = (ToggleButton) findViewById(R.id.Togglepop);
+		togglejazz = (ToggleButton) findViewById(R.id.Togglejazz);
+		togglespace = (ToggleButton) findViewById(R.id.Togglespace);
+		toggleacoustic = (ToggleButton) findViewById(R.id.Toggleacoustic);
+		togglehappy = (ToggleButton) findViewById(R.id.Togglehappy);
+		
+		togglegroup = new CompoundButtonGroup();
+		togglegroup.add(togglepop);
+		togglegroup.add(togglejazz);
+		togglegroup.add(togglespace);
+		togglegroup.add(toggleacoustic);
+		togglegroup.add(togglehappy);
 
-		timerbt.setChecked(/*data.isTimer()*/svtimer);
-		bgmusicbt.setChecked(/*data.isBgMusic()*/svbgmusic);
-		soundbt.setChecked(/*data.isSoundFX()*/svsound);
+		togglegroup.setClickListener(this);
+		timerbt.setChecked(data.isTimer());
+		bgmusicbt.setChecked(data.isBgMusic());
+		soundbt.setChecked(data.isSoundFX());
 
 		timerbt.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				if (timerbt.get) {
-					timer = true;
+				if (timerbt.isChecked()) {
+					data.setTimer(true);
 				} else {
-					timer = false;
+					data.setTimer(false);
 				}
 			}
 		});
@@ -50,10 +65,10 @@ public class OptionActivity extends Activity {
 		bgmusicbt.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				if (bgmusicbt.) {
-					bgmusic = true;
+				if (bgmusicbt.isChecked()) {
+					data.setBgmusic(true);
 				} else {
-					bgmusic = false;
+					data.setBgmusic(false);
 				}
 			}
 		});
@@ -61,10 +76,10 @@ public class OptionActivity extends Activity {
 		soundbt.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View arg0) {
-				if (soundbt.getTextOff() == null) {
-					sound = true;
+				if (soundbt.isChecked()) {
+					data.setSoundFX(true);
 				} else {
-					sound = false;
+					data.setSoundFX(false);
 				}
 			}
 		});
@@ -72,45 +87,33 @@ public class OptionActivity extends Activity {
 
 	public void onResume() {
 		super.onResume();
-		
-		data.load();
+		data = new OptionData();
+		data.load(this);
 
-//		SharedPreferences saveoptions = getSharedPreferences("Options", 0);
-//		boolean svtimer = saveoptions.getBoolean("time", false);
-//		boolean svbgmusic = saveoptions.getBoolean("bgmusic", false);
-//		boolean svsound = saveoptions.getBoolean("sound", false);
-
-		timerbt.setChecked(svtimer);
-		bgmusicbt.setChecked(svbgmusic);
-		soundbt.setChecked(svsound);
+		timerbt.setChecked(data.isTimer());
+		bgmusicbt.setChecked(data.isBgMusic());
+		soundbt.setChecked(data.isSoundFX());
 	}
 
 	public void onPause() {
-		
 		super.onPause();
-		
-		data.save();
-
-//		SharedPreferences saveoptions = getSharedPreferences("Options", 0);
-//		SharedPreferences.Editor editoption = saveoptions.edit();
-//		editoption.putBoolean("timer", timer);
-//		editoption.putBoolean("bgmusic", bgmusic);
-//		editoption.putBoolean("sound", sound);
-
-//		editoption.commit();
+		data.save(this);
 	}
 
 	public void onStop() {
 		super.onStop();
-		data.save();
-
-//		SharedPreferences saveoptions = getSharedPreferences("Options", 0);
-//		SharedPreferences.Editor editoption = saveoptions.edit();
-//		editoption.putBoolean("timer", timer);
-//		editoption.putBoolean("bgmusic", bgmusic);
-//		editoption.putBoolean("sound", sound);
-//
-//		editoption.commit();
+		data.save(this);
+	}
+	
+	public void onDestroy() {
+		super.onDestroy();
+		data.save(this);
 	}
 
+	@Override
+	public void onClick(View view) {
+		if(togglepop.equals(view)){
+			// toogleop clicked
+		} else if()
+	}
 }
