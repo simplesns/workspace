@@ -1,0 +1,13 @@
+package codegears.DEPuzzles.ui;
+
+import android.content.Context;
+import android.widget.LinearLayout;
+
+public class PuzzleSelectListItem extends LinearLayout {
+
+	public PuzzleSelectListItem(Context context) {
+		super(context);
+		View.inflate(context, R.layout.ui_checkbox_option, this);
+	}
+
+}
