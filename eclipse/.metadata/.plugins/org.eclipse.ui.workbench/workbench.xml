@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="12" version="2.0">
+<workbench progressCount="3" version="2.0">
 <workbenchAdvisor/>
 <window height="738" maximized="true" width="1024" x="175" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -21,7 +21,7 @@
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -30,10 +30,16 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 </editorArea>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CompoundButtonGroup.java" partName="CompoundButtonGroup.java" path="C:/workspace/eclipse/NeAndroid/src/freehand/neandroid/widget/CompoundButtonGroup.java" title="CompoundButtonGroup.java" tooltip="NeAndroid/src/freehand/neandroid/widget/CompoundButtonGroup.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/NeAndroid/src/freehand/neandroid/widget/CompoundButtonGroup.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="631" selectionTopPixel="204"/>
+</editor>
 </editors>
 <views>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
@@ -41,7 +47,9 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>&#x0A;<category IMemento.internal.id="Errors"/>
+<expanded>
+<category IMemento.internal.id="Errors"/>
+<category IMemento.internal.id="Warnings (12 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -49,6 +57,35 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.pathField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
+</viewState>
+</view>
+<view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
+<viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1294976695783">
+<customFilters userDefinedPatternsEnabled="false">
+<xmlDefinedFilters>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.LocalTypesFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.StaticsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.pde.ui.ExternalPluginLibrariesFilter1" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ClosedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonSharedProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaElementFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ContainedLibraryFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.CuAndClassFileFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonJavaProjectsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyInnerPackageFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.PackageDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.EmptyPackageFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.ImportDeclarationFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.FieldsFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.internal.ui.PackageExplorer.HideInnerClassFilesFilter" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.NonPublicFilter" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer_patternFilterId_.*" isEnabled="true"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.EmptyLibraryContainerFilter" isEnabled="true"/>
+<child filterId="org.eclipse.pde.ui.BinaryProjectFilter1" isEnabled="false"/>
+<child filterId="org.eclipse.jdt.ui.PackageExplorer.SyntheticMembersFilter" isEnabled="true"/>
+</xmlDefinedFilters>
+</customFilters>
 </viewState>
 </view>
 <view id="org.eclipse.ui.console.ConsoleView" partName="Console">
@@ -60,7 +97,7 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.ui.console.ConsoleView" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -124,17 +161,20 @@
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
 <info folder="true" part="left">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
+<folder activePageID="org.eclipse.jdt.ui.PackageExplorer" appearance="2" expanded="2">
+<page content="org.eclipse.jdt.ui.PackageExplorer" label="Package Explorer"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.ui.navigator.ProjectExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.junit.ResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
+</presentation>
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@699238ad" ratio="0.75" ratioLeft="750" ratioRight="250" relationship="2" relative="left">
@@ -179,7 +219,142 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory/>
+<navigationHistory>
+<editors>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/OptionActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/ui_puzzleselectlistitem.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/puzzleselect.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/PuzzleSelectListItem.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/MenuActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/data/OptionData.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NeAndroid/src/freehand/neandroid/widget/CompoundButtonGroup.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NeAndroid/src/freehand/neandroid/widget/ClickListener.java"/>
+</editors>
+<item historyLabel="OptionActivity.java" index="0">
+<position/>
+</item>
+<item historyLabel="OptionActivity.java" index="0">
+<position/>
+</item>
+<item historyLabel="ui_puzzleselectlistitem.xml" index="1"/>
+<item historyLabel="puzzleselect.xml" index="2"/>
+<item historyLabel="ui_puzzleselectlistitem.xml" index="1"/>
+<item historyLabel="PuzzleSelectListItem.java" index="3">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PuzzleSelectListItem.java" index="3">
+<position info="not_deleted" x="361" y="0"/>
+</item>
+<item historyLabel="ui_puzzleselectlistitem.xml" index="1"/>
+<item historyLabel="puzzleselect.xml" index="2"/>
+<item historyLabel="OptionActivity.java" index="0">
+<position/>
+</item>
+<item historyLabel="puzzleselect.xml" index="2"/>
+<item historyLabel="OptionActivity.java" index="0">
+<position/>
+</item>
+<item historyLabel="PuzzleSelectActivity.java" index="4">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PuzzleSelectActivity.java" index="4">
+<position info="not_deleted" x="363" y="0"/>
+</item>
+<item historyLabel="MenuActivity.java" index="5">
+<position info="not_deleted" x="1483" y="0"/>
+</item>
+<item historyLabel="MenuActivity.java" index="5">
+<position info="not_deleted" x="295" y="0"/>
+</item>
+<item historyLabel="PuzzleSelectActivity.java" index="4">
+<position info="not_deleted" x="285" y="0"/>
+</item>
+<item historyLabel="MenuActivity.java" index="5">
+<position info="not_deleted" x="431" y="0"/>
+</item>
+<item historyLabel="PuzzleSelectActivity.java" index="4">
+<position info="not_deleted" x="435" y="0"/>
+</item>
+<item historyLabel="MenuActivity.java" index="5">
+<position info="not_deleted" x="431" y="0"/>
+</item>
+<item historyLabel="PuzzleSelectActivity.java" index="4">
+<position info="not_deleted" x="444" y="0"/>
+</item>
+<item historyLabel="OptionActivity.java" index="0">
+<position info="not_deleted" x="874" y="0"/>
+</item>
+<item historyLabel="OptionData.java" index="6">
+<position info="not_deleted" x="182" y="0"/>
+</item>
+<item historyLabel="OptionData.java" index="6">
+<position info="not_deleted" x="182" y="0"/>
+</item>
+<item historyLabel="OptionActivity.java" index="0">
+<position info="not_deleted" x="874" y="0"/>
+</item>
+<item historyLabel="OptionActivity.java" index="0">
+<position info="not_deleted" x="652" y="0"/>
+</item>
+<item historyLabel="OptionActivity.java" index="0">
+<position info="not_deleted" x="2452" y="0"/>
+</item>
+<item historyLabel="OptionData.java" index="6">
+<position info="not_deleted" x="115" y="0"/>
+</item>
+<item historyLabel="OptionActivity.java" index="0">
+<position info="not_deleted" x="2031" y="0"/>
+</item>
+<item historyLabel="PuzzleSelectActivity.java" index="4">
+<position info="not_deleted" x="439" y="0"/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position info="not_deleted" x="278" y="0"/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position info="not_deleted" x="254" y="9"/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position/>
+</item>
+<item historyLabel="ClickListener.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="ClickListener.java" index="8">
+<position info="not_deleted" x="133" y="0"/>
+</item>
+<item historyLabel="ClickListener.java" index="8">
+<position info="not_deleted" x="124" y="4"/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position info="not_deleted" x="611" y="0"/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position info="not_deleted" x="240" y="0"/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position info="not_deleted" x="224" y="15"/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position info="not_deleted" x="577" y="0"/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position info="not_deleted" x="193" y="19"/>
+</item>
+<item historyLabel="CompoundButtonGroup.java" index="7">
+<position info="not_deleted" x="740" y="0"/>
+</item>
+<item active="true" historyLabel="CompoundButtonGroup.java" index="7">
+<position info="not_deleted" x="817" y="0"/>
+</item>
+</navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -196,17 +371,35 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OptionActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/OptionActivity.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/OptionActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClickListener.java" tooltip="NeAndroid/src/freehand/neandroid/widget/ClickListener.java">
+<persistable path="/NeAndroid/src/freehand/neandroid/widget/ClickListener.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuScreen.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CompoundButtonGroup.java" tooltip="NeAndroid/src/freehand/neandroid/widget/CompoundButtonGroup.java">
+<persistable path="/NeAndroid/src/freehand/neandroid/widget/CompoundButtonGroup.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OptionData.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/data/OptionData.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/data/OptionData.java"/>
 </file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OptionActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/OptionActivity.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/OptionActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/MenuActivity.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/MenuActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PuzzleSelectActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PuzzleSelectListItem.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/PuzzleSelectListItem.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/PuzzleSelectListItem.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="puzzleselect.xml" tooltip="DEPuzzles/res/layout/puzzleselect.xml">
+<persistable path="/DEPuzzles/res/layout/puzzleselect.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_puzzleselectlistitem.xml" tooltip="DEPuzzles/res/layout/ui_puzzleselectlistitem.xml">
 <persistable path="/DEPuzzles/res/layout/ui_puzzleselectlistitem.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuScreen.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Snippet.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/Snippet.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/Snippet.java"/>
@@ -222,24 +415,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_custombutton.xml" tooltip="DEPuzzles/res/layout/ui_custombutton.xml">
 <persistable path="/DEPuzzles/res/layout/ui_custombutton.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_custombutton.xml" tooltip="NeAndroid/res/layout/ui_custombutton.xml">
-<persistable path="/NeAndroid/res/layout/ui_custombutton.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClickListener.java" tooltip="NeAndroid/src/freehand/neandroid/widget/ClickListener.java">
-<persistable path="/NeAndroid/src/freehand/neandroid/widget/ClickListener.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ClickListener.java" tooltip="NeAndroid/src/freehand/neandroid/ui/ClickListener.java">
-<persistable path="/NeAndroid/src/freehand/neandroid/ui/ClickListener.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="main.xml" tooltip="test/res/layout/main.xml">
-<persistable path="/test/res/layout/main.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="Main.java" tooltip="test/src/com/test/Main.java">
-<persistable path="/test/src/com/test/Main.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SharedResource.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/SharedResource.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/SharedResource.java"/>
 </file>
 </mruList>
 </workbench>

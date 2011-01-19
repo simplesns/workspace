@@ -31,9 +31,8 @@
 				android:layout_width="fill_parent" android:layout_weight="1"
 				android:layout_gravity="center_vertical"
 				android:layout_marginLeft="20dip"></TextView> <ToggleButton
-				android:id="@+id/toggletime" android:layout_height="wrap_content" android:text="toggletimebutton"
-				android:layout_width="fill_parent" android:layout_weight="3"
-				android:layout_marginRight="20dip" android:textSize="10dip"></ToggleButton> </LinearLayout>
+				android:id="@+id/toggletime" android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="3"
+				android:layout_marginRight="20dip" android:textSize="10dip" android:text="true"></ToggleButton> </LinearLayout>
 				<LinearLayout android:id="@+id/LinearLayout05"
 				android:layout_height="wrap_content"
 				android:layout_width="fill_parent"> <TextView

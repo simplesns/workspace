@@ -1,0 +1,10 @@
+package codegears.DEPuzzles.data;
+
+public class OptionData {
+
+	public void save(){
+	}
+	
+	public void load(){
+	}
+}

@@ -1,0 +1,10 @@
+package freehand.neandroid.widget;
+
+public class CompoundButtonGroup {
+
+	private ArrayList<?> buttonList;
+	
+	public CompoundButtonGroup(){
+	}
+	
+}

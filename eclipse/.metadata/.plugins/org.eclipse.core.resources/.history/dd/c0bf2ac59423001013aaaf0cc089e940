@@ -1,0 +1,5 @@
+package freehand.neandroid.widget;
+
+public interface ClickListener {
+
+}
