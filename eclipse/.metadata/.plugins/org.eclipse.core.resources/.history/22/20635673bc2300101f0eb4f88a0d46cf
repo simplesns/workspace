@@ -1,0 +1,9 @@
+package codegears.DEPuzzles.util;
+
+public class DataBuilder {
+
+	public static ArrayList
+	<PuzzleSelectData> createPuzzleSelectDataFromAsset(String file){
+		return null;
+	}
+}

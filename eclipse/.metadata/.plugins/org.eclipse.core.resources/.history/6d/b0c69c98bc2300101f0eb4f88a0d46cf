@@ -1,0 +1,12 @@
+package codegears.DEPuzzles.util;
+
+import java.util.ArrayList;
+
+import codegears.DEPuzzles.data.PuzzleSelectData;
+
+public class DataBuilder {
+
+	public static ArrayList<PuzzleSelectData> createPuzzleSelectDataFromAsset(Context context, String file){
+		return null;
+	}
+}

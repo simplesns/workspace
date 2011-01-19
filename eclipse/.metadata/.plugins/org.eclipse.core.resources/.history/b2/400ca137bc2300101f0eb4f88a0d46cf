@@ -1,0 +1,14 @@
+package codegears.DEPuzzles.data;
+
+public class PuzzleSelectData {
+
+	private String text;
+	private String time;
+	private int percentComplete;
+	private String puzzleFile;
+	
+	public PuzzleSelectData(){
+	}
+	
+	public 
+}

@@ -1,0 +1,16 @@
+package codegears.DEPuzzles.util;
+
+import java.util.ArrayList;
+
+import android.content.Context;
+import android.content.res.AssetManager;
+
+import codegears.DEPuzzles.data.PuzzleSelectData;
+
+public class DataBuilder {
+
+	public static ArrayList<PuzzleSelectData> createPuzzleSelectDataFromAsset(Context context, String file){
+		AssetManager manager= context.getAssets();
+		return null;
+	}
+}

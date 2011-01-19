@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import codegears.DEPuzzles.data.PuzzleSelectData;
 import codegears.DEPuzzles.ui.PuzzleSelectListItem;
+import codegears.DEPuzzles.util.DataBuilder;
 
 import android.app.Activity;
 import android.content.Context;
@@ -25,6 +26,7 @@ public class PuzzleSelectActivity extends Activity {
 		 setContentView(R.layout.puzzleselect);		 
 		 list = (ListView)findViewById(R.id.ListView01);
 		 adapter = new PuzzleSelectAdapter(this);
+		 DataBuilder.createPuzzleSelectDataFromAsset(this, "CodeWordsPuzzle/CW_easy.txt");
 //		 adapter.setData(data1);
 		 list.setAdapter(adapter);
 	}

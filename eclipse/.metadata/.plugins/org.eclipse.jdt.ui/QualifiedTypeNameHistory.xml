@@ -22,9 +22,11 @@
 <fullyQualifiedTypeName name="codegears.DEPuzzles.R.id"/>
 <fullyQualifiedTypeName name="android.widget.ListView"/>
 <fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
+<fullyQualifiedTypeName name="codegears.DEPuzzles.ui.PuzzleSelectListItem"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.data.PuzzleSelectData"/>
+<fullyQualifiedTypeName name="codegears.DEPuzzles.util.DataBuilder"/>
 <fullyQualifiedTypeName name="android.content.Context"/>
-<fullyQualifiedTypeName name="codegears.DEPuzzles.ui.PuzzleSelectListItem"/>
 <fullyQualifiedTypeName name="android.content.res.AssetManager"/>
+<fullyQualifiedTypeName name="java.io.InputStream"/>
 </qualifiedTypeNameHistroy>
