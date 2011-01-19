@@ -12,38 +12,40 @@ public class MenuActivity extends GameActivity {
 
 	public static final String CROSSWORD = "crossword";
 	public static final String SUDOKU = "sudoku";
+	public static final String CODEWORD = "codeword";
+
 	private MenuScreen screen;
-	
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-    	Button options,puzzle;
-    	
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.mainmenu);
-        //SharedResource.init(this);
-        screen = new MenuScreen(this);
-        //this.set((GameSurfaceView)this.findViewById(R.id.surface), screen);
-        
-        options = (Button) findViewById(R.id.ButtonOptions);
-        options.setOnClickListener(new OnClickListener() {
-			
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		Button options, puzzle;
+
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.mainmenu);
+		// SharedResource.init(this);
+		screen = new MenuScreen(this);
+		// this.set((GameSurfaceView)this.findViewById(R.id.surface), screen);
+
+		options = (Button) findViewById(R.id.ButtonOptions);
+		options.setOnClickListener(new OnClickListener() {
+
 			@Override
 			public void onClick(View arg0) {
-				Intent i = new Intent(MenuActivity.this,OptionActivity.class);
+				Intent i = new Intent(MenuActivity.this, OptionActivity.class);
 				startActivity(i);
 			}
 		});
-        
-        puzzle = (Button) findViewById(R.id.ButtonPuzzleSelect);
-        puzzle.setOnClickListener(new OnClickListener() {
-			
+
+		puzzle = (Button) findViewById(R.id.ButtonPuzzleSelect);
+		puzzle.setOnClickListener(new OnClickListener() {
+
 			@Override
 			public void onClick(View arg0) {
 				Intent i = new Intent(MenuActivity.this, PuzzleSelectActivity.class);
 				startActivity(i);
 			}
 		});
-    }
+	}
 
 	@Override
 	public void changeScreen(int requestCode) {

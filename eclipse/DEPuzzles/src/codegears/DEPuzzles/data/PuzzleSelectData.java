@@ -17,4 +17,8 @@ public class PuzzleSelectData {
 	public void setPuzzleFile(String file){
 		puzzleFile = file;
 	}
+	
+	public String getText(){
+		return text;
+	}
 }

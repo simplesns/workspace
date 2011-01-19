@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:background="@drawable/bg_puzzleselect" android:orientation="vertical">
+	<ImageView android:layout_width="fill_parent" android:id="@+id/ImageView01" android:layout_height="70dip"></ImageView>
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent"
+		android:orientation="vertical" android:layout_height="fill_parent" android:layout_weight="1">
+		<TextView android:text="@+id/TextView02" android:id="@+id/TextView02"
+			android:layout_height="wrap_content" android:textColor="#000000"
+			android:layout_marginLeft="50dip" android:layout_marginRight="50dip"
+			android:layout_width="wrap_content" android:layout_gravity="center"></TextView>
+		<LinearLayout android:id="@+id/LinearLayout02"
+			xmlns:android="http://schemas.android.com/apk/res/android"
+			android:layout_width="fill_parent" android:layout_marginTop="10dip" android:layout_marginLeft="20dip"
+			android:layout_marginRight="20dip" android:background="#ffffff" android:layout_height="fill_parent">
+			<TextView android:layout_width="fill_parent"
+				android:background="#ffff" android:layout_marginLeft="20dip"
+				android:id="@+id/TextView01" android:layout_marginRight="20dip"
+				android:textColor="#000000" android:layout_height="wrap_content"
+				android:text="@+id/TextView01"></TextView>
+			<ListView android:id="@+id/ListView01" android:layout_height="fill_parent" android:layout_width="fill_parent"></ListView>
+		</LinearLayout>
+	</LinearLayout>
+
+
+<LinearLayout android:id="@+id/LinearLayout03" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="3"><LinearLayout android:id="@+id/LinearLayout04" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_gravity="center_vertical" android:layout_marginLeft="45dip">
+<ToggleButton android:layout_width="wrap_content" android:id="@+id/ToggleButton01" android:layout_height="wrap_content" android:text="@+id/ToggleButton01"></ToggleButton><ToggleButton android:text="@+id/ToggleButton02" android:id="@+id/ToggleButton02" android:layout_width="wrap_content" android:layout_height="wrap_content"></ToggleButton>
+<ToggleButton android:text="@+id/ToggleButton03" android:id="@+id/ToggleButton03" android:layout_width="wrap_content" android:layout_height="wrap_content"></ToggleButton>
+<ToggleButton android:text="@+id/ToggleButton04" android:id="@+id/ToggleButton04" android:layout_width="wrap_content" android:layout_height="wrap_content"></ToggleButton>
+
+
+</LinearLayout>
+</LinearLayout>
+
+
+
+</LinearLayout>
