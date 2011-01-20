@@ -96,13 +96,6 @@ public class PuzzleSelectActivity extends Activity implements ClickListener {
 			puzzleSelectList[3] = new ArrayList<PuzzleSelectData>();
 			adapter.setData(puzzleSelectList[0]);
 		} else if(game.equals(MenuActivity.WORDPUZZLERGAME)) {
-			puzzleSelectList = new ArrayList[2];
-			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"WordPuzzlerPuzzle/WP_easy.txt", "Puzzle");
-			puzzleSelectList[1] = new ArrayList<PuzzleSelectData>();
-			adapter.setData(puzzleSelectList[0]);
-			toggleButton[2].setVisibility(View.GONE);
-			toggleButton[3].setVisibility(View.GONE);
 		}
 		toggleButton[0].toggle();
 		list.setAdapter(adapter);
