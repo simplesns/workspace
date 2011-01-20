@@ -50,8 +50,46 @@ public class MenuScreen extends Screen {
 	private static int DRAWBUTTON_X_PLAYGAME;
 	private static int DRAWBUTTON_Y_PLAYGAME;
 	
+	private static final int STATE_NORMAL = 0;
+	private static final int STATE_SELECTED = 1;
 	
-	MenuScreen(GameActivity activity) {
+	public void stateNormal(){
+		optionButton.setEnableClick(true);
+		crosswordButton.setEnableClick(true);
+		wordPuzzlerButton.setEnableClick(true);
+		numberCrunchButton.setEnableClick(true);
+		codeWordButton.setEnableClick(true);
+		sudokuButton.setEnableClick(true);
+		wordSearchButton.setEnableClick(true);
+		
+		optionButton.setVisible(true);
+		crosswordButton.setVisible(true);
+		wordPuzzlerButton.setVisible(true);
+		numberCrunchButton.setVisible(true);
+		codeWordButton.setVisible(true);
+		sudokuButton.setVisible(true);
+		wordSearchButton.setVisible(true);
+	}
+	
+	public void stateSelected(){
+		optionButton.setEnableClick(false);
+		crosswordButton.setEnableClick(false);
+		wordPuzzlerButton.setEnableClick(false);
+		numberCrunchButton.setEnableClick(false);
+		codeWordButton.setEnableClick(false);
+		sudokuButton.setEnableClick(false);
+		wordSearchButton.setEnableClick(false);
+		
+		optionButton.setVisible(false);
+		crosswordButton.setVisible(false);
+		wordPuzzlerButton.setVisible(false);
+		numberCrunchButton.setVisible(false);
+		codeWordButton.setVisible(false);
+		sudokuButton.setVisible(false);
+		wordSearchButton.setVisible(false);
+	}
+	
+	public MenuScreen(GameActivity activity) {
 		super(activity);
 		
 		SharedResource.init(activity);
@@ -188,6 +226,7 @@ public class MenuScreen extends Screen {
 	void onClickGame(final String gameName) {
 		closeDialogButton.setVisible(true);
 		playGameButton.setVisible(true);
+		stateSelected();
 		
 		closeDialogButton.setClickListener(new ClickListener() {
 			
@@ -195,6 +234,7 @@ public class MenuScreen extends Screen {
 			public void onClick(Drawable drawObject) {
 				closeDialogButton.setVisible(false);
 				playGameButton.setVisible(false);
+				stateNormal();
 			}
 		});
 		
@@ -205,6 +245,9 @@ public class MenuScreen extends Screen {
 				Intent i = new Intent(MenuScreen.this.activity,PuzzleSelectActivity.class);
 				i.putExtra(MenuActivity.GAMENAME_EXTRA, gameName);
 				MenuScreen.this.activity.startActivity(i);
+				closeDialogButton.setVisible(false);
+				playGameButton.setVisible(false);
+				stateNormal();
 			}
 		});
 	}

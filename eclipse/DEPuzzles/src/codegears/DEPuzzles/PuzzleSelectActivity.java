@@ -67,42 +67,6 @@ public class PuzzleSelectActivity extends Activity implements ClickListener {
 			puzzleSelectList[2] = new ArrayList<PuzzleSelectData>();
 			adapter.setData(puzzleSelectList[0]);
 			toggleButton[3].setVisibility(View.GONE);
-		} else if(game.equals(MenuActivity.NUMBERCRUNCHGAME)) {
-			puzzleSelectList = new ArrayList[4];
-			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"NumberCrunchPuzzle/NumberCrunch_easy.txt", "Easy");
-			puzzleSelectList[1] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"NumberCrunchPuzzle/NumberCrunch_medium.txt", "Medium");
-			puzzleSelectList[2] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"NumberCrunchPuzzle/NumberCrunch_hard.txt", "Hard");
-			puzzleSelectList[3] = new ArrayList<PuzzleSelectData>();
-			adapter.setData(puzzleSelectList[0]);
-		} else if(game.equals(MenuActivity.WORDSEARCHGAME)) {
-			puzzleSelectList = new ArrayList[2];
-			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"WordSearchPuzzle/WSRC_easy.txt", "Puzzle");
-			puzzleSelectList[1] = new ArrayList<PuzzleSelectData>();
-			adapter.setData(puzzleSelectList[0]);
-			toggleButton[2].setVisibility(View.GONE);
-			toggleButton[3].setVisibility(View.GONE);
-		} else if(game.equals(MenuActivity.SUDOKUGAME)) {
-			puzzleSelectList = new ArrayList[4];
-			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"SudokuPuzzle/Sudoku-easy.txt", "Easy");
-			puzzleSelectList[1] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"SudokuPuzzle/Sudoku-medium.txt", "Medium");
-			puzzleSelectList[2] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"SudokuPuzzle/Sudoku-hard.txt", "Hard");
-			puzzleSelectList[3] = new ArrayList<PuzzleSelectData>();
-			adapter.setData(puzzleSelectList[0]);
-		} else if(game.equals(MenuActivity.WORDPUZZLERGAME)) {
-			puzzleSelectList = new ArrayList[2];
-			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"WordPuzzlerPuzzle/WP_easy.txt", "Puzzle");
-			puzzleSelectList[1] = new ArrayList<PuzzleSelectData>();
-			adapter.setData(puzzleSelectList[0]);
-			toggleButton[2].setVisibility(View.GONE);
-			toggleButton[3].setVisibility(View.GONE);
 		}
 		toggleButton[0].toggle();
 		list.setAdapter(adapter);

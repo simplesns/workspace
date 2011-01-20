@@ -4,7 +4,9 @@ import android.content.Context;
 import android.content.SharedPreferences;
 
 public class OptionData {
-	private boolean timer,bgmusic,soundFX;
+	private boolean timer;
+	private boolean bgmusic;
+	private boolean soundFX;
 	private boolean togglePop;
 	private boolean toggleJazz;
 	private boolean toggleSpace;
@@ -94,10 +96,10 @@ public class OptionData {
 	public void load(Context context){
 		SharedPreferences saveoptions = context.getSharedPreferences("Options", 0);
 		
-		timer = saveoptions.getBoolean("timer", false);
-		bgmusic = saveoptions.getBoolean("bgmusic", false);
-		soundFX = saveoptions.getBoolean("sound", false);
-		togglePop = saveoptions.getBoolean("muPop", false);
+		timer = saveoptions.getBoolean("timer", true);
+		bgmusic = saveoptions.getBoolean("bgmusic", true);
+		soundFX = saveoptions.getBoolean("sound", true);
+		togglePop = saveoptions.getBoolean("muPop", true);
 		toggleJazz = saveoptions.getBoolean("muJazz", false);
 		toggleSpace = saveoptions.getBoolean("muSpace", false);
 		toggleAcoustic = saveoptions.getBoolean("muAcoustic", false);
