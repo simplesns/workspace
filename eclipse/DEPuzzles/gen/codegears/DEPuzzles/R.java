@@ -30,7 +30,11 @@ public final class R {
         public static final int LinearLayout09=0x7f050019;
         public static final int LinearLayout10=0x7f05001c;
         public static final int LinearLayout11=0x7f05001f;
-        public static final int ListView01=0x7f050038;
+        public static final int PuzzleSelectListView=0x7f050038;
+        public static final int PuzzleSelectToggleButton1=0x7f050039;
+        public static final int PuzzleSelectToggleButton2=0x7f05003a;
+        public static final int PuzzleSelectToggleButton3=0x7f05003c;
+        public static final int PuzzleSelectToggleButton4=0x7f05003e;
         public static final int ScrollView01=0x7f050004;
         public static final int TextView01=0x7f050027;
         public static final int TextView02=0x7f050028;
@@ -50,8 +54,8 @@ public final class R {
         public static final int TextView16=0x7f05002c;
         public static final int ToggleButton01=0x7f050014;
         public static final int ToggleButton02=0x7f050021;
-        public static final int ToggleButton03=0x7f050039;
-        public static final int ToggleButton04=0x7f05003a;
+        public static final int ToggleButton03=0x7f05003b;
+        public static final int ToggleButton04=0x7f05003d;
         public static final int Toggleacoustic=0x7f05001e;
         public static final int Togglehappy=0x7f050022;
         public static final int Togglejazz=0x7f050018;
