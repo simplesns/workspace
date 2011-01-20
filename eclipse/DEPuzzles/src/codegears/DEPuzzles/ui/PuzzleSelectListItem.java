@@ -15,22 +15,23 @@ public class PuzzleSelectListItem extends LinearLayout {
 	private ImageView replay;
 	private CustomProgressBar progress;
 	private PuzzleSelectData data;
-	
+
 	public PuzzleSelectListItem(Context context) {
 		super(context);
 		View.inflate(context, R.layout.ui_puzzleselectlistitem, this);
-		text = (TextView)this.findViewById(R.id.PuzzleSelectListItemText);
-		time = (TextView)this.findViewById(R.id.PuzzleSelectListItemTime);
-		replay = (ImageView)this.findViewById(R.id.PuzzleSelectListItemReplay);
-		progress = (CustomProgressBar)this.findViewById(R.id.PuzzleSelectListItemProgress);
+		text = (TextView) this.findViewById(R.id.PuzzleSelectListItemText);
+		time = (TextView) this.findViewById(R.id.PuzzleSelectListItemTime);
+		replay = (ImageView) this.findViewById(R.id.PuzzleSelectListItemReplay);
+		progress = (CustomProgressBar) findViewById(R.id.PuzzleSelectListItemProgress);
 	}
-	
-	public void setData(PuzzleSelectData data){
+
+	public void setData(PuzzleSelectData data) {
 		this.data = data;
 		text.setText(data.getText());
+		progress.setPercentage(data.getPercentComplete());
 	}
-	
-	public PuzzleSelectData getData(){
+
+	public PuzzleSelectData getData() {
 		return data;
 	}
 }

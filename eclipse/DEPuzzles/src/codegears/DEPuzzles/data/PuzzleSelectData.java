@@ -5,7 +5,7 @@ public class PuzzleSelectData {
 	private String text;
 	private String time;
 	private String file;
-	private int guage;
+	private float percentage;
 	
 	public String getText(){
 		return text;
@@ -13,6 +13,10 @@ public class PuzzleSelectData {
 	
 	public String getFile(){
 		return file;
+	}
+	
+	public float getPercentComplete(){
+		return percentage;
 	}
 	
 	public void setText(String text){

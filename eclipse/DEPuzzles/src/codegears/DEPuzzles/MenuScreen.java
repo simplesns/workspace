@@ -3,11 +3,13 @@ package codegears.DEPuzzles;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.graphics.Matrix;
 import freehand.neandroid.GameActivity;
 import freehand.neandroid.Screen;
 import freehand.neandroid.ui.ButtonUI;
 import freehand.neandroid.ui.ClickListener;
 import freehand.neandroid.ui.Drawable;
+import freehand.neandroid.ui.ImageTransformUI;
 import freehand.neandroid.ui.ImageUI;
 
 public class MenuScreen extends Screen {
@@ -20,7 +22,7 @@ public class MenuScreen extends Screen {
 	private ButtonUI wordSearchButton;
 	private ButtonUI closeDialogButton;
 	private ButtonUI playGameButton;
-	private ImageUI background;
+	private ImageTransformUI background;
 	private Bitmap bgpic;
 	private Bitmap option ;
 	private Bitmap crosswords ;
@@ -53,41 +55,7 @@ public class MenuScreen extends Screen {
 	private static final int STATE_NORMAL = 0;
 	private static final int STATE_SELECTED = 1;
 	
-	public void stateNormal(){
-		optionButton.setEnableClick(true);
-		crosswordButton.setEnableClick(true);
-		wordPuzzlerButton.setEnableClick(true);
-		numberCrunchButton.setEnableClick(true);
-		codeWordButton.setEnableClick(true);
-		sudokuButton.setEnableClick(true);
-		wordSearchButton.setEnableClick(true);
-		
-		optionButton.setVisible(true);
-		crosswordButton.setVisible(true);
-		wordPuzzlerButton.setVisible(true);
-		numberCrunchButton.setVisible(true);
-		codeWordButton.setVisible(true);
-		sudokuButton.setVisible(true);
-		wordSearchButton.setVisible(true);
-	}
-	
-	public void stateSelected(){
-		optionButton.setEnableClick(false);
-		crosswordButton.setEnableClick(false);
-		wordPuzzlerButton.setEnableClick(false);
-		numberCrunchButton.setEnableClick(false);
-		codeWordButton.setEnableClick(false);
-		sudokuButton.setEnableClick(false);
-		wordSearchButton.setEnableClick(false);
-		
-		optionButton.setVisible(false);
-		crosswordButton.setVisible(false);
-		wordPuzzlerButton.setVisible(false);
-		numberCrunchButton.setVisible(false);
-		codeWordButton.setVisible(false);
-		sudokuButton.setVisible(false);
-		wordSearchButton.setVisible(false);
-	}
+	private int state;
 	
 	public MenuScreen(GameActivity activity) {
 		super(activity);
@@ -123,7 +91,10 @@ public class MenuScreen extends Screen {
 		closeDialog  = BitmapFactory.decodeResource(activity.getResources(), R.drawable.menu_closedialog);
 		playGame  = BitmapFactory.decodeResource(activity.getResources(), R.drawable.menu_playgame);
 		
-		background = new ImageUI();
+		background = new ImageTransformUI();
+		Matrix m = new Matrix();
+//		m.postScale(2, 2);
+		background.setMatrix(m);
 		optionButton = new ButtonUI();
 		crosswordButton = new ButtonUI();
 		wordPuzzlerButton = new ButtonUI();
@@ -222,6 +193,43 @@ public class MenuScreen extends Screen {
 		this.add(closeDialogButton);
 		this.add(playGameButton);
 	}
+
+	public void stateNormal(){
+		optionButton.setEnableClick(true);
+		crosswordButton.setEnableClick(true);
+		wordPuzzlerButton.setEnableClick(true);
+		numberCrunchButton.setEnableClick(true);
+		codeWordButton.setEnableClick(true);
+		sudokuButton.setEnableClick(true);
+		wordSearchButton.setEnableClick(true);
+		
+		optionButton.setVisible(true);
+		crosswordButton.setVisible(true);
+		wordPuzzlerButton.setVisible(true);
+		numberCrunchButton.setVisible(true);
+		codeWordButton.setVisible(true);
+		sudokuButton.setVisible(true);
+		wordSearchButton.setVisible(true);
+	}
+	
+	public void stateSelected(){
+		optionButton.setEnableClick(false);
+		crosswordButton.setEnableClick(false);
+		wordPuzzlerButton.setEnableClick(false);
+		numberCrunchButton.setEnableClick(false);
+		codeWordButton.setEnableClick(false);
+		sudokuButton.setEnableClick(false);
+		wordSearchButton.setEnableClick(false);
+		
+		optionButton.setVisible(false);
+		crosswordButton.setVisible(false);
+		wordPuzzlerButton.setVisible(false);
+		numberCrunchButton.setVisible(false);
+		codeWordButton.setVisible(false);
+		sudokuButton.setVisible(false);
+		wordSearchButton.setVisible(false);
+	}
+	
 	
 	void onClickGame(final String gameName) {
 		closeDialogButton.setVisible(true);

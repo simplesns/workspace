@@ -1,4 +1,4 @@
-#Tue Jan 18 17:23:43 ICT 2011
+#Thu Jan 20 17:32:41 ICT 2011
 sp_cleanup.remove_unnecessary_casts=true
 sp_cleanup.remove_trailing_whitespaces_ignore_empty=false
 org.eclipse.jdt.ui.staticondemandthreshold=99
@@ -7,7 +7,7 @@ sp_cleanup.use_blocks=false
 org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 sp_cleanup.make_private_fields_final=true
 sp_cleanup.never_use_parentheses_in_expressions=true
-content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"/>
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="android.view.ViewGroup$LayoutParams"><rhs name\="android.widget.LinearLayout$LayoutParams"/></lhs></history>
 closeBraces=false
 sp_cleanup.always_use_this_for_non_static_field_access=false
 sp_cleanup.never_use_blocks=false

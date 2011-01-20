@@ -40,4 +40,7 @@
 <fullyQualifiedTypeName name="freehand.neandroid.GameActivity"/>
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
 <fullyQualifiedTypeName name="android.content.Intent"/>
+<fullyQualifiedTypeName name="android.widget.LinearLayout.LayoutParams"/>
+<fullyQualifiedTypeName name="freehand.neandroid.ui.ImageTransformUI"/>
+<fullyQualifiedTypeName name="android.graphics.Matrix"/>
 </qualifiedTypeNameHistroy>

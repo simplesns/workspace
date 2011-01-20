@@ -25,6 +25,8 @@ public final class R {
         public static final int menu_wordsearch=0x7f02000b;
     }
     public static final class id {
+        public static final int CustomProgressLeft=0x7f05003f;
+        public static final int CustomProgressRight=0x7f050040;
         public static final int GameSurfaceView=0x7f050000;
         public static final int ImageView01=0x7f050037;
         public static final int LinearLayout01=0x7f050002;
@@ -38,10 +40,10 @@ public final class R {
         public static final int LinearLayout09=0x7f050019;
         public static final int LinearLayout10=0x7f05001c;
         public static final int LinearLayout11=0x7f05001f;
-        public static final int PuzzleSelectListItemProgress=0x7f050041;
-        public static final int PuzzleSelectListItemReplay=0x7f050042;
-        public static final int PuzzleSelectListItemText=0x7f05003f;
-        public static final int PuzzleSelectListItemTime=0x7f050040;
+        public static final int PuzzleSelectListItemProgress=0x7f050043;
+        public static final int PuzzleSelectListItemReplay=0x7f050044;
+        public static final int PuzzleSelectListItemText=0x7f050041;
+        public static final int PuzzleSelectListItemTime=0x7f050042;
         public static final int PuzzleSelectListView=0x7f050038;
         public static final int PuzzleSelectToggleButton1=0x7f050039;
         public static final int PuzzleSelectToggleButton2=0x7f05003a;

@@ -1,0 +1,21 @@
+package codegears.DEPuzzles.ui;
+
+import codegears.DEPuzzles.R;
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.LinearLayout;
+
+public class CustomProgressBar extends LinearLayout {
+
+	private LinearLayout left;
+	private LinearLayout right;
+	
+	public CustomProgressBar(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		View.inflate(context, R.layout.ui_customprogressbar, this);
+		left = (LinearLayout)findViewById(R.id.CustomProgressLeft);
+		right = (LinearLayout)findViewbyId(R.id.CustomProgressRight);
+	}
+
+}

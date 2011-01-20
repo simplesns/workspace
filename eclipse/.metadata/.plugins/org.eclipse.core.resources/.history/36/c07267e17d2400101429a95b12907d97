@@ -1,0 +1,38 @@
+package codegears.DEPuzzles.ui;
+
+import codegears.DEPuzzles.R;
+import codegears.DEPuzzles.data.PuzzleSelectData;
+import android.content.Context;
+import android.view.View;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+public class PuzzleSelectListItem extends LinearLayout {
+
+	private TextView text;
+	private TextView time;
+	private ImageView replay;
+	private CustomProgressBar progress;
+	private PuzzleSelectData data;
+
+	public PuzzleSelectListItem(Context context) {
+		super(context);
+		View.inflate(context, R.layout.ui_puzzleselectlistitem, this);
+		text = (TextView) this.findViewById(R.id.PuzzleSelectListItemText);
+		time = (TextView) this.findViewById(R.id.PuzzleSelectListItemTime);
+		replay = (ImageView) this.findViewById(R.id.PuzzleSelectListItemReplay);
+		progress = (CustomProgressBar)
+				findViewById(R.id.PuzzleSelectListItemProgress);
+	}
+
+	public void setData(PuzzleSelectData data) {
+		this.data = data;
+		text.setText(data.getText());
+		progress.setPercentage(data.getPercentComplete());
+	}
+
+	public PuzzleSelectData getData() {
+		return data;
+	}
+}
