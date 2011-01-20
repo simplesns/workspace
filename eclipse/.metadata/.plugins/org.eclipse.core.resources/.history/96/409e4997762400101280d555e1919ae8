@@ -1,0 +1,14 @@
+package codegears.DEPuzzles;
+
+import freehand.neandroid.GameSurfaceView;
+import android.app.Activity;
+import android.os.Bundle;
+
+public class NumberCrunchActivity extends Activity {
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		setContentView(R.layout.);
+
+	}
+
+}

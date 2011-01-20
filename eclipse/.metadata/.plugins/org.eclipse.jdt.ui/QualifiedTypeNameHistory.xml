@@ -31,11 +31,13 @@
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="android.widget.ImageView"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.R.id"/>
-<fullyQualifiedTypeName name="freehand.neandroid.GameActivity"/>
-<fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.R"/>
 <fullyQualifiedTypeName name="android.R.layout"/>
+<fullyQualifiedTypeName name="codegears.DEPuzzles.data.PuzzleSelectData"/>
+<fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.R"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.R.layout"/>
-<fullyQualifiedTypeName name="codegears.DEPuzzles.data.PuzzleSelectData"/>
+<fullyQualifiedTypeName name="freehand.neandroid.GameActivity"/>
+<fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
 </qualifiedTypeNameHistroy>

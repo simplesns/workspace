@@ -11,6 +11,10 @@ public class PuzzleSelectData {
 		return text;
 	}
 	
+	public String getFile(){
+		return file;
+	}
+	
 	public void setText(String text){
 		this.text = text;
 	}

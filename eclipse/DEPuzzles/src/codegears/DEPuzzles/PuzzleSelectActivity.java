@@ -11,17 +11,20 @@ import freehand.neandroid.widget.CompoundButtonGroup;
 
 import android.app.Activity;
 import android.content.Context;
-import android.content.res.AssetManager;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.ListView;
-import android.widget.TextView;
 import android.widget.ToggleButton;
 
-public class PuzzleSelectActivity extends Activity implements ClickListener {
+public class PuzzleSelectActivity extends Activity implements ClickListener,
+		OnItemClickListener {
 
+	public static final String EXTRA_FILE = "file";
 	private ListView list;
 	private PuzzleSelectAdapter adapter;
 	private String game;
@@ -35,6 +38,7 @@ public class PuzzleSelectActivity extends Activity implements ClickListener {
 		GameActivity.setFullscreen(this);
 		setContentView(R.layout.puzzleselect);
 		list = (ListView) findViewById(R.id.PuzzleSelectListView);
+		list.setOnItemClickListener(this);
 		adapter = new PuzzleSelectAdapter(this);
 		toggleButton = new ToggleButton[4];
 		toggleButton[0] = (ToggleButton) findViewById(R.id.PuzzleSelectToggleButton1);
@@ -67,11 +71,46 @@ public class PuzzleSelectActivity extends Activity implements ClickListener {
 			puzzleSelectList[2] = new ArrayList<PuzzleSelectData>();
 			adapter.setData(puzzleSelectList[0]);
 			toggleButton[3].setVisibility(View.GONE);
+		} else if(game.equals(MenuActivity.NUMBERCRUNCHGAME)) {
+			puzzleSelectList = new ArrayList[4];
+			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"NumberCrunchPuzzle/NumberCrunch_easy.txt", "Easy");
+			puzzleSelectList[1] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"NumberCrunchPuzzle/NumberCrunch_medium.txt", "Medium");
+			puzzleSelectList[2] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"NumberCrunchPuzzle/NumberCrunch_hard.txt", "Hard");
+			puzzleSelectList[3] = new ArrayList<PuzzleSelectData>();
+			adapter.setData(puzzleSelectList[0]);
+		} else if(game.equals(MenuActivity.WORDSEARCHGAME)) {
+			puzzleSelectList = new ArrayList[2];
+			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"WordSearchPuzzle/WSRC_easy.txt", "Puzzle");
+			puzzleSelectList[1] = new ArrayList<PuzzleSelectData>();
+			adapter.setData(puzzleSelectList[0]);
+			toggleButton[2].setVisibility(View.GONE);
+			toggleButton[3].setVisibility(View.GONE);
+		} else if(game.equals(MenuActivity.SUDOKUGAME)) {
+			puzzleSelectList = new ArrayList[4];
+			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"SudokuPuzzle/Sudoku-easy.txt", "Easy");
+			puzzleSelectList[1] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"SudokuPuzzle/Sudoku-medium.txt", "Medium");
+			puzzleSelectList[2] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"SudokuPuzzle/Sudoku-hard.txt", "Hard");
+			puzzleSelectList[3] = new ArrayList<PuzzleSelectData>();
+			adapter.setData(puzzleSelectList[0]);
+		} else if(game.equals(MenuActivity.WORDPUZZLERGAME)) {
+			puzzleSelectList = new ArrayList[2];
+			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"WordPuzzlerPuzzle/WP_easy.txt", "Puzzle");
+			puzzleSelectList[1] = new ArrayList<PuzzleSelectData>();
+			adapter.setData(puzzleSelectList[0]);
+			toggleButton[2].setVisibility(View.GONE);
+			toggleButton[3].setVisibility(View.GONE);
 		}
 		toggleButton[0].toggle();
 		list.setAdapter(adapter);
 	}
-
 	@Override
 	public void onClick(View view) {
 		for (int i = 0; i < toggleButton.length; i++) {
@@ -79,6 +118,19 @@ public class PuzzleSelectActivity extends Activity implements ClickListener {
 				adapter.setData(puzzleSelectList[i]);
 				adapter.notifyDataSetInvalidated();
 			}
+		}
+	}
+
+	@Override
+	public void onItemClick(AdapterView<?> parent, View view, int position,
+			long id) {
+		PuzzleSelectListItem item = (PuzzleSelectListItem) view;
+		PuzzleSelectData data = item.getData();
+		String file = data.getFile();
+		if (game.equals(MenuActivity.NUMBERCRUNCHGAME)) {
+			Intent i = new Intent(this, NumberCrunchActivity.class);
+			i.putExtra(EXTRA_FILE, file);
+			this.startActivity(i);
 		}
 	}
 
@@ -120,11 +172,11 @@ public class PuzzleSelectActivity extends Activity implements ClickListener {
 		public View getView(int position, View convertView, ViewGroup parent) {
 			if (data != null) {
 				PuzzleSelectListItem view = null;
-				if(convertView == null){
+				if (convertView == null) {
 					view = new PuzzleSelectListItem(context);
 					view.setData(data.get(position));
 				} else {
-					view = (PuzzleSelectListItem)convertView;
+					view = (PuzzleSelectListItem) convertView;
 					view.setData(data.get(position));
 				}
 				return view;

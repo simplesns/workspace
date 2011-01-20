@@ -29,4 +29,8 @@ public class PuzzleSelectListItem extends LinearLayout {
 		this.data = data;
 		text.setText(data.getText());
 	}
+	
+	public PuzzleSelectData getData(){
+		return data;
+	}
 }
