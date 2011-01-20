@@ -203,7 +203,7 @@ public class MenuScreen extends Screen {
 			@Override
 			public void onClick(Drawable drawObject) {
 				Intent i = new Intent(MenuScreen.this.activity,PuzzleSelectActivity.class);
-				i.putExtra(MenuActivity.GAMENAME_EXTRA, gameName);
+				i.putExtra(GAMENAME_EXTRA, gameName);
 				MenuScreen.this.activity.startActivity(i);
 			}
 		});

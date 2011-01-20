@@ -27,7 +27,7 @@ public class DataBuilder {
 			while (line != null) {
 				PuzzleSelectData data = new PuzzleSelectData();
 				data.setPuzzleFile(line);
-				data.setText(text + "" + count);
+				data.setText(text + "-" + count);
 				dataList.add(data);
 				line = bReader.readLine();
 				count++;

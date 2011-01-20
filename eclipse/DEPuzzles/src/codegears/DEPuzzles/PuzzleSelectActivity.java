@@ -47,17 +47,26 @@ public class PuzzleSelectActivity extends Activity implements ClickListener {
 			group.add(t);
 		}
 		// get game from Intent
-		game = "codeword";
+		game = this.getIntent().getStringExtra(MenuActivity.GAMENAME_EXTRA);
 		if (game.equals(MenuActivity.CODEWORD)) {
 			puzzleSelectList = new ArrayList[4];
 			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"CodeWordsPuzzle/CW_easy.txt", "easy");
+					"CodeWordsPuzzle/CW_easy.txt", "Easy");
 			puzzleSelectList[1] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"CodeWordsPuzzle/CW_medium.txt", "medium");
+					"CodeWordsPuzzle/CW_medium.txt", "Medium");
 			puzzleSelectList[2] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"CodeWordsPuzzle/CW_hard.txt", "hard");
+					"CodeWordsPuzzle/CW_hard.txt", "Hard");
 			puzzleSelectList[3] = new ArrayList<PuzzleSelectData>();
 			adapter.setData(puzzleSelectList[0]);
+		} else if(game.equals(MenuActivity.CROSSWORDSGAME)) {
+			puzzleSelectList = new ArrayList[3];
+			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"CrosswordsPuzzle/CRW_quick.txt", "Quick");
+			puzzleSelectList[1] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"CrosswordsPuzzle/CRW_cryptic.txt", "Cryptic");
+			puzzleSelectList[2] = new ArrayList<PuzzleSelectData>();
+			adapter.setData(puzzleSelectList[0]);
+			toggleButton[3].setVisibility(View.GONE);
 		}
 		toggleButton[0].toggle();
 		list.setAdapter(adapter);

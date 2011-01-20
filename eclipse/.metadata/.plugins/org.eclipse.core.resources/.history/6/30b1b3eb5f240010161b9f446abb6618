@@ -5,6 +5,9 @@ import java.util.ArrayList;
 import codegears.DEPuzzles.data.PuzzleSelectData;
 import codegears.DEPuzzles.ui.PuzzleSelectListItem;
 import codegears.DEPuzzles.util.DataBuilder;
+import freehand.neandroid.GameActivity;
+import freehand.neandroid.widget.ClickListener;
+import freehand.neandroid.widget.CompoundButtonGroup;
 
 import android.app.Activity;
 import android.content.Context;
@@ -17,36 +20,66 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
-public class PuzzleSelectActivity extends Activity {
+public class PuzzleSelectActivity extends Activity implements ClickListener {
 
 	private ListView list;
 	private PuzzleSelectAdapter adapter;
 	private String game;
 	private ArrayList<PuzzleSelectData>[] puzzleSelectList;
 	private ToggleButton[] toggleButton;
+	private CompoundButtonGroup group;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		GameActivity.setFullscreen(this);
 		setContentView(R.layout.puzzleselect);
 		list = (ListView) findViewById(R.id.PuzzleSelectListView);
 		adapter = new PuzzleSelectAdapter(this);
 		toggleButton = new ToggleButton[4];
-		
+		toggleButton[0] = (ToggleButton) findViewById(R.id.PuzzleSelectToggleButton1);
+		toggleButton[1] = (ToggleButton) findViewById(R.id.PuzzleSelectToggleButton2);
+		toggleButton[2] = (ToggleButton) findViewById(R.id.PuzzleSelectToggleButton3);
+		toggleButton[3] = (ToggleButton) findViewById(R.id.PuzzleSelectToggleButton4);
+		group = new CompoundButtonGroup();
+		group.setClickListener(this);
+		for (ToggleButton t : toggleButton) {
+			group.add(t);
+		}
 		// get game from Intent
-		game = "codeword";
+		game = this.getIntent().getStringExtra(name);
 		if (game.equals(MenuActivity.CODEWORD)) {
 			puzzleSelectList = new ArrayList[4];
 			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"CodeWordsPuzzle/CW_easy.txt", "easy");
+					"CodeWordsPuzzle/CW_easy.txt", "Easy");
 			puzzleSelectList[1] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"CodeWordsPuzzle/CW_medium.txt", "medium");
+					"CodeWordsPuzzle/CW_medium.txt", "Medium");
 			puzzleSelectList[2] = DataBuilder.createPuzzleSelectDataFromAsset(this,
-					"CodeWordsPuzzle/CW_hard.txt", "hard");
+					"CodeWordsPuzzle/CW_hard.txt", "Hard");
 			puzzleSelectList[3] = new ArrayList<PuzzleSelectData>();
 			adapter.setData(puzzleSelectList[0]);
+		} else if(game.equals(MenuActivity.CROSSWORDSGAME)) {
+			puzzleSelectList = new ArrayList[3];
+			puzzleSelectList[0] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"CrossWordsPuzzle/CRW_quick.txt", "Quick");
+			puzzleSelectList[1] = DataBuilder.createPuzzleSelectDataFromAsset(this,
+					"CrossWordsPuzzle/CRW_cryptic.txt", "Cryptic");
+			puzzleSelectList[2] = new ArrayList<PuzzleSelectData>();
+			adapter.setData(puzzleSelectList[0]);
+			toggleButton[3].setVisibility(View.GONE);
 		}
+		toggleButton[0].toggle();
 		list.setAdapter(adapter);
+	}
+
+	@Override
+	public void onClick(View view) {
+		for (int i = 0; i < toggleButton.length; i++) {
+			if (toggleButton[i].equals(view)) {
+				adapter.setData(puzzleSelectList[i]);
+				adapter.notifyDataSetInvalidated();
+			}
+		}
 	}
 
 	private class PuzzleSelectAdapter extends BaseAdapter {
@@ -86,12 +119,18 @@ public class PuzzleSelectActivity extends Activity {
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
 			if (data != null) {
-				TextView view = new TextView(context);
-				view.setText(data.get(position).getText());
-//				PuzzleSelectListItem view = new PuzzleSelectListItem(context);
+				PuzzleSelectListItem view = null;
+				if(convertView == null){
+					view = new PuzzleSelectListItem(context);
+					view.setData(data.get(position));
+				} else {
+					view = (PuzzleSelectListItem)convertView;
+					view.setData(data.get(position));
+				}
 				return view;
 			}
 			return null;
 		}
 	}
+
 }

@@ -10,7 +10,6 @@ import android.widget.Button;
 
 public class MenuActivity extends GameActivity {
 
-	public static final String GAMENAME_EXTRA = "gameName";
 	public static final String CROSSWORDSGAME = "crosswords";
 	public static final String SUDOKUGAME = "sudoku";
 	public static final String WORDPUZZLERGAME = "wordPuzzler";
