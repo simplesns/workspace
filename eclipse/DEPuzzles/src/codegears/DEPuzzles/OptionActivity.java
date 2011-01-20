@@ -1,13 +1,13 @@
 package codegears.DEPuzzles;
 
 import codegears.DEPuzzles.data.OptionData;
+import freehand.neandroid.GameActivity;
 import freehand.neandroid.widget.ClickListener;
 import freehand.neandroid.widget.CompoundButtonGroup;
 import android.app.Activity;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
-import android.widget.CompoundButton;
 import android.widget.ToggleButton;
 
 public class OptionActivity extends Activity implements ClickListener {
@@ -15,13 +15,13 @@ public class OptionActivity extends Activity implements ClickListener {
 	private ToggleButton timerbt;
 	private ToggleButton bgmusicbt;
 	private ToggleButton soundbt;
-	private ToggleButton togglepop;
-	private ToggleButton togglejazz;
-	private ToggleButton togglespace;
-	private ToggleButton toggleacoustic;
-	private ToggleButton togglehappy;
+	private ToggleButton togglePop;
+	private ToggleButton toggleJazz;
+	private ToggleButton toggleSpace;
+	private ToggleButton toggleAcoustic;
+	private ToggleButton toggleHappy;
 	private OptionData data;
-	private CompoundButtonGroup togglegroup;
+	private CompoundButtonGroup toggleGroup;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -33,23 +33,28 @@ public class OptionActivity extends Activity implements ClickListener {
 		timerbt = (ToggleButton) findViewById(R.id.toggletime);
 		bgmusicbt = (ToggleButton) findViewById(R.id.bgmusicbutton);
 		soundbt = (ToggleButton) findViewById(R.id.soundfxbutton);
-		togglepop = (ToggleButton) findViewById(R.id.Togglepop);
-		togglejazz = (ToggleButton) findViewById(R.id.Togglejazz);
-		togglespace = (ToggleButton) findViewById(R.id.Togglespace);
-		toggleacoustic = (ToggleButton) findViewById(R.id.Toggleacoustic);
-		togglehappy = (ToggleButton) findViewById(R.id.Togglehappy);
+		togglePop = (ToggleButton) findViewById(R.id.Togglepop);
+		toggleJazz = (ToggleButton) findViewById(R.id.Togglejazz);
+		toggleSpace = (ToggleButton) findViewById(R.id.Togglespace);
+		toggleAcoustic = (ToggleButton) findViewById(R.id.Toggleacoustic);
+		toggleHappy = (ToggleButton) findViewById(R.id.Togglehappy);
 		
-		togglegroup = new CompoundButtonGroup();
-		togglegroup.add(togglepop);
-		togglegroup.add(togglejazz);
-		togglegroup.add(togglespace);
-		togglegroup.add(toggleacoustic);
-		togglegroup.add(togglehappy);
-
-		togglegroup.setClickListener(this);
+		toggleGroup = new CompoundButtonGroup();
+		toggleGroup.add(togglePop);
+		toggleGroup.add(toggleJazz);
+		toggleGroup.add(toggleSpace);
+		toggleGroup.add(toggleAcoustic);
+		toggleGroup.add(toggleHappy);
+		toggleGroup.setClickListener(this);
+		
 		timerbt.setChecked(data.isTimer());
 		bgmusicbt.setChecked(data.isBgMusic());
 		soundbt.setChecked(data.isSoundFX());
+		togglePop.setChecked(data.isTogglePop());
+		toggleJazz.setChecked(data.isToggleJazz());
+		toggleSpace.setChecked(data.isToggleSpace());
+		toggleAcoustic.setChecked(data.isToggleAcoustic());
+		toggleHappy.setChecked(data.isToggleHappy());
 
 		timerbt.setOnClickListener(new OnClickListener() {
 			@Override
@@ -85,6 +90,40 @@ public class OptionActivity extends Activity implements ClickListener {
 		});
 	}
 
+	@Override
+	public void onClick(View view) {
+		if(togglePop.equals(view)){
+			// toogleop clicked
+			data.setTogglePop(true);
+		} else {
+			data.setTogglePop(false);
+		}
+		
+		if(toggleJazz.equals(view)){
+			data.setToggleJazz(true);
+		} else {
+			data.setToggleJazz(false);
+		}
+			
+		if(toggleSpace.equals(view)){
+			data.setToggleSpace(true);
+		} else {
+			data.setToggleSpace(false);
+		}
+		
+		if(toggleAcoustic.equals(view)){
+			data.setToggleAcoustic(true);
+		} else {
+			data.setToggleAcoustic(false);
+		}
+		
+		if(toggleHappy.equals(view)){
+			data.setToggleHappy(true);
+		} else {
+			data.setToggleHappy(false);
+		}
+	}
+	
 	public void onResume() {
 		super.onResume();
 		data = new OptionData();
@@ -94,7 +133,7 @@ public class OptionActivity extends Activity implements ClickListener {
 		bgmusicbt.setChecked(data.isBgMusic());
 		soundbt.setChecked(data.isSoundFX());
 	}
-
+	
 	public void onPause() {
 		super.onPause();
 		data.save(this);
@@ -108,12 +147,5 @@ public class OptionActivity extends Activity implements ClickListener {
 	public void onDestroy() {
 		super.onDestroy();
 		data.save(this);
-	}
-
-	@Override
-	public void onClick(View view) {
-		if(togglepop.equals(view)){
-			// toogleop clicked
-		}
 	}
 }
