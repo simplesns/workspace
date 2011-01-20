@@ -14,10 +14,18 @@ public final class R {
         public static final int bd_mainmenu=0x7f020000;
         public static final int bg_puzzleselect=0x7f020001;
         public static final int icon=0x7f020002;
+        public static final int menu_closedialog=0x7f020003;
+        public static final int menu_codeword=0x7f020004;
+        public static final int menu_crosswords=0x7f020005;
+        public static final int menu_numbercrunch=0x7f020006;
+        public static final int menu_option=0x7f020007;
+        public static final int menu_playgame=0x7f020008;
+        public static final int menu_sudoku=0x7f020009;
+        public static final int menu_wordpuzzler=0x7f02000a;
+        public static final int menu_wordsearch=0x7f02000b;
     }
     public static final class id {
-        public static final int ButtonOptions=0x7f050000;
-        public static final int ButtonPuzzleSelect=0x7f050001;
+        public static final int GameSurfaceView=0x7f050000;
         public static final int ImageView01=0x7f050037;
         public static final int LinearLayout01=0x7f050002;
         public static final int LinearLayout02=0x7f050005;
@@ -40,6 +48,7 @@ public final class R {
         public static final int PuzzleSelectToggleButton3=0x7f05003c;
         public static final int PuzzleSelectToggleButton4=0x7f05003e;
         public static final int ScrollView01=0x7f050004;
+        public static final int SurfaceMenu=0x7f050001;
         public static final int TextView01=0x7f050027;
         public static final int TextView02=0x7f050028;
         public static final int TextView03=0x7f050029;

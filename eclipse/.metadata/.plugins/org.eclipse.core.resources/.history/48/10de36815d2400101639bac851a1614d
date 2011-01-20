@@ -1,0 +1,8 @@
+package codegears.DEPuzzles.data;
+
+public class PuzzleSelectData {
+
+	private String name;
+	private String time;
+	private int guage;
+}

@@ -141,35 +141,35 @@ public class MenuScreen extends Screen {
 		wordPuzzlerButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.WORDPUZZLERGAME);
+				onClickGame(WORDPUZZLERGAME);
 			}
 		});
 		
 		numberCrunchButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.NUMBERCRUNCHGAME);
+				onClickGame(NUMBERCRUNCHGAME);
 			}
 		});
 		
 		codeWordButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.CODEWORD);
+				onClickGame(CODEWORD);
 			}
 		});
 		
 		sudokuButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.SUDOKUGAME);
+				onClickGame(SUDOKUGAME);
 			}
 		});
 		
 		wordSearchButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.WORDSEARCHGAME);
+				onClickGame(WORDSEARCHGAME);
 			}
 		});
 		

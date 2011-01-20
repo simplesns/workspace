@@ -50,6 +50,12 @@ public class MenuScreen extends Screen {
 	private static int DRAWBUTTON_X_PLAYGAME;
 	private static int DRAWBUTTON_Y_PLAYGAME;
 	
+	public static final String CROSSWORDSGAME = "crosswords";
+	public static final String SUDOKUGAME = "sudoku";
+	public static final String WORDPUZZLERGAME = "wordPuzzler";
+	public static final String NUMBERCRUNCHGAME = "numberCrunch";
+	public static final String WORDSEARCHGAME = "wordSearch";
+	public static final String CODEWORD = "codeword";
 	
 	MenuScreen(GameActivity activity) {
 		super(activity);
@@ -134,42 +140,42 @@ public class MenuScreen extends Screen {
 		crosswordButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.CROSSWORDSGAME);
+				onClickGame(CROSSWORDSGAME);
 			}
 		});
 		
 		wordPuzzlerButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.WORDPUZZLERGAME);
+				onClickGame(WORDPUZZLERGAME);
 			}
 		});
 		
 		numberCrunchButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.NUMBERCRUNCHGAME);
+				onClickGame(NUMBERCRUNCHGAME);
 			}
 		});
 		
 		codeWordButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.CODEWORD);
+				onClickGame(CODEWORD);
 			}
 		});
 		
 		sudokuButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.SUDOKUGAME);
+				onClickGame(SUDOKUGAME);
 			}
 		});
 		
 		wordSearchButton.setClickListener(new ClickListener() {
 			@Override
 			public void onClick(Drawable drawObject) {
-				onClickGame(MenuActivity.WORDSEARCHGAME);
+				onClickGame(WORDSEARCHGAME);
 			}
 		});
 		

@@ -7,10 +7,6 @@ public class PuzzleSelectData {
 	private String file;
 	private int guage;
 	
-	public String getText(){
-		return text;
-	}
-	
 	public void setText(String text){
 		this.text = text;
 	}
