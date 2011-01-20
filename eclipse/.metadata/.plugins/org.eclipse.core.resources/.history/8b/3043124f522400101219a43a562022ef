@@ -1,0 +1,13 @@
+package codegears.DEPuzzles.ui;
+
+import android.content.Context;
+import android.util.AttributeSet;
+import android.widget.LinearLayout;
+
+public class CustomProgressBar extends LinearLayout {
+
+	public CustomProgressBar(Context context, AttributeSet attrs) {
+		super(context, attrs);
+	}
+
+}

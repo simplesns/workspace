@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import codegears.DEPuzzles.data.PuzzleSelectData;
 import codegears.DEPuzzles.ui.PuzzleSelectListItem;
 import codegears.DEPuzzles.util.DataBuilder;
+import freehand.neandroid.GameActivity;
 import freehand.neandroid.widget.ClickListener;
 import freehand.neandroid.widget.CompoundButtonGroup;
 
@@ -31,6 +32,7 @@ public class PuzzleSelectActivity extends Activity implements ClickListener {
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
+		GameActivity.setFullscreen(this);
 		setContentView(R.layout.puzzleselect);
 		list = (ListView) findViewById(R.id.PuzzleSelectListView);
 		adapter = new PuzzleSelectAdapter(this);
@@ -66,6 +68,7 @@ public class PuzzleSelectActivity extends Activity implements ClickListener {
 		for (int i = 0; i < toggleButton.length; i++) {
 			if (toggleButton[i].equals(view)) {
 				adapter.setData(puzzleSelectList[i]);
+				adapter.notifyDataSetInvalidated();
 			}
 		}
 	}
@@ -107,9 +110,14 @@ public class PuzzleSelectActivity extends Activity implements ClickListener {
 		@Override
 		public View getView(int position, View convertView, ViewGroup parent) {
 			if (data != null) {
-				TextView view = new TextView(context);
-				view.setText(data.get(position).getText());
-				// PuzzleSelectListItem view = new PuzzleSelectListItem(context);
+				PuzzleSelectListItem view = null;
+				if(convertView == null){
+					view = new PuzzleSelectListItem(context);
+					view.setData(data.get(position));
+				} else {
+					view = (PuzzleSelectListItem)convertView;
+					view.setData(data.get(position));
+				}
 				return view;
 			}
 			return null;

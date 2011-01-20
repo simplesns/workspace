@@ -30,6 +30,10 @@ public final class R {
         public static final int LinearLayout09=0x7f050019;
         public static final int LinearLayout10=0x7f05001c;
         public static final int LinearLayout11=0x7f05001f;
+        public static final int PuzzleSelectListItemProgress=0x7f050041;
+        public static final int PuzzleSelectListItemReplay=0x7f050042;
+        public static final int PuzzleSelectListItemText=0x7f05003f;
+        public static final int PuzzleSelectListItemTime=0x7f050040;
         public static final int PuzzleSelectListView=0x7f050038;
         public static final int PuzzleSelectToggleButton1=0x7f050039;
         public static final int PuzzleSelectToggleButton2=0x7f05003a;
@@ -85,7 +89,8 @@ public final class R {
         public static final int mainmenu=0x7f030001;
         public static final int options=0x7f030002;
         public static final int puzzleselect=0x7f030003;
-        public static final int ui_puzzleselectlistitem=0x7f030004;
+        public static final int ui_customprogressbar=0x7f030004;
+        public static final int ui_puzzleselectlistitem=0x7f030005;
     }
     public static final class string {
         public static final int app_name=0x7f040001;
