@@ -1,0 +1,26 @@
+A1:John ---, actor whose film roles include Peter McCallister in Home Alone and Home Alone 2(5)
+A4:Goran ---, actor who played Dr. Luka Kovac in the television series ER(7)
+A8:Alter ego of the character Edward Nygma in the film Batman Forver(7)
+A9:English horse racecourse that traditionally hosts the Derby(5)
+A10:Unit of length equal to three feet(4)
+A11:Frances ---, 2006 Tony Award Best Featured Actress in a Play winner for The History Boys(2, 2, 4)
+A13:Any of several small, short-necked ducks often with bright plumage(4)
+A14:Nephew of Lancelot and knight of the Round Table in Arthurian legend(4)
+A16:Name by which the US murderer David Berkowitz is known(3, 2, 3)
+A17:Martin ---, author of the 2008 collection of essays The Second Plane(4)
+A20:'Mr. ---', 1997 film starring Leslie Nielsen in the title role(5)
+A21:Jean ---, French author of the novel Les Enfants terribles(7)
+A22:'The ---', 1952 novel by Bernard Malamud(7)
+A23:Niki ---, 1984 world Formula 1 motor racing champion(5)
+D1:Bully in the Thomas Hughes novel Tom Brown's Schooldays(5, 8)
+D2:Tree whose wood is used for bridges because it resists underwater rot(5)
+D3:Constable in the William Shakespeare play Love's Labour's Lost(4)
+D4:Reg ---, comedian who starred as Stan Butler in the ITV sitcom On The Buses(6)
+D5:Thomas ---, English furniture maker who authored 1791’s Cabinet-Maker and Upholsterer’s Drawing Book(8)
+D6:1886 novel by Louisa M. Alcott(3, 4)
+D7:Small building in which images of outside objects are projected onto a flat surface by a convex lens in an aperture(6, 7)
+D12:'Hancock's --- ---', long-running BBC Radio series that starred Tony Hancock(4, 4)
+D13:1984 No. 1 album by David Bowie(7)
+D15:The derived SI unit of pressure(6)
+D18:Lake --- lies on the Zambia-Democratic Republic of the Congo border(5)
+D19:Popular British bidding system in bridge favouring light opening bids(4)

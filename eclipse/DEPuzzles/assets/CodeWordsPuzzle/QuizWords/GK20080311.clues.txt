@@ -1,0 +1,24 @@
+A1:British nobleman ranking below a marquess and above a viscount(4)
+A3:--- Park is the home ground of Everton F.C.(8)
+A8:Semiaquatic mammal whose fur is highly valued(4)
+A9:'The ---', 1990 film starring Anjelica Huston based on a Jim Thompson novel(8)
+A11:British violinist born in 1956 whose albums include Inner Thoughts and Polish Spirit(5, 7)
+A13:Television comedy series that featured the characters Andy Millman and Maggie Jacobs(6)
+A14:Greek island in the Ionian Sea that is regarded as the home of Homer's Odysseus(6)
+A17:German idealist philosopher who died in 1804 whose works include Critique of Pure Reason(8, 4)
+A20:Cecil ---, poet whose volumes of verse include 1953's An Italian Visit(3-5)
+A21:Puffer fish used as food in Japan after the poisonous liver has been removed(4)
+A22:Emmanuel ---, Togo footballer signed by Manchester City from Arsenal in 2009(8)
+A23:Nick ---, co-director and co-producer of the animated film Chicken Run(4)
+D1:Johan ---, Sweden footballer who was signed by Bolton Wanderers from Toulouse in 2008(8)
+D2:Standard monetary unit of Malaysia(7)
+D4:Edna ---, author of the novels A Pagan Place and The Country Girls(6)
+D5:'---, Maybe', 2008 film that starred Ryan Reynolds as Will Hayes(10)
+D6:Jon ---, Ipswich Town footballer signed from Sheffield United in 2008(5)
+D7:Graham ---, former member of the pop group The Hollies who recorded a 1969 record album with David Crosby and Stephen Stills(4)
+D10:Sir Lawrence ---, painter born in the Netherlands whose works include The Roses of Heliogabalus(4-6)
+D12:French music duo whose albums include Discovery and Human After All(4, 4)
+D15:The --- Sea is that part of the Pacific Ocean between Australia and S.W. New Guinea(7)
+D16:Ida ---, actress-director who starred as Marie Garson in the 1941 film High Sierra(6)
+D18:Peter ---, author of the novels A Good Year and Hotel Pastis(5)
+D19:1968 Top Five album by the Bee Gees(4)

@@ -1,0 +1,24 @@
+A1:1975 album by Wings (5, 3, 4)
+A7:Kirsten ---, actress who played Mary Jane Watson in the Spider-Man film trilogy(5)
+A8:The standard monetary unit of Bahrain(5)
+A9:Diving bird of northern oceans with a black and white plumage(3)
+A10:Sam ---, manager of Blackburn Rovers F.C. appointed in 2008(9)
+A11:Former standard monetary unit of Portugal that was replaced by the Euro(6)
+A12:2010 novel by Harlan Coben(6)
+A15:1987 film comedy starring Goldie Hawn and Kurt Russell(9)
+A17:Collective noun for a flock of pheasants(3)
+A18:West African republic whose capital is Niamey(5)
+A19:Costantino ---, golfer who won the 1997 Canon European Masters(5)
+A21:Count --- ---, Radio Four comic character played by Steve Delaney(6, 6)
+D1:2008 film starring Dennis Quaid and Matthew Fox(7, 5)
+D2:'Doctor ---', 1915 novel by Russell Thorndike subtitled A Smuggler Tale of the Romney Marsh(3)
+D3:Weedy plant that has leaves with stinging hairs(6)
+D4:Frances ---, Best Actress in a Leading Role Oscar winner for Fargo(9)
+D5:Egon ---, Hungary-born travel-guide writer and gastronome(5)
+D6:Sport in which contestants race on foot over a course with checkpoints using a map and compass(12)
+D7:Jelena ---, ladies' singles tennis player who won the 2001 Rome Masters title(5)
+D10:Town in Suffolk that houses the sculpture The Scallop by Maggi Hambling(9)
+D13:The Gulf of --- is the northernmost part of the Ligurian Sea(5)
+D14:Jay ---, US songwriter and musician associated with the groups Son Volt and Uncle Tupelo(6)
+D16:Edward ---, composer of the oratorio The Dream of Gerontius(5)
+D20:Small domesticated feline mammal(3)

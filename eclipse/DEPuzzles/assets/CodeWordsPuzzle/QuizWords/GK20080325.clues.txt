@@ -1,0 +1,26 @@
+A1:1988 film starring Arnold Schwarzenegger and Danny DeVito(5)
+A4:'The ---', 2006 novel by Dean Koontz(7)
+A8:Brian ---, manager of the pop group The Beatles who died in 1967(7)
+A9:Olympic men's gymnastics event that was won by Dimosthenis Tampakos in 2004(5)
+A10:Henry ---, 1978 Commonwealth men’s 5,000m champion(4)
+A11:2007 film comedy starring Damian Lewis and Kate Ashfield(3, 5)
+A13:Kate ---, Labour M.P. for Vauxhall who was re-elected in 2010(4)
+A14:‘The ---’, 1973 Top Ten album by the Osmonds(4)
+A16:Author of the 1956 novel Cop Hater(2, 6)
+A17:Stuart ---, golfer who won the 1997 Cannes Open(4)
+A20:The red ring on an archery target(5)
+A21:Horse racecourse in Baltimore that hosts the Preakness Stakes in mid-May(7)
+A22:Auguste ---, French cinema pioneer who with brother Louis invented a process of colour photography(7)
+A23:Passageway separating seating areas in a theatre(5)
+D1:2003 children’s book by Jostein Gaarder(3, 6, 4)
+D2:Henrik ---, author of the plays Hedda Gabler and The Pillars of Society(5)
+D3:Port in N.E. Egypt(4)
+D4:Largest of the four main islands of Japan(6)
+D5:Board game developed by Alfred Butts that uses numbered tiles(8)
+D6:Ken ---, English director of the film comedy Monte Carlo Or Bust(7)
+D7:1964 film subtitled How I Learned to Stop Worrying and Love the Bomb(2, 11)
+D12:Wales rugby union player who scored two tries in their 47-8 win over Italy in the 2008 Six Nations tournament (3, 5)
+D13:One of a group of words pronounced or spelt the same but having different meanings(7)
+D15:Port in Seine-Maritime, France that has a ferry link with Newhaven, East Sussex(6)
+D18:D.L. ---, England Test cricketer who scored an innings of 262 n.o. against West Indies at Kingston in 1974(5)
+D19:1816 novel by Jane Austen(4)

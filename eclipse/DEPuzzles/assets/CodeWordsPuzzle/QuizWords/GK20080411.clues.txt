@@ -1,0 +1,22 @@
+A7:Christopher ---, actor who played the title role in the 1978 film Superman(5)
+A8:District of Rio de Janeiro, Brazil that is known for its beach(7)
+A9:City in Rajasthan, India that was the capital of the kingdom of Mewar(7)
+A10:Genus of plants with white, blue, purple or pink daisy-like flowers(5)
+A12:The county town of Shropshire(10)
+A15:City in Punjab, Pakistan that was formerly known as Lyallpur(10)
+A18:Steve ---, New York-born minimalist composer whose works include 1965's It's Gonna Rain(5)
+A19:1975 No. 1 single by Billy Connolly(7)
+A21:1990 film starring Kevin Bacon and Fred Ward(7)
+A22:'The ---', rock group whose albums include Nightfreak and the Sons of Becker and The Invisible Invasion(5)
+D1:Joseph von ---, German optician and scientist who invented the spectroscope(10)
+D2:1984 No. 1 single by Frankie Goes To Hollywood(5)
+D3:Mark ---, actor who played Dr. Alan Statham in the television series Green Wing(4)
+D4:State capital of South Dakota, US(6)
+D5:Independent federation of S.E. Asia whose capital is Kuala Lumpur(8)
+D6:One of a race of creatures in Greek mythology with the head, arms and torso of a man and the legs and lower body of a horse(7)
+D11:Secretion of the honeybee that is fed to larvae that are being raised as queens(5, 5)
+D13:London airport that began life as the Great Western Aerodrome(8)
+D14:Singer of the 1973 Top 20 single Amoureuse(4, 3)
+D16:Brian ---, science fiction author of the 2007 novel Harm(6)
+D17:James ---, actor who played the title role in the television western series The Virginian(5)
+D20:Toby ---, character in the Charles Dickens story The Chimes(4)

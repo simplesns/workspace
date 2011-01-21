@@ -2,11 +2,7 @@ package codegears.DEPuzzles;
 
 import freehand.neandroid.GameActivity;
 import freehand.neandroid.GameSurfaceView;
-import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
-import android.view.View.OnClickListener;
-import android.widget.Button;
 
 public class MenuActivity extends GameActivity {
 
@@ -28,7 +24,6 @@ public class MenuActivity extends GameActivity {
 		setContentView(R.layout.mainmenu);
 		screen = new MenuScreen(this);
 		this.set((GameSurfaceView) this.findViewById(R.id.SurfaceMenu), screen);
-
 	}
 
 	@Override

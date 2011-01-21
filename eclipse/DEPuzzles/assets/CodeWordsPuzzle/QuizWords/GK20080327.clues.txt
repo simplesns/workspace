@@ -1,0 +1,24 @@
+A1:1948 Alfred Hitchcock film based on a play by Patrick Hamilton(4)
+A3:Marsupial of Australia and New Guinea with large hind legs and a long thick tail(8)
+A9:Edible North American freshwater fish such as the white --- or black ---(7)
+A10:Warren ---, actor who played the title role in the 1973 film Dillinger(5)
+A11:Actress whose film roles included Lili Von Shtupp in Blazing Saddles(8, 4)
+A13:The population of free-swimming animals that inhabits the middle depths of a sea(6)
+A15:Jonathan ---, singer whose album releases include Tenor At The Movies and Forever(6)
+A17:The formation of words whose sound imitates the sound of the action described, such as bang or buzz(12)
+A20:Red powder that is used as a cosmetic(5)
+A21:Genus of plants of southern Africa with white, yellow or pink tubular flowers(7)
+A22:Rock guitarist whose albums include Flex-Able and Fire Garden(5, 3)
+A23:Gaming stake put up before the deal in poker(4)
+D1:State capital of Virginia, US(8)
+D2:Michael ---, actor whose television roles have included Prince Michael in the soap Dynasty(5)
+D4:Caroline ---, comedienne whose characters include Mrs. Merton(6)
+D5:Musical instrument consisting of a set of tuned metal plates played with a pair of small hammers(12)
+D6:Guy ---, director of the film Lock, Stock and Two Smoking Barrels(7)
+D7:River in England that flows to the Wash near King's Lynn(4)
+D8:2003 novel by Patrick Redmond(5, 2, 2, 3)
+D12:Flowering plant such as the Stalked --- or Abajo ---(8)
+D14:Frédéric ---, former Mali player who won the 2007 CAF African Footballer of the Year award(7)
+D16:Island in the Inner Hebrides that houses Fingal’s Cave(6)
+D18:City in Germany that is the leading administrative centre of the Ruhr(5)
+D19:River forming part of the border between Azerbaijan and Iran(4)

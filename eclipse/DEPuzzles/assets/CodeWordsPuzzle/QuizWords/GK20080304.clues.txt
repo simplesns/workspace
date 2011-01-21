@@ -1,0 +1,24 @@
+A4:Barry ---, musician whose albums include Stranger on the Sofa and Oedipus Schmoedipus(7)
+A8:Isaac ---, author of the story collection I, Robot(6)
+A9:1995 Top Five album release by Del Amitri(7)
+A10:Ricardo ---, Jamaica and Stoke City footballer(6) 
+A11:Smooth elongated insect with leathery forewings(6)
+A12:1959 film starring John Mills and Horst Buchholz(5, 3)
+A18:Jerry ---, London-born US talk show host(8)
+A20:Paolo ---, Scottish singer-songwriter who released the 2006 album These Streets(6)
+A21:Silvery-white metallic element whose symbol is Ba(6)
+A22:Sean ---, actor whose roles have included Capt. Nathan Rooker in the 2008 film Mutant Chronicles(7)
+A23:Robert ---, 1984 Best Actor in a Leading Role Oscar winner for Tender Mercies(6)
+A24:Roland ---, Surrealist painter whose works include 1938's Le Grand Jour(7)
+D1:Rick ---, Status Quo rhythm guitarist(7)
+D2:'The ---', 2004 film starring Bryce Dallas Howard and Joaquin Phoenix(7)
+D3:‘The ---’, 1955 novel by Alain Robbe-Grillet(6)
+D5:Robert ---, Best Actor in a Leading Role Oscar nominee for Chaplin(6,2)
+D6:Stephen King novel featuring the character Paul Sheldon(6)
+D7:'Eugene ---', 1879 opera by Tchaikovsky(6)
+D13:‘The ---’, 1999 Iain Banks novel featuring the character Kate Telman(8)
+D14:Felipe ---, Chilean golfer who won the 2008 Indonesia Open(7)
+D15:Thorny plant of the rose family such as the blackberry or raspberry(7)
+D16:Anton ---, dancer who hosted the BBCTV cookery programme Step Up to the Plate(2, 4)
+D17:1987 novel by Len Deighton(6)
+D19:Son of Daedalus in Greek mythology(6)

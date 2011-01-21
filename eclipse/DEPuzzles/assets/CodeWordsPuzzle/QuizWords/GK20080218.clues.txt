@@ -1,0 +1,24 @@
+A1:The --- --- Plant is a houseplant of the arum family with large perforated leaves(5, 6)
+A9:1977 album by David Bowie(3)
+A10:1997 French Open women's singles tennis champion(3, 6)
+A11:Julius ---, former Prime Minister of New Zealand who wrote the science fiction novel Anno Domini 2000(5)
+A13:Large square-rigged sailing ship that was especially used by Spain from the 15th to 18th Centuries(7)
+A14:Giles ---, former Labour M.P. for North Durham who was Shadow Secretary of State for Education 1983-87(6)
+A16:Town in central Italy that was the birthplace of St. Francis(6)
+A18:Ancient region on the Adriatic Sea including parts of present-day Albania, Croatia and Montenegro(7)
+A19:Rock group whose albums include A Day at the Races and A Night at the Opera(5)
+A20:All-time leading goalscorer for the Italy national football team who scored three times in the 1970 World Cup finals(5, 4)
+A21:Ancient city in southern Kyrgyzstan(3)
+A22:2001 album release by Emma Bunton(1, 4, 4, 2)
+D2:1979 Top Twenty single release by Kate Bush(3)
+D3:1981 compilation album released by Joy Division(5)
+D4:2007 album by Sugababes(6)
+D5:Seaside resort in Pas-de-Calais, France(7)
+D6:The Italian --- --- is a tree of southern Europe that is also called the umbrella pine(5, 4)
+D7:2008 film featuring Michael Stahl-David and T.J. Miller(11)
+D8:Village in Vietnam that was scene of a major defeat of French forces by the Vietminh in 1954(4, 4, 3)
+D12:Town in Surrey that houses Charterhouse School(9)
+D15:Jacques ---, French explorer who discovered the St. Lawrence River, Canada(7)
+D17:Gary ---, footballer signed by Bolton Wanderers from Aston Villa in 2008(6)
+D19:A soft creamy cured cheese made from whole milk(5)
+D21:Blind amphibian that is also known as a proteus or cave salamander(3)

@@ -1,0 +1,26 @@
+A1:2007 novel by Robert Harris(3, 5)
+A5:Mountain range in south central Europe(4)
+A9:City in N.E. Romania that was a capital of the Principality of Moldavia(4)
+A10:Setting of the Shakespeare play Hamlet(8)
+A11:2000 film starring Samuel L. Jackson in the title role(5)
+A12:1990 Top Five single by The Stone Roses(3, 4)
+A13:'The --- --- ---', 1991 film directed by and featuring Barbra Streisand as Susan Lowenstein(6, 2, 5)
+A18:1963 No. 1 single by Jet Harris & Tony Meehan(8)
+A19:Sammy ---, baseball player who in 2007 became the fifth man in history to hit 600 home runs(4)
+A20:Henry David ---, US author of the 1849 essay Civil Disobedience(7)
+A21:Vincent ---, France rugby union player who scored two tries in their 27-6 victory over Scotland in the 2008 Six Nations Championship(5)
+A22:Roy ---, songwriter-musician who was a member of the bands The Move, Wizzard and Electric Light Orchestra(4)
+A23:1973 album release by Roxy Music(8)
+D2:Low-growing evergreen Eurasian shrub with clusters of small bell-shaped pinkish-purple flowers(7)
+D3:Angela ---, actress whose television roles have included Fiona Middleton in Coronation Street and Kim Campbell in Waterloo Road(7)
+D4:'The --- --- ---', collection of material by the humorist Douglas Adams that was published porthumously in 2002(6, 2, 5)
+D6:--- III was king of Belgium 1934-51(7)
+D7:Matthew ---, snooker player who won the 2003 UK Championship(7)
+D8:2004 Top Five single release by Geri(4, 2)
+D13:Town in North Cornwall associated with 'Obby 'Oss Day(7)
+D14:Junichi ---, Japan footballer who played in the Premier League for Fulham and West Bromwich Albion(7)
+D15:Ashley ---, 1958 Wimbledon men’s singles tennis champion(6)
+D16:Protein hormone secreted in the pancreas by the islets of Langerhans(7)
+D17:Town in Hertfordshire associated with the motion picture industry(7)
+
+  

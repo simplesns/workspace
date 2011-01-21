@@ -1,0 +1,24 @@
+A1:1995 film drama starring Leonardo DiCaprio and David Thewlis(5, 7)
+A7:1941 animated film about an elephant(5)
+A8:Island of the Inner Hebrides south-west of Coll(5)
+A9:Department of France whose capital is Bourg(3)
+A10:Town in N. Germany that houses Castle Gottorf(9)
+A11:Capital of Poland(6)
+A12:Elke ---, Germany-born actress whose film roles include Maria Gambrelli in A Shot in the Dark(6)
+A15:Island of the Canary Islands that is associated with the tourist industry(9)
+A17:17th letter in the Greek alphabet(3)
+A18:City in S. Finland that houses the Gallen-Kallela Museum(5)
+A19:Franz ---, Czech author of the novels The Trial and The Castle(5)
+A21:Women's 5000m champion at the 2001 IAAF World Championships(4, 8)
+D1:Lord High Chancellor 1515-29(6, 6)
+D2:Herbert ---, actor who played Chief Inspector Dreyfus in the film The Return of the Pink Panther(3)
+D3:One of the three Fates in Greek mythology; the spinner of the thread of life(6)
+D4:2003 album release by Britney Spears(2, 3, 4)
+D5:Jack ---, Lord Chancellor 2007-10(5)
+D6:'The --- ---', 1728 ballad-opera by John Gay(7, 5)
+D7:1982 comedy-drama film starring Steve Guttenberg and Daniel Stern(5)
+D10:Maria ---, 2008 Australian Open women's singles tennis champion(9)
+D13:Sania ---, women’s singles tennis player who won the 2005 Hyderabad Open(5)
+D14:Sand-burrowing bivalve mollusc with a rounded shell(6)
+D16:Asian republic whose capital is Kathmandu(5)
+D20:Tore-Andre ---, former Norway footballer who was an F.A. Cup winner with Chelsea in 2000(3)

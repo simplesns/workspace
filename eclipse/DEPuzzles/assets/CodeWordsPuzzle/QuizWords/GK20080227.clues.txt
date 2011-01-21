@@ -1,0 +1,25 @@
+A7:Capital of Turkey(6)
+A8:Island in the Pacific Ocean that houses the sultanate of Brunei(6)
+A10:George ---, Best Actor in a Supporting Role Oscar winner for All About Eve(7)
+A11:Michael ---, television presenter whose credits include Antiques Roadshow and This Is Your Life(5)
+A12:Winners of the All-Ireland Championships in gaelic football in 1994(4)
+A13:Department of S.E. France whose capital is Grenoble(5)
+A17:Cary ---, actor who played the title role in the film Robin Hood: Men in Tights(5)
+A18:Egypt footballer who was signed by Middlesbrough from Tottenham Hotspur in 2007(4)
+A22:Fiona ---, comic actress whose film roles include Sandra in Fat Slags(5)
+A23:Herb ---, 1960 Olympic men’s 1500m champion(7)
+A24:John ---, Republican Party presidential nominee in the 2008 US election(6)
+A25:British rock group whose 1968 debut album was Music in a Doll's House(6)
+D1:Butch --- was a US outlaw born Robert LeRoy Parker(7)
+D2:Coral island of Japan that was administered by the US from 1945-72(7)
+D3:Robert ---, West Ham United and England footballer born in 1980(5)
+D4:The capital of Guinea(7)
+D5:Medium-sized wading bird with a long, straight bill(5)
+D6:Elliott ---, Best Actor in a Supporting Role Oscar nominee for Bob & Carol & Ted & Alice(5)
+D9:Triangle having two sides of equal length(9)
+D14:Evelyn ---, Scottish percussionist and Grammy-winner who was awarded an O.B.E. in 1992(7)
+D15:Capital of Cyprus(7)
+D16:Dame Margot ---, English ballerina born Margaret Hookham(7)
+D19:Third letter in the Greek alphabet(5)
+D20:Roger ---, 1986 Commonwealth men's 400m champion(5)
+D21:David ---, manager of Tottenham Hotspur F.C. 1986-87(5)

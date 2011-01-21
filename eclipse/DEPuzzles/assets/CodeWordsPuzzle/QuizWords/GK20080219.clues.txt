@@ -1,0 +1,26 @@
+A4:'The ---', 2010 novel by Justin Cronin(7)
+A8:Richard ---, US photographer whose books include Nothing Personal(6)
+A9:US state whose capital is Albany(3, 4)
+A10:Former English name of the Chinese capital Beijing(6)
+A11:Peter---, actor whose television roles included Jim Phelps in the series Mission: Impossible(6)
+A12:1981 studio album by Thin Lizzy(8)
+A18:Heroine of the Shakespeare play As You Like It(8)
+A20:Roman goddess of the dawn(6)
+A21:Greek virgin goddess of wisdom and prudent warfare(6)
+A22:South American republic whose capital is Montevideo(7)
+A23:Greg ---, cyclist who won the 1986 Tour de France(6)
+A24:Coniferous tree with dark green leaves and rounded cones(7)
+D1:The --- bat has sharp incisor and canine teeth(7)
+D2:Jean-Luc Godard film that was a nominee for the Golden Bear at the 1968 Berlin International Film Festival(7)
+D3:Walter ---, actor best known for his role as Pavel Chekov in the television series Star Trek(6)
+D5:'The ---', 1998 film starring Ralph Fiennes as John Steed(8)
+D6:US space station that was launched in May 1973(6)
+D7:Jennifer ---, US actress who is married to Ben Affleck(6)
+D13:Harold ---, 1924 Olympic men's 100m champion(8)
+D14:1982 Clint Eastwood action film that starred the director as Mitchell Gant(7)
+D15:Gareth ---, Wales rugby union scrum half who played 53 consecutive internationals from 1967-78(7)
+D16:Al ---, stand-up comedian who performs as The Pub Landlord(6)
+D17:Large marine eel that breeds in deep water in the tropical Atlantic(6)
+D19:Rick ---, singer of the 1987 No. 1 single Never Gonna Give You Up(6)
+
+

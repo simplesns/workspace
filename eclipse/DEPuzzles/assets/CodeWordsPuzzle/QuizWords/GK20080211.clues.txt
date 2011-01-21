@@ -1,0 +1,22 @@
+A7:2007 film starring Steve Carell as Dan Burns(3, 2, 4, 4)
+A8:1941 novel by James Hanley(3, 5)
+A9:Television sitcom that featured Christopher Lloyd as Reverend Jim Ignatowski(4)
+A10:Nephew of Squire Allworthy in the Henry Fielding novel The History Of Tom Jones(6)
+A12:Mediterranean plant with star-shaped blue flowers whose young leaves are used in salads(6)
+A14:City and spa in Germany that was the northern capital of the empire of Charlemagne(6)
+A16:Maureen ---, actress who played Mother in the 2002 film The Pianist(6)
+A18:'The ---', ITV drama series that starred Ken Stott as Pat Chappel(4)
+A20:Kelly ---, singer of the 2002 Top Ten single Tell It To My Heart(8)
+A22:US golfer who won The Barclays tournament in 2007(5, 8)
+D1:In Norse mythology, the great hall of Odin where warriors who died in battle as heroes dwell eternally(8)
+D2:In cricket, the fielding position on the off side closest to the bowler(3-3)
+D3:Soft creamy white cheese similar to Camembert(4)
+D4:US city and port on the Mississippi River in Missouri that was the boyhood home of Mark Twain(8)
+D5:Christian ---, actor whose film roles include Clarence Worley in True Romance(6)
+D6:Port in Tunisia on the Gulf of Gabes(4)
+D11:Neville ---, orphan in the Charles Dickens novel The Mystery of Edwin Drood(8)
+D13:Percy ---, Australian pianist and composer who died in 1961(8)
+D15:City that was founded by Carthaginians in S.W. Spain near the Portuguese border(6)
+D17:Mary ---, 1995 Australian Open women's singles tennis champion(6)
+D19:Ninth letter in the Greek alphabet(4)
+D21:Annual plant with edible sticky green pods that is also called ladies' fingers(4)

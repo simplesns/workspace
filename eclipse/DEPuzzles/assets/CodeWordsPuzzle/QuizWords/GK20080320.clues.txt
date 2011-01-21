@@ -1,0 +1,30 @@
+A3:Comedy performer on the show Dead Ringers who was a contestant on the 2006 series of Strictly Come Dancing(3, 6)
+A8:Sultanate in S.E. Arabia whose capital is Muscat(4)
+A9:Marion ---, Best Actress in a Leading Role Oscar winner for La Mome(9)
+A10:Paul ---, former England footballer who was the manager of Walsall F.C. from 2004-06(6)
+A11:Person who refrains from using animal product for food or clothing(5)
+A14:--- Beach is a coastal suburb of Sydney, Australia that is popular with surfers(5)
+A15:City in S. E. France on the Mediterranean Sea(4)
+A16:Miley ---, singer-actress who plays the title role in the television series Hannah Montana(5)
+A18:1980s pop group comprising George Michael and Andrew Ridgeley(4)
+A20:Chris ---, M.P. for Eastleigh who was a Liberal Democrats leadership contender in 2006 and 2007(5)
+A21:Charlotte M. ---, author of the novels The Heir of Redclyffe and The Daisy Chain(5)
+A24:Angela ---, Chancellor of Germany from 2005(6)
+A25:1976 film starring Michael York and Richard Jordan(6, 3)
+A26:1982 film starring Jeff Bridges as Kevin Flynn(4)
+A27:2008 album by Duffy(9)
+D1:Ireland rugby union player who scored two tries in their 34-13 win over Scotland in the 2008 Six Nations tournament(5, 4)
+D2:Television presenter whose credits include You Bet! and Don't Try This at Home!(6, 3)
+D4:River of central England that flows to the River Severn at Tewkesbury(4)
+D5:Bjørn Helge ---, Norway and Fulham footballer(5)
+D6:Roman god of fire and metalworking(6)
+D7:Agatha Christie novel featuring the Sans Souci Hotel(1, 2, 1)
+D9:Condition characterized by acute spasmodic abdominal pain(5)
+D11:Jules ---, French author of the story Around the World in Eighty Days(5)
+D12:Kei ---, men's singles tennis player who won the 2008 Delray Beach International championship(9)
+D13:--- Ranch in Santa Barbara, California was owned by Michael Jackson(9)
+D17:Michael ---, actor who portrayed Tony Blair in the 2006 film The Queen(5)
+D19:River in central New York State(6)
+D22:The --- Peninsula in E. Canada lies between the St. Lawrence River and New Brunswick(5)
+D23:Musical composition for one performer(4)
+D24:Frank ---, writing partner of Denis Norden who died in 1998(4)

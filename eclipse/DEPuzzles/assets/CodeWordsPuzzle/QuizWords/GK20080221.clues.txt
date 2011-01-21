@@ -1,0 +1,24 @@
+A1:'The ---', 2000 Ron Howard film starring Jim Carrey in the title role(6)
+A4:Andrew ---, Secretary of State for Transport 2009-10(6)
+A9:Best Actor in a Supporting Role Oscar nominee for Death of a Salesman(5, 8)
+A10:Tree with yellow edible fruit that is native to Africa and W. Asia(7)
+A11:Edward ---, British Prime Minister 1970-74(5)
+A12:Mike ---, director of the films Career Girls and Life is Sweet(5)
+A14:Franz Joseph ---, Austrian composer whose works include the 1782 opera Orlando Paladino(5)
+A18:1961 film starring Charlton Heston as the Spanish soldier Rodrigo Diaz de Vivar(2, 3)
+A19:Eurasian burrowing rodent that is a popular pet(7)
+A21:2007 debut single by Adele(8, 5)
+A22:John ---, Scottish inventor of a type of road surface(6)
+A23:Code word for the letter V in the NATO phonetic alphabet(6)
+D1:Presenter of the C4 television show How to Look Good Naked(3, 3)
+D2:Punctuation mark that is also known as a quotation mark(8, 5)
+D3:A member of a school of philosophy founded by Antisthenes(5)
+D5:Former standard unit of currency of Greece that was replaced by the Euro(7)
+D6:Sweetheart of Adelaide in the stage musical Guys and Dolls(6, 7)
+D7:Pat ---, show jumper who won the women's competition at the European Championships 1961-63(6)
+D8:George C. ---, Best Actor in a Leading Role Oscar winner for Patton(5)
+D13:North American flowering plant that is also known as Farewell-to-Spring(7)
+D15:Arizona-born television chef whose books include Travels with a Hot Wok(3, 3)
+D16:Dick ---, US actor whose roles included 'L.S.D.' in the 1968 film The Producers(5)
+D17:Verne ---, actor who played Mini-Me in the film Austin Powers: The Spy Who Shagged Me(6)
+D20:Charlie ---, WBC Flyweight champion from March-September, 1983(5)
