@@ -38,4 +38,31 @@ public class DataBuilder {
 		}
 		return dataList;
 	}
+
+	public static String[] createCrosswordsGridFromAsset(Context context,
+			String file) {
+		String[] str = new String[13];
+		AssetManager aManager = context.getAssets();
+		try {
+			InputStream iStream = aManager.open(file);
+			BufferedReader bReader = new BufferedReader(
+					new InputStreamReader(iStream));
+			String line = bReader.readLine();
+			String readedData = "";
+			int count = 1;
+			while (line != null) {
+				readedData += line;
+				line = bReader.readLine();
+				count++;
+			}
+			for (int i = 0; i < str.length; i++) {
+				str[i] = readedData.substring(0, 13);
+				readedData = readedData.substring(14);
+				System.out.println("Crosswords Grid: " + str[i]);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return str;
+	}
 }

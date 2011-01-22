@@ -132,6 +132,10 @@ public class PuzzleSelectActivity extends Activity implements ClickListener,
 			Intent i = new Intent(this, NumberCrunchActivity.class);
 			i.putExtra(EXTRA_FILE, file);
 			this.startActivity(i);
+		} else if (game.equals(MenuActivity.CODEWORD)) {
+			Intent i = new Intent(this, CodeWordActivity.class);
+			i.putExtra(EXTRA_FILE, file);
+			this.startActivity(i);
 		}
 	}
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<workbench progressCount="17" version="2.0">
+<workbench progressCount="18" version="2.0">
 <workbenchAdvisor/>
 <window height="738" maximized="true" width="1024" x="175" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -17,12 +17,12 @@
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
-<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="group.help" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.help" itemType="typeToolBarContribution" x="-1" y="-1"/>
 </coolbarLayout>
@@ -31,42 +31,25 @@
 <editorArea activeWorkbook="DefaultEditorWorkbook">
 <info part="DefaultEditorWorkbook">
 <folder appearance="1" expanded="2">
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
-</presentation>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
 </editorArea>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuScreen.java" partName="MenuScreen.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java" title="MenuScreen.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4374" selectionTopPixel="1258"/>
-</editor>
 </editors>
 <views>
-<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
-<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
-<viewState/>
-</view>
-<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
-<viewState/>
-</view>
-<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
-<viewState/>
-</view>
 <view id="com.android.ide.eclipse.ddms.views.LogCatView" partName="LogCat">
 <viewState/>
 </view>
 <view id="org.eclipse.ui.views.PropertySheet" partName="Properties">
 <viewState/>
 </view>
+<view id="org.eclipse.debug.ui.DebugView" partName="Debug">
+<viewState/>
+</view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (20 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -75,6 +58,9 @@
 <visible IMemento.internal.id="org.eclipse.ui.ide.locationField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.markerType"/>
 </viewState>
+</view>
+<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<viewState/>
 </view>
 <view id="org.eclipse.jdt.ui.PackageExplorer" partName="Package Explorer">
 <viewState group_libraries="1" layout="2" linkWithEditor="0" rootMode="1" workingSetName="Aggregate for window 1294976695783">
@@ -105,13 +91,22 @@
 </customFilters>
 </viewState>
 </view>
-<view id="org.eclipse.ui.console.ConsoleView" partName="Console">
+<view id="org.eclipse.debug.ui.BreakpointView" partName="Breakpoints">
 <viewState/>
 </view>
-<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration"/>
+<view id="org.eclipse.debug.ui.VariableView" partName="Variables">
+<viewState/>
+</view>
+<view id="org.eclipse.ui.views.TaskList" partName="Tasks"/>
+<view id="org.eclipse.ui.views.ContentOutline" partName="Outline">
+<viewState/>
+</view>
+<view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
+<viewState/>
+</view>
 <view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -216,7 +211,7 @@
 </folder>
 </info>
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@5c8c9fca" ratio="0.5253968" ratioLeft="331" ratioRight="299" relationship="4" relative="org.eclipse.ui.editorss">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<folder activePageID="org.eclipse.ui.views.PropertySheet" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
 <page content="org.eclipse.jdt.ui.SourceView" label="Declaration"/>
@@ -334,166 +329,7 @@
 </perspective>
 </perspectives>
 <workingSets/>
-<navigationHistory>
-<editors>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/data/PuzzleSelectData.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/MenuActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/PuzzleSelectListItem.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/DEPuzzles/AndroidManifest.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/puzzleselect.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/PuzzleSelectListItem.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CustomProgressBar.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/ui_customprogressbar.xml"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/data/PuzzleSelectData.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/NeAndroid/src/freehand/neandroid/ui/ImageTransformUI.java"/>
-</editors>
-<item historyLabel="MenuActivity.java" index="1">
-<position info="not_deleted" x="450" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectData.java" index="0">
-<position info="not_deleted" x="263" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="6940" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="821" y="19"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="958" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="754" y="20"/>
-</item>
-<item historyLabel="PuzzleSelectListItem.java" index="3">
-<position info="not_deleted" x="1096" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position/>
-</item>
-<item historyLabel="PuzzleSelectData.java" index="0">
-<position info="not_deleted" x="213" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="3733" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="5744" y="6"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="5811" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="5854" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="5844" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="1399" y="0"/>
-</item>
-<item historyLabel="DEPuzzles Manifest" index="4"/>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="5138" y="0"/>
-</item>
-<item historyLabel="puzzleselect.xml" index="5"/>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="5138" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectListItem.java" index="6">
-<position info="not_deleted" x="1148" y="0"/>
-</item>
-<item historyLabel="CustomProgressBar.java" index="7">
-<position info="not_deleted" x="1015" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectActivity.java" index="2">
-<position info="not_deleted" x="5214" y="0"/>
-</item>
-<item historyLabel="CustomProgressBar.java" index="7">
-<position info="not_deleted" x="253" y="0"/>
-</item>
-<item historyLabel="ui_customprogressbar.xml" index="8"/>
-<item historyLabel="CustomProgressBar.java" index="7">
-<position info="not_deleted" x="253" y="0"/>
-</item>
-<item historyLabel="CustomProgressBar.java" index="7">
-<position info="not_deleted" x="1019" y="0"/>
-</item>
-<item historyLabel="CustomProgressBar.java" index="7">
-<position info="not_deleted" x="843" y="0"/>
-</item>
-<item historyLabel="CustomProgressBar.java" index="7">
-<position info="not_deleted" x="908" y="0"/>
-</item>
-<item historyLabel="CustomProgressBar.java" index="7">
-<position/>
-</item>
-<item historyLabel="CustomProgressBar.java" index="7">
-<position info="not_deleted" x="701" y="0"/>
-</item>
-<item historyLabel="CustomProgressBar.java" index="7">
-<position info="not_deleted" x="635" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectListItem.java" index="6">
-<position info="not_deleted" x="1148" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectListItem.java" index="6">
-<position info="not_deleted" x="1085" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectListItem.java" index="6">
-<position info="not_deleted" x="1036" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectListItem.java" index="6">
-<position info="not_deleted" x="1066" y="18"/>
-</item>
-<item historyLabel="PuzzleSelectData.java" index="9">
-<position info="not_deleted" x="166" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectListItem.java" index="6">
-<position info="not_deleted" x="933" y="0"/>
-</item>
-<item historyLabel="PuzzleSelectData.java" index="9">
-<position info="not_deleted" x="220" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="10">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="10">
-<position info="not_deleted" x="943" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="10">
-<position info="not_deleted" x="4434" y="0"/>
-</item>
-<item historyLabel="ImageTransformUI.java" index="11">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="ImageTransformUI.java" index="11">
-<position info="not_deleted" x="269" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="10">
-<position info="not_deleted" x="4434" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="10">
-<position info="not_deleted" x="4400" y="0"/>
-</item>
-<item historyLabel="MenuScreen.java" index="10">
-<position info="not_deleted" x="4339" y="6"/>
-</item>
-<item historyLabel="MenuScreen.java" index="10">
-<position info="not_deleted" x="4367" y="0"/>
-</item>
-<item active="true" historyLabel="MenuScreen.java" index="10">
-<position info="not_deleted" x="4398" y="0"/>
-</item>
-</navigationHistory>
+<navigationHistory/>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
 </page>
 <workbenchWindowAdvisor/>
@@ -510,50 +346,50 @@
 </trimLayout>
 </window>
 <mruList>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ImageTransformUI.java" tooltip="NeAndroid/src/freehand/neandroid/ui/ImageTransformUI.java">
-<persistable path="/NeAndroid/src/freehand/neandroid/ui/ImageTransformUI.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumPad.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/NumPad.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/NumPad.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuScreen.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080328.grid.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/Cryptic/CR20080328.grid.txt">
+<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/Cryptic/CR20080328.grid.txt"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_customprogressbar.xml" tooltip="DEPuzzles/res/layout/ui_customprogressbar.xml">
-<persistable path="/DEPuzzles/res/layout/ui_customprogressbar.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080328.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/Cryptic/CR20080328.clues.txt">
+<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/Cryptic/CR20080328.clues.txt"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="DEPuzzles/AndroidManifest.xml">
-<persistable path="/DEPuzzles/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PuzzleSelectActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="numbercrunch.xml" tooltip="DEPuzzles/res/layout/numbercrunch.xml">
-<persistable path="/DEPuzzles/res/layout/numbercrunch.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataBuilder.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberCrunchActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/NumberCrunchActivity.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/NumberCrunchActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumPad.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/NumPad.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/NumPad.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="crosswords.xml" tooltip="DEPuzzles/res/layout/crosswords.xml">
+<persistable path="/DEPuzzles/res/layout/crosswords.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_numpad.xml" tooltip="DEPuzzles/res/layout/ui_numpad.xml">
-<persistable path="/DEPuzzles/res/layout/ui_numpad.xml"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CustomProgressBar.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/CustomProgressBar.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/CustomProgressBar.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="WP_medium.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/WP_medium.txt">
-<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/WP_medium.txt"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KeyPad.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/KeyPad.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/KeyPad.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="WP_hard.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/WP_hard.txt">
-<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/WP_hard.txt"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_keypad.xml" tooltip="DEPuzzles/res/layout/ui_keypad.xml">
+<persistable path="/DEPuzzles/res/layout/ui_keypad.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="WP_easy.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/WP_easy.txt">
-<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/WP_easy.txt"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="DEPuzzles/AndroidManifest.xml">
+<persistable path="/DEPuzzles/AndroidManifest.xml"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/MenuActivity.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/MenuActivity.java"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrossWordsActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/CrossWordsActivity.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/CrossWordsActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CRW_cryptic.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CRW_cryptic.txt">
-<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CRW_cryptic.txt"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PuzzleSelectActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
 </file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CRW_quick.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CRW_quick.txt">
-<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CRW_quick.txt"/>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="codeword.xml" tooltip="DEPuzzles/res/layout/codeword.xml">
+<persistable path="/DEPuzzles/res/layout/codeword.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CodeWordActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/CodeWordActivity.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/CodeWordActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="ImageTransformUI.java" tooltip="NeAndroid/src/freehand/neandroid/ui/ImageTransformUI.java">
+<persistable path="/NeAndroid/src/freehand/neandroid/ui/ImageTransformUI.java"/>
 </file>
 </mruList>
 </workbench>
