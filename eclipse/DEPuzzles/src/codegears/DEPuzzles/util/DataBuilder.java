@@ -65,4 +65,20 @@ public class DataBuilder {
 		}
 		return str;
 	}
+	
+	public static String[] createNumberCrunchQuizFromAsset(Context context,
+			String file) {
+		String[] str = new String[19];
+		AssetManager aManager = context.getAssets();
+		try {
+			InputStream iStream = aManager.open(file);
+			BufferedReader bReader = new BufferedReader(
+					new InputStreamReader(iStream));
+			String line = bReader.readLine();
+			str = line.split(",");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return str;
+	}
 }
