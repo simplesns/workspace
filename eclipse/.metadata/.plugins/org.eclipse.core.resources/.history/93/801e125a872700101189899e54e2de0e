@@ -1,0 +1,22 @@
+package codegears.DEPuzzles.ui;
+
+import codegears.DEPuzzles.R;
+import android.content.Context;
+import android.view.View;
+import android.widget.LinearLayout;
+
+public class CrosswordsTile extends LinearLayout {
+
+	private boolean black;
+
+	public CrosswordsTile(Context context) {
+		super(context);
+		View.inflate(context, R.layout.ui_crosswordstile, this);
+		black = false;
+	}
+
+	public void setBlack(boolean black) {
+		this.black = black;
+	}
+
+}

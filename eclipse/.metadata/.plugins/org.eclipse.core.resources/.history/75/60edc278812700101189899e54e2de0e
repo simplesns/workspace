@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<Button android:id="@+id/Button01" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="^"></Button>
+		<Button android:id="@+id/Button02" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="A"></Button>
+		<Button android:id="@+id/Button03" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="B"></Button>
+		<Button android:id="@+id/Button04" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="R"></Button>
+		<Button android:id="@+id/Button05" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="time"></Button>
+	</LinearLayout>
+	<ScrollView android:id="@+id/ScrollView01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:layout_weight="1">
+		<codegears.DEPuzzles.ui.CrosswordsBoard android:id="@+id/LinearLayout04"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"></codegears.DEPuzzles.ui.CrosswordsBoard>
+	</ScrollView>
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_height="wrap_content" android:layout_width="fill_parent">
+		<Button android:id="@+id/Button06" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="&lt;"></Button>
+		<Button android:text="@+id/Button07" android:id="@+id/Button07"
+			android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1"></Button>
+		<Button android:id="@+id/Button08" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="&gt;"></Button>
+
+	</LinearLayout>
+	<codegears.DEPuzzles.ui.KeyPad
+		android:id="@+id/LinearLayout03" android:layout_width="wrap_content"
+		android:layout_height="wrap_content"></codegears.DEPuzzles.ui.KeyPad>
+
+</LinearLayout>

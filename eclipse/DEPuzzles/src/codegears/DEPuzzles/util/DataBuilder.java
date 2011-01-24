@@ -57,8 +57,7 @@ public class DataBuilder {
 			}
 			for (int i = 0; i < str.length; i++) {
 				str[i] = readedData.substring(0, 13);
-				readedData = readedData.substring(14);
-				System.out.println("Crosswords Grid: " + str[i]);
+				readedData = readedData.substring(13);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();

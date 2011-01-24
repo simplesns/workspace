@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<<<<<<< HEAD
 <workbench progressCount="22" version="2.0">
+=======
+<workbench progressCount="12" version="2.0">
+>>>>>>> 867b8003c0e346c28fa3620990284a362da75191
 <workbenchAdvisor/>
 <window height="738" maximized="true" width="1024" x="175" y="0">
 <fastViewData fastViewLocation="1024"/>
@@ -43,6 +47,7 @@
 </folder>
 </info>
 </editorArea>
+<<<<<<< HEAD
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberCrunchActivity.java" partName="NumberCrunchActivity.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/NumberCrunchActivity.java" title="NumberCrunchActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/NumberCrunchActivity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/NumberCrunchActivity.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="15" selectionOffset="1886" selectionTopPixel="578"/>
@@ -63,6 +68,30 @@
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberCrunchGame.java" partName="NumberCrunchGame.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/ui/NumberCrunchGame.java" title="NumberCrunchGame.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/NumberCrunchGame.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/ui/NumberCrunchGame.java"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1440" selectionTopPixel="510"/>
+=======
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsActivity.java" partName="CrosswordsActivity.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java" title="CrosswordsActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="736" selectionTopPixel="25"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CodeWordActivity.java" partName="CodeWordActivity.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/CodeWordActivity.java" title="CodeWordActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/CodeWordActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/CodeWordActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="495" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsBoard.java" partName="CrosswordsBoard.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java" title="CrosswordsBoard.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="9" selectionOffset="1191" selectionTopPixel="357"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsTile.java" partName="CrosswordsTile.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java" title="CrosswordsTile.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="867" selectionTopPixel="212"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_crosswordstile.xml" partName="ui_crosswordstile.xml" path="C:/workspace/eclipse/DEPuzzles/res/layout/ui_crosswordstile.xml" title="ui_crosswordstile.xml" tooltip="DEPuzzles/res/layout/ui_crosswordstile.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/res/layout/ui_crosswordstile.xml"/>
+</editor>
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsWord.java" partName="CrosswordsWord.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java" title="CrosswordsWord.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="223" selectionTopPixel="0"/>
+>>>>>>> 867b8003c0e346c28fa3620990284a362da75191
 </editor>
 </editors>
 <views>
@@ -78,6 +107,10 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<<<<<<< HEAD
+=======
+<category IMemento.internal.id="Warnings (35 items)"/>
+>>>>>>> 867b8003c0e346c28fa3620990284a362da75191
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
 <category IMemento.internal.id="Warnings (30 items)"/>
@@ -208,13 +241,13 @@
 <perspective_action id="com.android.ide.eclipse.hierarchyviewer.TreeViewPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -264,7 +297,11 @@
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
 </info>
+<<<<<<< HEAD
 <info folder="true" part="org.eclipse.ui.internal.ViewStack@5c8c9fca" ratio="0.729097" ratioLeft="436" ratioRight="162" relationship="4" relative="org.eclipse.ui.editorss">
+=======
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@5c8c9fca" ratio="0.68095237" ratioLeft="429" ratioRight="201" relationship="4" relative="org.eclipse.ui.editorss">
+>>>>>>> 867b8003c0e346c28fa3620990284a362da75191
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -405,6 +442,7 @@
 <workingSets/>
 <navigationHistory>
 <editors>
+<<<<<<< HEAD
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/NumberCrunchActivity.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/NumberCrunchGame.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/NumPad.java"/>
@@ -553,6 +591,155 @@
 </item>
 <item active="true" historyLabel="NumberCrunchGame.java" index="1">
 <position info="not_deleted" x="1957" y="0"/>
+=======
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/CodeWordActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/crosswords.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/ui_crosswordstile.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/CrosswordsPuzzle/ez20080101.grid.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/CrosswordsPuzzle/ez20080101.clues.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java"/>
+</editors>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="975" y="12"/>
+</item>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position info="not_deleted" x="605" y="0"/>
+</item>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position/>
+</item>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position/>
+</item>
+<item historyLabel="crosswords.xml" index="2"/>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position info="not_deleted" x="609" y="0"/>
+</item>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="761" y="0"/>
+</item>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position info="not_deleted" x="991" y="0"/>
+</item>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="761" y="0"/>
+</item>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position info="not_deleted" x="609" y="0"/>
+</item>
+<item historyLabel="CodeWordActivity.java" index="1">
+<position info="not_deleted" x="495" y="0"/>
+</item>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="975" y="12"/>
+</item>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="960" y="0"/>
+</item>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="1191" y="9"/>
+</item>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="1073" y="0"/>
+</item>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="1191" y="9"/>
+</item>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="757" y="0"/>
+</item>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="1191" y="9"/>
+</item>
+<item historyLabel="CodeWordActivity.java" index="1">
+<position info="not_deleted" x="495" y="0"/>
+</item>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position info="not_deleted" x="343" y="0"/>
+</item>
+<item historyLabel="ui_crosswordstile.xml" index="5"/>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="757" y="0"/>
+</item>
+<item historyLabel="ui_crosswordstile.xml" index="5"/>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="327" y="0"/>
+</item>
+<item historyLabel="ui_crosswordstile.xml" index="5"/>
+<item historyLabel="CodeWordActivity.java" index="1">
+<position info="not_deleted" x="495" y="0"/>
+</item>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="1191" y="9"/>
+</item>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="327" y="0"/>
+</item>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position info="not_deleted" x="343" y="0"/>
+</item>
+<item historyLabel="CodeWordActivity.java" index="1">
+<position info="not_deleted" x="495" y="0"/>
+</item>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="1191" y="9"/>
+</item>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="327" y="0"/>
+</item>
+<item historyLabel="ui_crosswordstile.xml" index="5"/>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="327" y="0"/>
+</item>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="912" y="0"/>
+</item>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="1191" y="9"/>
+</item>
+<item historyLabel="ui_crosswordstile.xml" index="5"/>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="912" y="0"/>
+</item>
+<item historyLabel="CrosswordsTile.java" index="4">
+<position info="not_deleted" x="867" y="0"/>
+</item>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="1191" y="9"/>
+</item>
+<item historyLabel="CodeWordActivity.java" index="1">
+<position info="not_deleted" x="495" y="0"/>
+</item>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position info="not_deleted" x="343" y="0"/>
+</item>
+<item historyLabel="ez20080101.grid.txt" index="6">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position info="not_deleted" x="343" y="0"/>
+</item>
+<item historyLabel="ez20080101.clues.txt" index="7">
+<position info="not_deleted" x="108" y="0"/>
+</item>
+<item historyLabel="CrosswordsActivity.java" index="0">
+<position info="not_deleted" x="736" y="0"/>
+</item>
+<item historyLabel="CrosswordsWord.java" index="8">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="CrosswordsWord.java" index="8">
+<position info="not_deleted" x="217" y="0"/>
+</item>
+<item historyLabel="CrosswordsWord.java" index="8">
+<position info="not_deleted" x="165" y="0"/>
+</item>
+<item active="true" historyLabel="CrosswordsWord.java" index="8">
+<position info="not_deleted" x="169" y="14"/>
+>>>>>>> 867b8003c0e346c28fa3620990284a362da75191
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -560,6 +747,12 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -567,10 +760,12 @@
 <trimItem IMemento.internal.id="org.eclise.ui.internal.FastViewBar"/>
 <trimItem IMemento.internal.id="org.eclipse.jface.action.StatusLineManager"/>
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.progress.ProgressRegion"/>
+<trimItem IMemento.internal.id="org.eclipse.ui.internal.ViewStack@5c8c9fca"/>
 </trimArea>
 </trimLayout>
 </window>
 <mruList>
+<<<<<<< HEAD
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumberCrunchGame.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/NumberCrunchGame.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/NumberCrunchGame.java"/>
 </file>
@@ -585,10 +780,24 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OptionActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/OptionActivity.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/OptionActivity.java"/>
+=======
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsWord.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="ez20080101.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/ez20080101.clues.txt">
+<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/ez20080101.clues.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="ez20080101.grid.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/ez20080101.grid.txt">
+<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/ez20080101.grid.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_crosswordstile.xml" tooltip="DEPuzzles/res/layout/ui_crosswordstile.xml">
+<persistable path="/DEPuzzles/res/layout/ui_crosswordstile.xml"/>
+>>>>>>> 867b8003c0e346c28fa3620990284a362da75191
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="OptionData.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/data/OptionData.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/data/OptionData.java"/>
 </file>
+<<<<<<< HEAD
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="MenuScreen.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/MenuScreen.java"/>
 </file>
@@ -606,15 +815,45 @@
 </file>
 <file factoryID="org.eclipse.jdt.ui.ClassFileEditorInputFactory" id="org.eclipse.jdt.ui.ClassFileEditor" name="Integer.class" tooltip="java.lang.Integer">
 <persistable org.eclipse.jdt.ui.ClassFileIdentifier="=DEPuzzles/C:\/Program Files\/Android\/android-sdk-windows\/platforms\/android-7\/android.jar&lt;java.lang(Integer.class"/>
+=======
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsTile.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataBuilder.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PuzzleSelectActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_crosswordsboard.xml" tooltip="DEPuzzles/res/layout/ui_crosswordsboard.xml">
+<persistable path="/DEPuzzles/res/layout/ui_crosswordsboard.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsBoard.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_crosswordboard.xml" tooltip="DEPuzzles/res/layout/ui_crosswordboard.xml">
+<persistable path="/DEPuzzles/res/layout/ui_crosswordboard.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_crosswordtile.xml" tooltip="DEPuzzles/res/layout/ui_crosswordtile.xml">
+<persistable path="/DEPuzzles/res/layout/ui_crosswordtile.xml"/>
+>>>>>>> 867b8003c0e346c28fa3620990284a362da75191
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CodeWordActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/CodeWordActivity.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/CodeWordActivity.java"/>
 </file>
+<<<<<<< HEAD
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PuzzleSelectActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataBuilder.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java"/>
+=======
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="NumPad.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/NumPad.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/NumPad.java"/>
+>>>>>>> 867b8003c0e346c28fa3620990284a362da75191
 </file>
 </mruList>
 </workbench>

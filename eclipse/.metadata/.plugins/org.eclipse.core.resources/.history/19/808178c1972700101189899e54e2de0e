@@ -1,0 +1,10 @@
+package codegears.DEPuzzles.data;
+
+public class CrosswordsWord {
+
+	private ArrayList<CrosswordsTile> tileList;
+	private String words;
+	private String clue;
+}
+
+

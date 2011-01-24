@@ -1,0 +1,7 @@
+package codegears.DEPuzzles.ui;
+
+import android.widget.LinearLayout;
+
+public class CrosswordsTile extends LinearLayout {
+
+}
