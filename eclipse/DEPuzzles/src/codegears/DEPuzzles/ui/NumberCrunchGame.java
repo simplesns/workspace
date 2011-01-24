@@ -20,6 +20,7 @@ public class NumberCrunchGame extends LinearLayout implements OnClickListener {
 	private TextView num2View;
 	private TextView numOpearationView;
 	private EditText resultView;
+	private LinearLayout bgView;
 	
 	private String num1;					//chatchai
 	private String num2;
@@ -28,7 +29,7 @@ public class NumberCrunchGame extends LinearLayout implements OnClickListener {
 	private int state;						//
 	
 	private static final int STATE_NORMAL = 0;
-	private static final int STATE_CORRET = 1;
+	private static final int STATE_CORRECT = 1;
 	private static final int STATE_WRONG = 2;
 	
 	
@@ -40,18 +41,26 @@ public class NumberCrunchGame extends LinearLayout implements OnClickListener {
 		num2View = (TextView) this.findViewById(R.id.Num2);
 		numOpearationView = (TextView) this.findViewById(R.id.NumOperation);
 		resultView = (EditText) this.findViewById(R.id.Result);
+		bgView = (LinearLayout) this.findViewById(R.id.BgNumberCrunchGame);
 
 	}
 	
 	public void setStateToNormal(){
 		state = STATE_NORMAL;
-		//....
+		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz);
+		num1View.setText("?");
 	}
 	
 	public void setStateToCorrect(){
+		state = STATE_CORRECT;
+		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz_correct);
+		num1View.setText(num1);
 	}
 	
 	public void setStateToWrong(){
+		state = STATE_WRONG;
+		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz_wrong);
+		num1View.setText("?");
 	}
 
 	public String getNum1(){

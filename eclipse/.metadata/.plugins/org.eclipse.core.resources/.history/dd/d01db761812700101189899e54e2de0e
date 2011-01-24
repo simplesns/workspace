@@ -1,7 +1,0 @@
-package codegears.DEPuzzles.ui;
-
-import android.widget.LinearLayout;
-
-public class CrosswordsBoard extends LinearLayout {
-
-}

@@ -17,5 +17,8 @@ public class CodeWordActivity extends Activity {
 	}
 
 	private void setGameArea(){
+		Intent i = getIntent();
+		String file = i.getStringExtra(PuzzleSelectActivity.EXTRA_FILE);
+		String[] grid = DataBuilder.createCrosswordsGridFromAsset(this, file);
 	}
 }
