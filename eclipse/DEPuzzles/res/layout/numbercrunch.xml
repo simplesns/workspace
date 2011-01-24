@@ -20,72 +20,11 @@
 			android:id="@+id/NumberCrunchTimer"></Button>
 	</LinearLayout>
 	<ScrollView android:layout_width="fill_parent"
-		android:layout_height="fill_parent" android:id="@+id/NumberCrunchScrollView">
+		android:id="@+id/NumberCrunchScrollView" android:layout_height="wrap_content" android:layout_weight="1">
 		
-	<LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/LinearNumberCrunchArea"></LinearLayout>
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/LinearNumberCrunchArea" android:orientation="vertical" android:layout_width="fill_parent"></LinearLayout>
 </ScrollView>
-	<TableLayout android:layout_height="wrap_content"
-		android:layout_width="fill_parent" android:id="@+id/TableNamPad">
-		<TableRow android:layout_width="fill_parent">
-			<LinearLayout android:id="@+id/LinearLayout01"
-				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:layout_weight="1">
-				<Button android:layout_height="wrap_content" android:id="@+id/ButtonNum1"
-					android:text="1" android:layout_width="fill_parent"
-					android:textSize="20dip" android:layout_weight="1"></Button>
-				<Button android:layout_height="wrap_content"
-					android:layout_width="fill_parent" android:layout_weight="1"
-					android:id="@+id/ButtonNum2" android:text="2" android:textSize="20dip"></Button>
-				<Button android:layout_height="wrap_content" android:text="3"
-					android:id="@+id/ButtonNum3" android:layout_width="fill_parent"
-					android:layout_weight="1" android:textSize="20dip"></Button>
-			</LinearLayout>
-		</TableRow>
-		<TableRow android:layout_width="fill_parent">
-			<LinearLayout android:id="@+id/LinearLayout01"
-				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:layout_weight="1">
-				<Button android:layout_height="wrap_content"
-					android:layout_width="fill_parent" android:layout_weight="1"
-					android:id="@+id/ButtonNum4" android:text="4" android:textSize="20dip"></Button>
-				<Button android:layout_height="wrap_content"
-					android:layout_width="fill_parent" android:layout_weight="1"
-					android:text="5" android:id="@+id/ButtonNum5" android:textSize="20dip"></Button>
-				<Button android:layout_height="wrap_content"
-					android:layout_width="fill_parent" android:layout_weight="1"
-					android:id="@+id/ButtonNum6" android:text="6" android:textSize="20dip"></Button>
-			</LinearLayout>
-		</TableRow>
-		<TableRow android:layout_width="fill_parent">
-			<LinearLayout android:id="@+id/LinearLayout01"
-				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:layout_weight="1">
-				<Button android:layout_height="wrap_content"
-					android:layout_width="fill_parent" android:layout_weight="1"
-					android:text="7" android:id="@+id/ButtonNum7" android:textSize="20dip"></Button>
-				<Button android:layout_height="wrap_content"
-					android:layout_width="fill_parent" android:layout_weight="1"
-					android:id="@+id/ButtonNum8" android:text="8" android:textSize="20dip"></Button>
-				<Button android:layout_height="wrap_content"
-					android:layout_width="fill_parent" android:layout_weight="1"
-					android:text="9" android:id="@+id/ButtonNum9" android:textSize="20dip"></Button>
-			</LinearLayout>
-		</TableRow>
-		<TableRow android:layout_width="fill_parent">
-			<LinearLayout android:id="@+id/LinearLayout01"
-				android:layout_width="fill_parent" android:layout_height="wrap_content"
-				android:layout_weight="1">
-				<Button android:layout_height="wrap_content"
-					android:layout_width="fill_parent" android:layout_weight="1"
-					android:id="@+id/ButtonNumBlank" android:textSize="25dip"></Button>
-				<Button android:layout_height="wrap_content"
-					android:layout_width="fill_parent" android:layout_weight="1"
-					android:id="@+id/ButtonNum0" android:text="0" android:textSize="20dip"></Button>
-				<Button android:layout_height="wrap_content"
-					android:layout_width="fill_parent" android:layout_weight="1"
-					android:id="@+id/ButtonNumDelete" android:text="&lt; -- X"
-					android:textSize="20dip"></Button>
-			</LinearLayout>
-		</TableRow>
-	</TableLayout>
+	<codegears.DEPuzzles.ui.NumPad android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/TableNumPad">
+	</codegears.DEPuzzles.ui.NumPad>
 </LinearLayout>

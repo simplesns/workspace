@@ -24,7 +24,7 @@
 			android:text="=" android:id="@+id/NumIs" android:layout_marginLeft="15dip"></TextView>
 		
 
-<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Result" android:text="result" android:layout_gravity="center_vertical" android:layout_weight="1" android:layout_marginRight="10dip"></EditText>
+<EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/Result" android:layout_gravity="center_vertical" android:layout_weight="1" android:layout_marginRight="10dip" android:maxWidth="50dip" android:minWidth="50dip" android:maxLength="10"></EditText>
 </LinearLayout>
 
 </LinearLayout>

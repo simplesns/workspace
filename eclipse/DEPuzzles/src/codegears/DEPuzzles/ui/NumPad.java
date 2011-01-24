@@ -27,8 +27,9 @@ public class NumPad extends LinearLayout implements OnClickListener {
 
 	public NumPad(Context context, AttributeSet attrs) {
 		super(context, attrs);
-		View.inflate(context, R.layout.numbercrunch, this);
+		View.inflate(context, R.layout.ui_numpad, this);
 
+		button = new Button[11];
 		button[0] = (Button) findViewById(R.id.ButtonNum0);
 		button[1] = (Button) findViewById(R.id.ButtonNum1);
 		button[2] = (Button) findViewById(R.id.ButtonNum2);
@@ -48,6 +49,31 @@ public class NumPad extends LinearLayout implements OnClickListener {
 
 	public void setNumPadListener(NumPadListener listener) {
 		this.listener = listener;
+	}
+	
+	public static char getChar(int keyCode){
+		if(keyCode == NUMPAD_0){
+			return '0';
+		} else if(keyCode == NUMPAD_1){
+			return '1';
+		} else if(keyCode == NUMPAD_2){
+			return '2';
+		} else if(keyCode == NUMPAD_3){
+			return '3';
+		} else if(keyCode == NUMPAD_4){
+			return '4';
+		} else if(keyCode == NUMPAD_5){
+			return '5';
+		} else if(keyCode == NUMPAD_6){
+			return '6';
+		} else if(keyCode == NUMPAD_7){
+			return '7';
+		} else if(keyCode == NUMPAD_8){
+			return '8';
+		} else if(keyCode == NUMPAD_9){
+			return '9';
+		}
+		return ' ';
 	}
 
 	@Override
