@@ -1,0 +1,12 @@
+package codegears.DEPuzzles.ui;
+
+import android.content.Context;
+import android.widget.LinearLayout;
+
+public class CrosswordsTile extends LinearLayout {
+
+	public CrosswordsTile(Context context) {
+		super(context);
+	}
+	
+}
