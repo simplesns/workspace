@@ -9,6 +9,8 @@ import java.util.ArrayList;
 import android.content.Context;
 import android.content.res.AssetManager;
 
+import codegears.DEPuzzles.data.CrosswordsClue;
+import codegears.DEPuzzles.data.CrosswordsWord;
 import codegears.DEPuzzles.data.PuzzleSelectData;
 
 public class DataBuilder {
@@ -49,21 +51,44 @@ public class DataBuilder {
 					new InputStreamReader(iStream));
 			String line = bReader.readLine();
 			String readedData = "";
-			int count = 1;
 			while (line != null) {
 				readedData += line;
 				line = bReader.readLine();
-				count++;
 			}
 			for (int i = 0; i < str.length; i++) {
 				str[i] = readedData.substring(0, 13);
-				readedData = readedData.substring(14);
-				System.out.println("Crosswords Grid: " + str[i]);
+				readedData = readedData.substring(13);
 			}
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
 		return str;
+	}
+	
+	public static CrosswordsClue createCrosswordsClueFromAsset(Context context, String file){
+		CrosswordsClue clue = new CrosswordsClue();
+		ArrayList<String> aClue = new ArrayList<String>();
+		ArrayList<String> dClue = new ArrayList<String>();
+		AssetManager aManager = context.getAssets();
+		try {
+			InputStream iStream = aManager.open(file);
+			BufferedReader bReader = new BufferedReader(
+					new InputStreamReader(iStream));
+			String line = bReader.readLine();
+			while (line != null) {
+				CrosswordsWord word = new CrosswordsWord();
+				word.setClue(line);
+				if(line.startsWith("A")){
+					clue.addAWord(word);
+				} else {
+					clue.addDWord(word);
+				}
+				line = bReader.readLine();
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return clue;
 	}
 	
 	public static String[] createNumberCrunchQuizFromAsset(Context context,

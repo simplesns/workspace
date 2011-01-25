@@ -53,13 +53,13 @@ public class NumberCrunchGame extends LinearLayout implements OnClickListener {
 	
 	public void setStateToCorrect(){
 		state = STATE_CORRECT;
-		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz_correct);
+//		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz_correct);
 		num1View.setText(num1);
 	}
 	
 	public void setStateToWrong(){
 		state = STATE_WRONG;
-		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz_wrong);
+//		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz_wrong);
 		num1View.setText("?");
 	}
 

@@ -1,0 +1,32 @@
+package codegears.DEPuzzles.data;
+
+import java.util.ArrayList;
+
+public class CrosswordsClue {
+
+	private ArrayList<CrosswordsWord> aWord;
+	private ArrayList<CrosswordsWord> dWord;
+
+	public CrosswordsClue(){
+		
+	}
+	
+	public void addAWord(CrosswordsWord word) {
+		aWord.add(word);
+	}
+
+	public void addDWord(CrosswordsWord word) {
+		dWord.add(word);
+	}
+	
+	public String toString(){
+		String str = "CrosswordsClue:\n";
+		for(CrosswordsWord w:aWord){
+			str += w.toString();
+		}
+		for(CrosswordsWord w:dWord){
+			str += w.toString();
+		}
+		return str;
+	}
+}

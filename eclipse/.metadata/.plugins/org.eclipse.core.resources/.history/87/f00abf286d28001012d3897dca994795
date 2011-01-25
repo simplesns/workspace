@@ -1,0 +1,47 @@
+package codegears.DEPuzzles.data;
+
+import java.util.ArrayList;
+
+import codegears.DEPuzzles.ui.CrosswordsBoard;
+
+public class CrosswordsClue {
+
+	private ArrayList<CrosswordsWord> aWord;
+	private ArrayList<CrosswordsWord> dWord;
+
+	public CrosswordsClue(){
+		aWord = new ArrayList<CrosswordsWord>();
+		dWord = new ArrayList<CrosswordsWord>();
+	}
+	
+	public void addAWord(CrosswordsWord word) {
+		aWord.add(word);
+	}
+
+	public void addDWord(CrosswordsWord word) {
+		dWord.add(word);
+	}
+	
+	public CrosswordsWord getFirstWord(){
+		return aWord.get(0);
+	}
+	
+	public void scanBoard(CrosswordsBoard board){
+		String[] boardData = board.getBoardData();
+		for(int i = 0;i < boardData.length; i++){
+			for(int j = 0; j < boardData[i].length(); j++){
+			}
+		}
+	}
+	
+	public String toString(){
+		String str = "CrosswordsClue:\n";
+		for(CrosswordsWord w:aWord){
+			str += w.toString();
+		}
+		for(CrosswordsWord w:dWord){
+			str += w.toString();
+		}
+		return str;
+	}
+}
