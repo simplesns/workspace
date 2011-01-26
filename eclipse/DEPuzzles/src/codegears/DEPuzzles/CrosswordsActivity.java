@@ -3,17 +3,25 @@ package codegears.DEPuzzles;
 import codegears.DEPuzzles.data.CrosswordsClue;
 import codegears.DEPuzzles.data.CrosswordsWord;
 import codegears.DEPuzzles.ui.CrosswordsBoard;
+import codegears.DEPuzzles.ui.CrosswordsTile;
 import codegears.DEPuzzles.util.DataBuilder;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import freehand.neandroid.GameActivity;
 
-public class CrosswordsActivity extends Activity {
+public class CrosswordsActivity extends Activity implements OnClickListener {
 
 	private CrosswordsBoard board;
 	private CrosswordsClue clue;
 	private CrosswordsWord currentWord;
+	private CrosswordsTile currentTile;
+	private Button left;
+	private Button hintBar;
+	private Button right;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -21,6 +29,12 @@ public class CrosswordsActivity extends Activity {
 		GameActivity.setFullscreen(this);
 		setContentView(R.layout.crosswords);
 		board = (CrosswordsBoard) findViewById(R.id.CrosswordsBoard);
+		left = (Button) findViewById(R.id.CrosswordsLeft);
+		left.setOnClickListener(this);
+		hintBar = (Button) findViewById(R.id.CrosswordsHintBar);
+		hintBar.setOnClickListener(this);
+		right = (Button) findViewById(R.id.CrosswordsRight);
+		right.setOnClickListener(this);
 		setGameArea();
 	}
 
@@ -34,6 +48,35 @@ public class CrosswordsActivity extends Activity {
 				"CrosswordsPuzzle/" + file + ".clues.txt");
 		clue.scanBoard(board);
 		currentWord = clue.getFirstWord();
+		currentWord.selected();
+		currentTile = currentWord.getFirstTile();
+		hintBar.setText(currentWord.getClue());
+		currentTile.tileSelected();
+	}
+
+	@Override
+	public void onClick(View view) {
+		if(left.equals(view)){
+			currentWord.unselect();
+			currentWord = clue.getPreviousWord(currentWord);
+			currentWord.selected();
+			currentTile = currentWord.getFirstTile();
+			currentTile.tileSelected();
+			hintBar.setText(currentWord.getClue());
+		} else if(hintBar.equals(view)){
+			currentWord.unselect();
+			currentTile = clue.getHintBarClickedTile(board, currentWord, currentTile);
+			currentWord = clue.getHintBarClickedWord(board, currentWord, currentTile);
+			currentWord.selected();
+			currentTile.tileSelected();
+		} else if(right.equals(view)){
+			currentWord.unselect();
+			currentWord = clue.getNextWord(currentWord);
+			currentWord.selected();
+			currentTile = currentWord.getFirstTile();
+			currentTile.tileSelected();
+			hintBar.setText(currentWord.getClue());
+		}
 	}
 	
 }

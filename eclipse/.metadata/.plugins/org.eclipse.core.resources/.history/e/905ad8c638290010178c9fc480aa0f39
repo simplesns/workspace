@@ -1,0 +1,141 @@
+package codegears.DEPuzzles.data;
+
+import java.util.ArrayList;
+
+import codegears.DEPuzzles.ui.CrosswordsBoard;
+import codegears.DEPuzzles.ui.CrosswordsTile;
+
+public class CrosswordsClue {
+
+	private ArrayList<CrosswordsWord> aWord;
+	private ArrayList<CrosswordsWord> dWord;
+
+	public CrosswordsClue() {
+		aWord = new ArrayList<CrosswordsWord>();
+		dWord = new ArrayList<CrosswordsWord>();
+	}
+
+	public void addAWord(CrosswordsWord word) {
+		aWord.add(word);
+	}
+
+	public void addDWord(CrosswordsWord word) {
+		dWord.add(word);
+	}
+
+	public CrosswordsWord getFirstWord() {
+		return aWord.get(0);
+	}
+	
+	public CrosswordsWord getPreviousWord(CrosswordsWord current){
+		for(int i = 0; i < aWord.size(); i++){
+			if(aWord.get(i).equals(current)){
+				if(i == 0){
+					return aWord.get(aWord.size() - 1);
+				} else {
+					return aWord.get(i - 1);
+				}
+			}
+		}
+		for(int i = 0; i < dWord.size(); i++){
+			if(dWord.get(i).equals(current)){
+				if(i == 0){
+					return dWord.get(dWord.size() - 1);
+				} else {
+					return dWord.get(i - 1);
+				}
+			}
+		}
+		return null;
+	}
+	
+	public CrosswordsWord getNextWord(CrosswordsWord current){
+		for(int i = 0; i < aWord.size(); i++){
+			if(aWord.get(i).equals(current)){
+				if(i == aWord.size() - 1){
+					return aWord.get(0);
+				} else {
+					return aWord.get(i + 1);
+				}
+			}
+		}
+		for(int i = 0; i < dWord.size(); i++){
+			if(dWord.get(i).equals(current)){
+				if(i == dWord.size() - 1){
+					return dWord.get(0);
+				} else {
+					return dWord.get(i + 1);
+				}
+			}
+		}
+		return null;		
+	}
+
+	public void scanBoard(CrosswordsBoard board) {
+		String[] boardData = board.getBoardData();
+		int wordCount = 0;
+		// horizontal scan
+		for (int i = 0; i < boardData.length; i++) {
+			for (int j = 0; j < (boardData[i].length() - 2); j++) {
+				if ((boardData[i].charAt(j) != '.')
+						&& (boardData[i].charAt(j + 1) != '.')) {
+					if (j == 0) {
+						addNewAWord(wordCount, board, i, j);
+						wordCount++;
+					} else if (boardData[i].charAt(j - 1) == '.') {
+						addNewAWord(wordCount, board, i, j);
+						wordCount++;
+					}
+				}
+			}
+		}
+		wordCount = 0;
+		//vertical scan
+		for (int i = 0; i < boardData.length - 2; i++) {
+			for (int j = 0; j < (boardData[i].length()); j++) {
+				if((boardData[i].charAt(j) != '.') && (boardData[i + 1].charAt(j) != '.')){
+					if(i == 0){
+						addNewDWord(wordCount, board, i, j);
+						wordCount++;
+					} else if(boardData[i - 1].charAt(j) == '.'){
+						addNewDWord(wordCount, board, i, j);
+						wordCount++;
+					}
+				}
+			}
+		}
+	}
+
+	private void addNewAWord(int index, CrosswordsBoard board, int i, int j) {
+		CrosswordsWord word = aWord.get(index);
+		int length = board.getALength(i, j);
+		ArrayList<CrosswordsTile> tile = new ArrayList<CrosswordsTile>();
+		for (int loop = 0; loop < length; loop++) {
+			tile.add(board.getTile(i, j + loop));
+		}
+		word.setTileList(tile);
+		System.out.println(word);
+	}
+	
+	private void addNewDWord(int index, CrosswordsBoard board, int i, int j){
+		CrosswordsWord word = dWord.get(index);
+		int length = board.getDLength(i, j);
+		ArrayList<CrosswordsTile> tile = new ArrayList<CrosswordsTile>();
+		for(int loop = 0; loop < length; loop++){
+			tile.add(board.getTile(i + loop, j));
+		}
+		word.setTileList(tile);
+		System.out.println(word);
+	}
+
+	public String toString() {
+		String str = "CrosswordsClue:\n";
+		for (CrosswordsWord w : aWord) {
+			str += w.toString();
+		}
+		for (CrosswordsWord w : dWord) {
+			str += w.toString();
+		}
+		return str;
+	}
+}

@@ -14,7 +14,6 @@
 <fullyQualifiedTypeName name="android.widget.CompoundButton.OnCheckedChangeListener"/>
 <fullyQualifiedTypeName name="freehand.neandroid.widget.ToggleButtonGroup"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.data.OptionData"/>
-<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.widget.ListView"/>
 <fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.ui.PuzzleSelectListItem"/>
@@ -32,7 +31,6 @@
 <fullyQualifiedTypeName name="freehand.neandroid.ui.ImageTransformUI"/>
 <fullyQualifiedTypeName name="android.graphics.Matrix"/>
 <fullyQualifiedTypeName name="android.app.Activity"/>
-<fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.NumberCrunchActivity"/>
 <fullyQualifiedTypeName name="android.widget.LinearLayout.LayoutParams"/>
@@ -58,4 +56,7 @@
 <fullyQualifiedTypeName name="codegears.DEPuzzles.data.CrosswordsClue"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.data.CrosswordsWord"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.ui.CrosswordsBoard"/>
+<fullyQualifiedTypeName name="codegears.DEPuzzles.ui.CrosswordsTile"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 </qualifiedTypeNameHistroy>

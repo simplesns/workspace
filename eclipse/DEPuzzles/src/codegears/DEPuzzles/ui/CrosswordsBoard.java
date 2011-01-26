@@ -44,6 +44,45 @@ public class CrosswordsBoard extends LinearLayout {
 		return length;
 	}
 
+	public int getDLength(int i, int j) {
+		int length = 0;
+		for (int loop = i; loop < boardData.length; loop++) {
+			if (boardData[loop].charAt(j) == '.') {
+				return length;
+			} else {
+				length++;
+			}
+		}
+		return length;
+	}
+	
+	public int getPosition(CrosswordsTile tile){
+		for(int i = 0; i < this.tile.length; i++){
+			if(tile.equals(this.tile[i])){
+				return i;
+			}
+		}
+		return -1;
+	}
+
+	public CrosswordsTile getTile(int i, int j) {
+		return tile[(i * 13) + j];
+	}
+	
+
+	public CrosswordsTile getNextTile(CrosswordsTile tile){
+		for(int i = 0; i < this.tile.length; i++){
+			if(this.tile[i].equals(tile)){
+				if(i == this.tile.length - 1){
+					return this.tile[0];
+				} else {
+					return this.tile[i + 1];
+				}
+			}
+		}
+		return null;
+	}
+	
 	public void setBoardData(String[] data) {
 		boardData = data;
 		for (int i = 0; i < 13; i++) {
@@ -51,7 +90,8 @@ public class CrosswordsBoard extends LinearLayout {
 				if (data[i].charAt(j) == '.') {
 					tile[(i * 13) + j].setBlack(true);
 				} else {
-					tile[(i * 13) + j].setResult(data[i].charAt(j));;
+					tile[(i * 13) + j].setResult(data[i].charAt(j));
+					;
 				}
 			}
 		}

@@ -1,0 +1,41 @@
+package codegears.DEPuzzles.data;
+
+import java.util.ArrayList;
+
+import codegears.DEPuzzles.ui.CrosswordsTile;
+
+public class CrosswordsWord {
+
+	private ArrayList<CrosswordsTile> tileList;
+	private String clue;
+
+	public void setClue(String clue) {
+		this.clue = clue;
+	}
+	
+	public CrosswordsTile getFirstTile(){
+		if(tileList!= null){
+			if(tileList.size() > 0){
+		return tileList.get(0);
+			}
+		}
+	}
+	
+	public void selected(){
+		for(CrosswordsTile t:tileList){
+			t.wordSelected();
+		}
+	}
+
+	public String toString() {
+		String str = "Word: ";
+		for (CrosswordsTile t : tileList) {
+			str += t.getResult();
+		}
+		return str;
+	}
+
+	public void setTileList(ArrayList<CrosswordsTile> tile) {
+		tileList = tile;
+	}
+}

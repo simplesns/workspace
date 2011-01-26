@@ -26,13 +26,12 @@
 	</ScrollView>
 	<LinearLayout android:id="@+id/LinearLayout02"
 		android:layout_height="wrap_content" android:layout_width="fill_parent">
-		<Button android:id="@+id/Button06" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:text="&lt;"></Button>
-		<Button android:text="@+id/Button07" android:id="@+id/Button07"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"
-			android:layout_weight="1"></Button>
-		<Button android:id="@+id/Button08" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:text="&gt;"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="&lt;" android:id="@+id/CrosswordsLeft"></Button>
+		<Button android:text="@+id/Button07" android:layout_width="wrap_content" android:layout_height="wrap_content"
+			android:layout_weight="1" android:id="@+id/CrosswordsHintBar"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="&gt;" android:id="@+id/CrosswordsRight"></Button>
 
 	</LinearLayout>
 	<codegears.DEPuzzles.ui.KeyPad
