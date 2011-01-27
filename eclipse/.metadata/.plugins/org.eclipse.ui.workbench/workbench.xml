@@ -20,7 +20,7 @@
 <coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
-<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
 <coolItem id="group.nav" itemType="typeGroupMarker"/>
 <coolItem id="org.eclipse.ui.workbench.navigate" itemType="typeToolBarContribution" x="190" y="22"/>
 <coolItem id="group.editor" itemType="typeGroupMarker"/>
@@ -39,32 +39,42 @@
 <part id="3"/>
 <part id="4"/>
 <part id="5"/>
+<part id="6"/>
+<part id="7"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsBoard.java" partName="CrosswordsBoard.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java" title="CrosswordsBoard.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2056" selectionTopPixel="1005"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1392" selectionTopPixel="483"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsActivity.java" partName="CrosswordsActivity.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java" title="CrosswordsActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2524" selectionTopPixel="699"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1345" selectionTopPixel="70"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsWord.java" partName="CrosswordsWord.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java" title="CrosswordsWord.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="599" selectionTopPixel="104"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="219" selectionTopPixel="29"/>
 </editor>
-<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsTile.java" partName="CrosswordsTile.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java" title="CrosswordsTile.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java" workbook="DefaultEditorWorkbook">
+<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsTile.java" partName="CrosswordsTile.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java" title="CrosswordsTile.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1413" selectionTopPixel="782"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2416" selectionTopPixel="1413"/>
 </editor>
-<editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsClue.java" partName="CrosswordsClue.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsClue.java" title="CrosswordsClue.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsClue.java" workbook="DefaultEditorWorkbook">
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsClue.java" partName="CrosswordsClue.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsClue.java" title="CrosswordsClue.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsClue.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsClue.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1983" selectionTopPixel="1243"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4442" selectionTopPixel="2860"/>
 </editor>
-<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="crosswords.xml" partName="crosswords.xml" path="C:/workspace/eclipse/DEPuzzles/res/layout/crosswords.xml" title="crosswords.xml" tooltip="DEPuzzles/res/layout/crosswords.xml" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/res/layout/crosswords.xml"/>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_keypad.xml" partName="ui_keypad.xml" path="C:/workspace/eclipse/DEPuzzles/res/layout/ui_keypad.xml" title="ui_keypad.xml" tooltip="DEPuzzles/res/layout/ui_keypad.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/res/layout/ui_keypad.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KeyPad.java" partName="KeyPad.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/ui/KeyPad.java" title="KeyPad.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/KeyPad.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/ui/KeyPad.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="1611" selectionTopPixel="580"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KeyPadListener.java" partName="KeyPadListener.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/ui/KeyPadListener.java" title="KeyPadListener.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/KeyPadListener.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/ui/KeyPadListener.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="121" selectionTopPixel="0"/>
 </editor>
 </editors>
 <views>
@@ -80,9 +90,9 @@
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
 <expanded>
+<category IMemento.internal.id="Warnings (39 items)"/>
 <category IMemento.internal.id="Warnings"/>
 <category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings (38 items)"/>
 </expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
@@ -148,7 +158,9 @@
 <view id="org.eclipse.jdt.ui.SourceView" partName="Declaration">
 <viewState/>
 </view>
-<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc"/>
+<view id="org.eclipse.jdt.ui.JavadocView" partName="Javadoc">
+<viewState/>
+</view>
 </views>
 <perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
@@ -208,13 +220,13 @@
 <perspective_action id="com.android.ide.eclipse.hierarchyviewer.TreeViewPerspective"/>
 <hide_toolbar_item_id id="org.eclipse.jdt.ui.actions.OpenProjectWizard"/>
 <hide_toolbar_item_id id="org.eclipse.ui.edit.text.toggleShowSelectedElementOnly"/>
-<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <view id="org.eclipse.ui.views.ProblemView"/>
 <view id="org.eclipse.jdt.ui.JavadocView"/>
 <view id="org.eclipse.jdt.ui.SourceView"/>
 <view id="org.eclipse.ui.console.ConsoleView"/>
 <view id="org.eclipse.ui.views.ContentOutline"/>
 <view id="org.eclipse.ui.views.PropertySheet"/>
+<view id="org.eclipse.jdt.ui.PackageExplorer"/>
 <fastViewBars/>
 <layout>
 <mainWindow>
@@ -314,50 +326,71 @@
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <fastViewBars/>
-<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>
+<mainWindow>
+<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.3825397" ratioLeft="241" ratioRight="389" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.3825397" ratioLeft="241" ratioRight="389" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
+<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@7e116d9b" ratio="0.23542435" ratioLeft="319" ratioRight="1036" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">&#x0A;<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7e116d9b" ratio="0.23542435" ratioLeft="319" ratioRight="1036" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">
+<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
+<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@2cfd610" ratio="0.38490567" ratioLeft="102" ratioRight="163" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2cfd610" ratio="0.38490567" ratioLeft="102" ratioRight="163" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.internal.ViewStack@2cfd610">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.internal.ViewStack@2cfd610">
+<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
+<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
+<part id="0"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2413793" ratioLeft="14" ratioRight="44" relationship="4" relative="org.eclipse.ui.internal.ViewStack@2cfd610"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
+<folder appearance="2" expanded="2">
+<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -371,163 +404,151 @@
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsClue.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTile.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsBoard.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/CrosswordsActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsWord.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/ui_keypad.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/KeyPad.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/KeyPadListener.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/crosswords.xml"/>
 </editors>
 <item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="1107" y="0"/>
+<position info="not_deleted" x="4442" y="0"/>
 </item>
-<item historyLabel="CrosswordsWord.java" index="4">
-<position info="not_deleted" x="624" y="0"/>
-</item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="1069" y="0"/>
-</item>
-<item historyLabel="CrosswordsWord.java" index="4">
-<position info="not_deleted" x="624" y="0"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="3258" y="0"/>
 </item>
 <item historyLabel="CrosswordsTile.java" index="1">
-<position info="not_deleted" x="1625" y="0"/>
+<position info="not_deleted" x="1558" y="0"/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="3">
-<position info="not_deleted" x="2390" y="0"/>
-</item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="619" y="0"/>
-</item>
-<item historyLabel="CrosswordsActivity.java" index="3">
-<position info="not_deleted" x="2390" y="0"/>
-</item>
-<item historyLabel="CrosswordsWord.java" index="4">
-<position info="not_deleted" x="624" y="0"/>
-</item>
-<item historyLabel="CrosswordsBoard.java" index="2">
-<position info="not_deleted" x="1430" y="0"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="3269" y="0"/>
 </item>
 <item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="619" y="0"/>
+<position info="not_deleted" x="4442" y="0"/>
 </item>
-<item historyLabel="CrosswordsTile.java" index="5">
-<position info="not_deleted" x="1625" y="0"/>
+<item historyLabel="CrosswordsTile.java" index="1">
+<position info="not_deleted" x="1558" y="0"/>
 </item>
-<item historyLabel="CrosswordsBoard.java" index="6">
-<position info="not_deleted" x="1430" y="0"/>
+<item historyLabel="CrosswordsWord.java" index="2">
+<position info="not_deleted" x="219" y="0"/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="2723" y="0"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="3269" y="0"/>
 </item>
-<item historyLabel="CrosswordsWord.java" index="8">
-<position info="not_deleted" x="847" y="0"/>
+<item historyLabel="CrosswordsBoard.java" index="3">
+<position info="not_deleted" x="1392" y="0"/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="1897" y="0"/>
+<item historyLabel="ui_keypad.xml" index="5"/>
+<item historyLabel="CrosswordsTile.java" index="1">
+<position info="not_deleted" x="654" y="0"/>
 </item>
-<item historyLabel="CrosswordsWord.java" index="8">
-<position info="not_deleted" x="843" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="2328" y="17"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="519" y="0"/>
 </item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="1395" y="0"/>
-</item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="3454" y="0"/>
-</item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="1739" y="0"/>
-</item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="2381" y="0"/>
-</item>
-<item historyLabel="CrosswordsTile.java" index="5">
-<position info="not_deleted" x="1413" y="0"/>
-</item>
-<item historyLabel="CrosswordsWord.java" index="8">
-<position info="not_deleted" x="843" y="0"/>
-</item>
-<item historyLabel="CrosswordsClue.java" index="0">
+<item historyLabel="KeyPad.java" index="6">
 <position/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="2357" y="0"/>
+<item historyLabel="ui_keypad.xml" index="5"/>
+<item historyLabel="KeyPad.java" index="6">
+<position/>
 </item>
-<item historyLabel="CrosswordsBoard.java" index="6">
-<position info="not_deleted" x="1507" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="342" y="0"/>
 </item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="2248" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="326" y="15"/>
 </item>
-<item historyLabel="CrosswordsBoard.java" index="6">
-<position info="not_deleted" x="2056" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="1734" y="0"/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="2357" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="326" y="15"/>
 </item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="1625" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position/>
 </item>
-<item historyLabel="CrosswordsWord.java" index="8">
-<position info="not_deleted" x="878" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="326" y="15"/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="2357" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="159" y="0"/>
 </item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="1625" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="1173" y="0"/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="2357" y="0"/>
+<item historyLabel="KeyPadListener.java" index="7">
+<position info="not_deleted" x="116" y="0"/>
 </item>
-<item historyLabel="CrosswordsTile.java" index="5">
-<position info="not_deleted" x="1413" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="1258" y="0"/>
 </item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="1625" y="0"/>
+<item historyLabel="KeyPadListener.java" index="7">
+<position info="not_deleted" x="104" y="0"/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="2320" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position/>
 </item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="1944" y="0"/>
+<item historyLabel="KeyPadListener.java" index="7">
+<position info="not_deleted" x="104" y="0"/>
 </item>
-<item historyLabel="CrosswordsWord.java" index="8">
-<position info="not_deleted" x="599" y="0"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="1021" y="0"/>
 </item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="2765" y="0"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="3269" y="0"/>
 </item>
-<item historyLabel="CrosswordsTile.java" index="5">
-<position info="not_deleted" x="1413" y="0"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="749" y="14"/>
 </item>
-<item historyLabel="CrosswordsWord.java" index="8">
-<position info="not_deleted" x="599" y="0"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="800" y="0"/>
 </item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="2765" y="0"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="3263" y="0"/>
 </item>
-<item historyLabel="CrosswordsWord.java" index="8">
-<position info="not_deleted" x="599" y="0"/>
+<item historyLabel="CrosswordsTile.java" index="1">
+<position info="not_deleted" x="2421" y="0"/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="2090" y="0"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="3263" y="0"/>
 </item>
-<item historyLabel="CrosswordsTile.java" index="5">
-<position info="not_deleted" x="1413" y="0"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="1492" y="0"/>
 </item>
-<item historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="2263" y="0"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="918" y="6"/>
 </item>
-<item historyLabel="CrosswordsActivity.java" index="7">
-<position info="not_deleted" x="2524" y="0"/>
+<item historyLabel="crosswords.xml" index="8"/>
+<item historyLabel="CrosswordsActivity.java" index="4">
+<position info="not_deleted" x="1345" y="0"/>
 </item>
-<item active="true" historyLabel="CrosswordsClue.java" index="0">
-<position info="not_deleted" x="2263" y="0"/>
+<item historyLabel="ui_keypad.xml" index="5"/>
+<item historyLabel="KeyPadListener.java" index="7">
+<position info="not_deleted" x="104" y="0"/>
+</item>
+<item historyLabel="crosswords.xml" index="8"/>
+<item historyLabel="KeyPadListener.java" index="7">
+<position info="not_deleted" x="121" y="0"/>
+</item>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="971" y="0"/>
+</item>
+<item historyLabel="ui_keypad.xml" index="5"/>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="514" y="0"/>
+</item>
+<item historyLabel="CrosswordsTile.java" index="1">
+<position info="not_deleted" x="2421" y="0"/>
+</item>
+<item historyLabel="KeyPad.java" index="6">
+<position info="not_deleted" x="1611" y="0"/>
+</item>
+<item active="true" historyLabel="CrosswordsTile.java" index="1">
+<position info="not_deleted" x="2421" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -535,6 +556,12 @@
 <workbenchWindowAdvisor/>
 <actionBarAdvisor/>
 <trimLayout>
+<trimArea IMemento.internal.id="16384">
+<trimItem IMemento.internal.id="left"/>
+</trimArea>
+<trimArea IMemento.internal.id="131072">
+<trimItem IMemento.internal.id="org.eclipse.ui.editorss"/>
+</trimArea>
 <trimArea IMemento.internal.id="128">
 <trimItem IMemento.internal.id="org.eclipse.ui.internal.WorkbenchWindow.topBar"/>
 </trimArea>
@@ -548,6 +575,27 @@
 <mruList>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="crosswords.xml" tooltip="DEPuzzles/res/layout/crosswords.xml">
 <persistable path="/DEPuzzles/res/layout/crosswords.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KeyPadListener.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/KeyPadListener.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/KeyPadListener.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="KeyPad.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/KeyPad.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/KeyPad.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_keypad.xml" tooltip="DEPuzzles/res/layout/ui_keypad.xml">
+<persistable path="/DEPuzzles/res/layout/ui_keypad.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_crosswordstile.xml" tooltip="DEPuzzles/res/layout/ui_crosswordstile.xml">
+<persistable path="/DEPuzzles/res/layout/ui_crosswordstile.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080328.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CR20080328.clues.txt">
+<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CR20080328.clues.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsTileListener.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTileListener.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/CrosswordsTileListener.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="temp.xml" tooltip="DEPuzzles/res/layout/temp.xml">
+<persistable path="/DEPuzzles/res/layout/temp.xml"/>
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="CrosswordsClue.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsClue.java">
 <persistable path="/DEPuzzles/src/codegears/DEPuzzles/data/CrosswordsClue.java"/>
@@ -569,27 +617,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080620.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CR20080620.clues.txt">
 <persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CR20080620.clues.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080616.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CR20080616.clues.txt">
-<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CR20080616.clues.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080527.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CR20080527.clues.txt">
-<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CR20080527.clues.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080523.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CR20080523.clues.txt">
-<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CR20080523.clues.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080513.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CR20080513.clues.txt">
-<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CR20080513.clues.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080424.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CR20080424.clues.txt">
-<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CR20080424.clues.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080416.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CR20080416.clues.txt">
-<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CR20080416.clues.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="CR20080415.clues.txt" tooltip="DEPuzzles/assets/CrosswordsPuzzle/CR20080415.clues.txt">
-<persistable path="/DEPuzzles/assets/CrosswordsPuzzle/CR20080415.clues.txt"/>
 </file>
 </mruList>
 </workbench>

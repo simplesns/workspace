@@ -1,0 +1,33 @@
+package codegears.DEPuzzles.ui;
+
+
+import codegears.DEPuzzles.R;
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.LinearLayout;
+
+public class KeyPad extends LinearLayout implements OnClickListener {
+
+	private Button b_q;
+	private Button b_w;
+	private Button b_e;
+	
+	public KeyPad(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		View.inflate(context, R.layout.ui_keypad, this);
+		b_q = (Button)findViewById(R.id.KeyPadQ);
+		b_q.setOnClickListener(this);
+		b_w = (Button)findViewById(R.id.KeyPadW);
+		b_w.setOnClickListener(this);
+		b_e = (Button)findViewById(R.id.KeyPadE);
+		b_e.setOnClickListener(this);
+	}
+
+	@Override
+	public void onClick(View v) {
+	}
+
+}

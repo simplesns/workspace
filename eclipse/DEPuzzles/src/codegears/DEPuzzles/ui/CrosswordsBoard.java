@@ -3,8 +3,10 @@ package codegears.DEPuzzles.ui;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
+import android.widget.TableLayout;
+import android.widget.TableRow;
 
-public class CrosswordsBoard extends LinearLayout {
+public class CrosswordsBoard extends TableLayout {
 
 	private LinearLayout[] line;
 	private CrosswordsTile[] tile;
@@ -32,6 +34,10 @@ public class CrosswordsBoard extends LinearLayout {
 		return boardData;
 	}
 
+	public CrosswordsTile[] getTile() {
+		return tile;
+	}
+
 	public int getALength(int i, int j) {
 		int length = 0;
 		for (int loop = j; loop < boardData[i].length(); loop++) {
@@ -55,10 +61,10 @@ public class CrosswordsBoard extends LinearLayout {
 		}
 		return length;
 	}
-	
-	public int getPosition(CrosswordsTile tile){
-		for(int i = 0; i < this.tile.length; i++){
-			if(tile.equals(this.tile[i])){
+
+	public int getPosition(CrosswordsTile tile) {
+		for (int i = 0; i < this.tile.length; i++) {
+			if (tile.equals(this.tile[i])) {
 				return i;
 			}
 		}
@@ -68,12 +74,11 @@ public class CrosswordsBoard extends LinearLayout {
 	public CrosswordsTile getTile(int i, int j) {
 		return tile[(i * 13) + j];
 	}
-	
 
-	public CrosswordsTile getNextTile(CrosswordsTile tile){
-		for(int i = 0; i < this.tile.length; i++){
-			if(this.tile[i].equals(tile)){
-				if(i == this.tile.length - 1){
+	public CrosswordsTile getNextTile(CrosswordsTile tile) {
+		for (int i = 0; i < this.tile.length; i++) {
+			if (this.tile[i].equals(tile)) {
+				if (i == this.tile.length - 1) {
 					return this.tile[0];
 				} else {
 					return this.tile[i + 1];
@@ -82,7 +87,7 @@ public class CrosswordsBoard extends LinearLayout {
 		}
 		return null;
 	}
-	
+
 	public void setBoardData(String[] data) {
 		boardData = data;
 		for (int i = 0; i < 13; i++) {
@@ -91,9 +96,9 @@ public class CrosswordsBoard extends LinearLayout {
 					tile[(i * 13) + j].setBlack(true);
 				} else {
 					tile[(i * 13) + j].setResult(data[i].charAt(j));
-					;
 				}
 			}
 		}
 	}
+
 }

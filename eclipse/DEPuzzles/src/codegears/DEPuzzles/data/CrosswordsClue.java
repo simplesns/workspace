@@ -77,9 +77,9 @@ public class CrosswordsClue {
 		CrosswordsTile t = tile;
 		if (isAWord(word)) {
 			// result must be in dWord
-			while(true){
-				for(CrosswordsWord w:dWord){
-					if(w.isContain(t)){
+			while (true) {
+				for (CrosswordsWord w : dWord) {
+					if (w.isContain(t)) {
 						return t;
 					}
 				}
@@ -88,9 +88,9 @@ public class CrosswordsClue {
 			}
 		} else if (isDWord(word)) {
 			// result must be in aWord
-			while(true){
-				for(CrosswordsWord w:aWord){
-					if(w.isContain(t)){
+			while (true) {
+				for (CrosswordsWord w : aWord) {
+					if (w.isContain(t)) {
 						return t;
 					}
 				}
@@ -100,21 +100,22 @@ public class CrosswordsClue {
 		}
 		return null;
 	}
-	
-	public CrosswordsWord getHintBarClickedWord(CrosswordsBoard board, CrosswordsWord word, CrosswordsTile tile){
-		//if word is in aWord
+
+	public CrosswordsWord getHintBarClickedWord(CrosswordsBoard board,
+			CrosswordsWord word, CrosswordsTile tile) {
+		// if word is in aWord
 		if (isAWord(word)) {
-			//answer is in dWord
-			for(CrosswordsWord w:dWord){
-				if(w.isContain(tile)){
+			// answer is in dWord
+			for (CrosswordsWord w : dWord) {
+				if (w.isContain(tile)) {
 					return w;
 				}
 			}
-		//else if word is in dword
+			// else if word is in dword
 		} else if (isDWord(word)) {
-			//answer is in aWord
-			for(CrosswordsWord w:aWord){
-				if(w.isContain(tile)){
+			// answer is in aWord
+			for (CrosswordsWord w : aWord) {
+				if (w.isContain(tile)) {
 					return w;
 				}
 			}
@@ -122,8 +123,7 @@ public class CrosswordsClue {
 		return null;
 	}
 
-
-	private boolean isAWord(CrosswordsWord word) {
+	public boolean isAWord(CrosswordsWord word) {
 		for (CrosswordsWord w : aWord) {
 			if (word.equals(w)) {
 				return true;
@@ -132,7 +132,7 @@ public class CrosswordsClue {
 		return false;
 	}
 
-	private boolean isDWord(CrosswordsWord word) {
+	public boolean isDWord(CrosswordsWord word) {
 		for (CrosswordsWord w : dWord) {
 			if (word.equals(w)) {
 				return true;
@@ -185,7 +185,7 @@ public class CrosswordsClue {
 			tile.add(board.getTile(i, j + loop));
 		}
 		word.setTileList(tile);
-		System.out.println(word);
+		word.setNumberToTile();
 	}
 
 	private void addNewDWord(int index, CrosswordsBoard board, int i, int j) {
@@ -196,7 +196,7 @@ public class CrosswordsClue {
 			tile.add(board.getTile(i + loop, j));
 		}
 		word.setTileList(tile);
-		System.out.println(word);
+		word.setNumberToTile();
 	}
 
 	public String toString() {
@@ -208,5 +208,33 @@ public class CrosswordsClue {
 			str += w.toString();
 		}
 		return str;
+	}
+
+	public CrosswordsWord getWordFromTouch(CrosswordsWord word,
+			CrosswordsTile tile) {
+		if (isAWord(word)) {
+			for (CrosswordsWord w : aWord) {
+				if (w.isContain(tile)) {
+					return w;
+				}
+			}
+			for (CrosswordsWord w : dWord) {
+				if (w.isContain(tile)) {
+					return w;
+				}
+			}
+		} else if (isDWord(word)) {
+			for (CrosswordsWord w : dWord) {
+				if (w.isContain(tile)) {
+					return w;
+				}
+			}
+			for (CrosswordsWord w : aWord) {
+				if (w.isContain(tile)) {
+					return w;
+				}
+			}
+		}
+		return null;
 	}
 }

@@ -21,10 +21,10 @@ public class CrosswordsWord {
 		}
 		return null;
 	}
-	
-	public boolean isContain(CrosswordsTile tile){
-		for(CrosswordsTile t:tileList){
-			if(t.equals(tile)){
+
+	public boolean isContain(CrosswordsTile tile) {
+		for (CrosswordsTile t : tileList) {
+			if (t.equals(tile)) {
 				return true;
 			}
 		}
@@ -36,14 +36,14 @@ public class CrosswordsWord {
 			t.wordSelected();
 		}
 	}
-	
-	public void unselect(){
+
+	public void unselect() {
 		for (CrosswordsTile t : tileList) {
 			t.unselect();
 		}
 	}
-	
-	public String getClue(){
+
+	public String getClue() {
 		return clue;
 	}
 
@@ -57,5 +57,13 @@ public class CrosswordsWord {
 
 	public void setTileList(ArrayList<CrosswordsTile> tile) {
 		tileList = tile;
+	}
+
+	public void setNumberToTile() {
+		String number = clue.substring(1, 3);
+		if (number.contains(":")) {
+			number = number.substring(0,1);
+		}
+		getFirstTile().setNumber(number);
 	}
 }
