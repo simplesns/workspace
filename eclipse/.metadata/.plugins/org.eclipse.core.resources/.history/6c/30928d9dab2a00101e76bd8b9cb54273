@@ -1,0 +1,13 @@
+package codegears.DEPuzzles.ui.dialog;
+
+import android.app.Dialog;
+import android.content.Context;
+
+public class CrosswordsClearDialog extends Dialog {
+
+	public CrosswordsClearDialog(Context context, int theme) {
+		super(context, theme);
+		setContentView();
+	}
+
+}

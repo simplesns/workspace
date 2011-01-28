@@ -1,0 +1,20 @@
+package codegears.DEPuzzles.ui.dialog;
+
+import codegears.DEPuzzles.R;
+import android.app.Dialog;
+import android.content.Context;
+
+public class CrosswordsClearDialog extends Dialog {
+
+	private Button restart;
+	private Button deleteCurrent;
+	private Button clearErrors;
+	private Buttton cancel;
+	
+	public CrosswordsClearDialog(Context context) {
+		super(context);
+		setContentView(R.layout.dialog_crosswords_clear);
+		
+	}
+
+}

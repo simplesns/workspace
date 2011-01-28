@@ -1,0 +1,48 @@
+package codegears.DEPuzzles.ui.dialog;
+
+import codegears.DEPuzzles.R;
+import android.app.Dialog;
+import android.content.Context;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class CrosswordsClearDialog extends Dialog implements OnClickListener {
+
+	private Button reset;
+	private Button deleteCurrent;
+	private Button clearErrors;
+	private Button cancel;
+	private CrosswordsClearDialogListener listener;
+
+	public CrosswordsClearDialog(Context context) {
+		super(context);
+		setContentView(R.layout.dialog_crosswords_clear);
+		reset = (Button) findViewById(R.id.DialogCrosswordsReset);
+		reset.setOnClickListener(this);
+		deleteCurrent = (Button) findViewById(R.id.DialogCrosswordsReset);
+		deleteCurrent.setOnClickListener(this);
+		clearErrors = (Button) findViewById(R.id.DialogCrosswordsReset);
+		clearErrors.setOnClickListener(this);
+		cancel = (Button) findViewById(R.id.DialogCrosswordsReset);
+		cancel.setOnClickListener(this);
+	}
+
+	public void setDialogListener(CrosswordsClearDialogListener listener) {
+		this.listener = listener;
+	}
+
+	@Override
+	public void onClick(View view) {
+		if (reset.equals(view)) {
+			listener.onReset();
+		} else if (deleteCurrent.equals(view)) {
+			listener.onDeleteCurrent();
+		} else if (clearErrors.equals(view)) {
+			listener.onClearErrors();
+		} else if (cancel.equals(view)) {
+			this.dismiss();
+		}
+	}
+
+}

@@ -22,6 +22,58 @@ public class CrosswordsWord {
 		return null;
 	}
 
+	public CrosswordsTile getNextEmptyTile(CrosswordsTile tile) {
+		int i = 0;
+		while (!tile.equals(tileList.get(i))) {
+			i++;
+			if (i >= tileList.size()) {
+				return null;
+			}
+		}
+		for (int j = i; j < tileList.size(); j++) {
+			if (tileList.get(j).isEmpty()) {
+				return tileList.get(j);
+			}
+		}
+		return tile;
+	}
+
+	public boolean isFilled() {
+		for (CrosswordsTile t : tileList) {
+			if (!t.isFilled()) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public boolean isComplete() {
+		for (CrosswordsTile t : tileList) {
+			if (!t.isComplete()) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public void emptyTile() {
+		for (CrosswordsTile t : tileList) {
+			t.empty();
+		}
+	}
+
+	public void clearErrors() {
+		for (CrosswordsTile t : tileList) {
+			t.clearErrors();
+		}
+	}
+
+	public void showError() {
+		for (CrosswordsTile t : tileList) {
+			t.errorCheck();
+		}
+	}
+
 	public boolean isContain(CrosswordsTile tile) {
 		for (CrosswordsTile t : tileList) {
 			if (t.equals(tile)) {
@@ -62,7 +114,7 @@ public class CrosswordsWord {
 	public void setNumberToTile() {
 		String number = clue.substring(1, 3);
 		if (number.contains(":")) {
-			number = number.substring(0,1);
+			number = number.substring(0, 1);
 		}
 		getFirstTile().setNumber(number);
 	}

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="fill_parent" android:layout_height="wrap_content">
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ClueId" android:text="A1"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Text" android:id="@+id/ClueText" android:layout_weight="1"></TextView>
+<TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:id="@+id/ClueLength" android:text="[2]"></TextView>
+</LinearLayout>

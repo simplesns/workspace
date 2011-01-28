@@ -1,0 +1,14 @@
+package codegears.DEPuzzles.ui;
+
+import android.content.DialogInterface;
+import android.content.DialogInterface.OnClickListener;
+
+public class CompleteDialogListener implements OnClickListener {
+
+	@Override
+	public void onClick(DialogInterface arg0, int arg1) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

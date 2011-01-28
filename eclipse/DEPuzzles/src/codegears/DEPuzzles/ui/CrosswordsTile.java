@@ -16,6 +16,7 @@ public class CrosswordsTile extends LinearLayout {
 	private TextView text;
 	private LinearLayout inner;
 	private CrosswordsTileListener listener;
+	private boolean error;
 
 	private int state;
 	private int textMode;
@@ -28,12 +29,23 @@ public class CrosswordsTile extends LinearLayout {
 	public static final int TEXT_PENCIL = 1;
 	public static final int TEXT_MULTI = 2;
 
+	private TextView multi1;
+	private TextView multi2;
+	private TextView multi3;
+
 	public CrosswordsTile(Context context) {
 		super(context);
 		View.inflate(context, R.layout.ui_crosswordstile, this);
 		state = STATE_NORMAL;
+		error = false;
 		textMode = TEXT_PEN;
 		black = false;
+		multi1 = (TextView) findViewById(R.id.CrosswordsTileMulti1);
+		multi1.setText("");
+		multi2 = (TextView) findViewById(R.id.CrosswordsTileMulti2);
+		multi2.setText("");
+		multi3 = (TextView) findViewById(R.id.CrosswordsTileMulti3);
+		multi3.setText("");
 		number = (TextView) findViewById(R.id.CrosswordsTileNumber);
 		number.setText("");
 		text = (TextView) findViewById(R.id.CrosswordsTileText);
@@ -41,6 +53,65 @@ public class CrosswordsTile extends LinearLayout {
 		inner = (LinearLayout) findViewById(R.id.CrosswordsTileInner);
 	}
 
+	public boolean isComplete() {
+		if ((textMode == TEXT_PEN) && (text.getText().toString().equals(String.valueOf(result)))) {
+			return true;
+		}
+		return false;
+	}
+	
+	public void clearErrors	(){
+		if(!text.getText().toString().equals(String.valueOf(result))){
+			text.setText("");
+			textMode = TEXT_PEN;
+			text.setVisibility(View.VISIBLE);
+			text.setTextColor(0xFF000000);
+			multi1.setText("");
+			multi2.setText("");
+			multi3.setText("");
+		}
+	}
+
+	public void errorCheck(){
+		if(!isComplete()){
+			error = true;
+			inner.setBackgroundColor(0xFF0000FF);
+		}
+	}
+	
+	public void empty(){
+		textMode = TEXT_PEN;
+		text.setText("");
+		text.setTextColor(0xFF000000);
+		text.setVisibility(View.VISIBLE);
+		multi1.setText("");
+		multi2.setText("");
+		multi3.setText("");
+		setStateNormal();
+	}
+	
+	public boolean isEmpty() {
+		if (textMode == TEXT_MULTI) {
+			if (multi1.getText().toString().equals("")) {
+				return true;
+			}
+		} else {
+			if (text.getText().toString().equals("")) {
+				return true;
+			}
+		}
+		return false;
+	}
+
+	public boolean isFilled(){
+		if (textMode == TEXT_PEN) {
+			if (!text.getText().toString().equals("")) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
 	public void setNumber(String n) {
 		number.setText(n);
 	}
@@ -76,12 +147,16 @@ public class CrosswordsTile extends LinearLayout {
 
 	private void setStateNormal() {
 		state = STATE_NORMAL;
-		inner.setBackgroundColor(0xFFFFFFFF);
+		if(!error){
+			inner.setBackgroundColor(0xFFFFFFFF);
+		}
 	}
 
 	private void setStateWordSelected() {
 		state = STATE_WORDSELECTED;
-		inner.setBackgroundColor(0xFFFF0000);
+		if(!error){
+			inner.setBackgroundColor(0xFFFF0000);
+		}
 	}
 
 	private void setStateTileSelected() {
@@ -91,13 +166,30 @@ public class CrosswordsTile extends LinearLayout {
 
 	public void setText(int mode, String key) {
 		textMode = mode;
-		if(mode == TEXT_PEN){
+		error = false;
+		if (mode == TEXT_PEN) {
 			text.setText(key);
 			text.setTextColor(0xFF000000);
-		} else if(mode == TEXT_PENCIL){
+			text.setVisibility(View.VISIBLE);
+			multi1.setText("");
+			multi2.setText("");
+			multi3.setText("");
+		} else if (mode == TEXT_PENCIL) {
 			text.setText(key);
 			text.setTextColor(0xFF999999);
-		} else if(mode == TEXT_MULTI){
+			text.setVisibility(View.VISIBLE);
+			multi1.setText("");
+			multi2.setText("");
+			multi3.setText("");
+		} else if (mode == TEXT_MULTI) {
+			text.setVisibility(View.GONE);
+			if (multi1.getText().toString().equals("")) {
+				multi1.setText(key);
+			} else if (multi2.getText().toString().equals("")) {
+				multi2.setText(key);
+			} else {
+				multi3.setText(key);
+			}
 		}
 	}
 

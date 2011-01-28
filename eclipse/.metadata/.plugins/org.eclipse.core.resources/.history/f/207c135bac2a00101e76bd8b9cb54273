@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical">
+<Button android:id="@+id/Button01" android:layout_height="wrap_content" android:text="Reset Puzzle" android:layout_width="fill_parent"></Button>
+<Button android:id="@+id/Button04" android:layout_height="wrap_content" android:text="Delete Current Clue" android:layout_width="wrap_content"></Button><Button android:id="@+id/Button03" android:layout_height="wrap_content" android:text="Clear Puzzle Errors" android:layout_width="fill_parent"></Button><Button android:id="@+id/Button02" android:layout_height="wrap_content" android:text="Cancel" android:layout_width="fill_parent" android:layout_marginTop="10dip"></Button>
+
+
+</LinearLayout>

@@ -199,6 +199,7 @@ public class CrosswordsClue {
 		word.setNumberToTile();
 	}
 
+	@Override
 	public String toString() {
 		String str = "CrosswordsClue:\n";
 		for (CrosswordsWord w : aWord) {
@@ -208,6 +209,61 @@ public class CrosswordsClue {
 			str += w.toString();
 		}
 		return str;
+	}
+
+	public boolean isFull() {
+		for (CrosswordsWord w : aWord) {
+			if (!w.isFilled()) {
+				return false;
+			}
+		}
+		for (CrosswordsWord w : dWord) {
+			if (!w.isFilled()) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public boolean isComplete() {
+		for (CrosswordsWord w : aWord) {
+			if (!w.isComplete()) {
+				return false;
+			}
+		}
+		for (CrosswordsWord w : dWord) {
+			if (!w.isComplete()) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public void showError() {
+		for (CrosswordsWord w : aWord) {
+			w.showError();
+		}
+		for (CrosswordsWord w : dWord) {
+			w.showError();
+		}
+	}
+	
+	public void emptyBoard(){
+		for (CrosswordsWord w : aWord) {
+			w.emptyTile();
+		}
+		for (CrosswordsWord w : dWord) {
+			w.emptyTile();
+		}		
+	}
+	
+	public void clearErrors(){
+		for (CrosswordsWord w : aWord) {
+			w.clearErrors();
+		}
+		for (CrosswordsWord w : dWord) {
+			w.clearErrors();
+		}		
 	}
 
 	public CrosswordsWord getWordFromTouch(CrosswordsWord word,

@@ -1,0 +1,34 @@
+package codegears.DEPuzzles;
+
+import freehand.neandroid.GameActivity;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+import android.widget.ListView;
+
+public class CrosswordsClueActivity extends Activity implements OnClickListener {
+
+	private Button done;
+	private ListView list;
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		GameActivity.setFullscreen(this);
+		setContentView(R.layout.crosswordsclue);
+		list = (ListView)findViewById(R.id.CrosswordsClueList);
+		done = (Button)findViewById(R.id.CrosswordsClueDone);
+		done.setOnClickListener(this);
+		//get clue array
+	}
+	
+	@Override
+	public void onClick(View v) {
+		finish();
+	}
+	
+	private class ClueListAdapter extends BaseAdapter {
+		
+	}
+}

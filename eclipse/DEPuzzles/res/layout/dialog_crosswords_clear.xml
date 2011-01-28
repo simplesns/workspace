@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:layout_width="wrap_content" android:layout_height="wrap_content" android:orientation="vertical" android:paddingLeft="15dip" android:paddingRight="15dip" android:paddingBottom="15dip" android:paddingTop="15dip">
+<TextView android:id="@+id/TextView01" android:layout_height="wrap_content" android:text="Clear" android:textColor="#FFFFFFFF" android:layout_width="fill_parent" android:gravity="center_horizontal"></TextView><Button android:layout_height="wrap_content" android:text="Reset Puzzle" android:layout_width="fill_parent" android:layout_marginTop="15dip" android:id="@+id/DialogCrosswordsReset"></Button>
+<Button android:layout_height="wrap_content" android:text="Delete Current Clue" android:layout_width="wrap_content" android:id="@+id/DialogCrosswordsDeleteCurrent"></Button><Button android:layout_height="wrap_content" android:text="Clear Puzzle Errors" android:layout_width="fill_parent" android:id="@+id/DialogCrosswordsClearErrors"></Button><Button android:layout_height="wrap_content" android:text="Cancel" android:layout_width="fill_parent" android:layout_marginTop="10dip" android:id="@+id/DialogCrosswordsCancel"></Button>
+
+
+
+</LinearLayout>

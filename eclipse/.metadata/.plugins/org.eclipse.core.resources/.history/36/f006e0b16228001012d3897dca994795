@@ -1,9 +1,0 @@
-package codegears.DEPuzzles.ui;
-
-class CrosswordsTile {
-
-	public CrosswordsTile() {
-		// TODO Auto-generated constructor stub
-	}
-
-}

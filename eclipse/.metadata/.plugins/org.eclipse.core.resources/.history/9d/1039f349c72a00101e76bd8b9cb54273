@@ -1,0 +1,23 @@
+package codegears.DEPuzzles;
+
+import freehand.neandroid.GameActivity;
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ListView;
+
+public class CrosswordsClueActivity extends Activity {
+
+	private Button done;
+	private ListView list;
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		GameActivity.setFullscreen(this);
+		setContentView(R.layout.crosswordsclue);
+		list = (ListView)findViewById(R.id.CrosswordsClueList);
+		done = (Button)findViewById(R.id.CrosswordsClueDone);
+		done.setOnClickListener(this);
+		//get clue array
+	}
+}

@@ -6,12 +6,12 @@
 		android:layout_height="wrap_content" android:layout_width="fill_parent">
 		<Button android:id="@+id/Button01" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="^"></Button>
-		<Button android:id="@+id/Button02" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:text="A"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="A" android:id="@+id/CrosswordsClue"></Button>
 		<Button android:id="@+id/Button03" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="B"></Button>
-		<Button android:id="@+id/Button04" android:layout_width="wrap_content"
-			android:layout_height="wrap_content" android:text="R"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="R" android:id="@+id/CrosswordsClear"></Button>
 		<Button android:id="@+id/Button05" android:layout_width="wrap_content"
 			android:layout_height="wrap_content" android:text="time"></Button>
 	</LinearLayout>

@@ -17,6 +17,7 @@
 <activity android:name="NumberCrunchActivity"></activity>
 <activity android:name="CodeWordActivity"></activity>
 <activity android:name="CrosswordsActivity"></activity>
+<activity android:name="CrosswordsClueActivity"></activity>
 </application>
     <uses-sdk android:minSdkVersion="7" />
 
