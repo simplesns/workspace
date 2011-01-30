@@ -1,0 +1,24 @@
+package codegears.DEPuzzles;
+
+import freehand.neandroid.GameActivity;
+import android.app.Activity;
+import android.os.Bundle;
+import android.widget.Button;
+
+public class CrosswordsHintActivity extends Activity {
+	
+	private Button done;
+	private Button all;
+	private Button revealSingle;
+	private Button showError;
+	private Button revealEntire;
+	
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		GameActivity.setFullscreen(this);
+		setContentView(R.layout.crosswordshint);
+		done = (Button)findViewById(R.id.CrosswordsHintDone);
+	}
+
+}

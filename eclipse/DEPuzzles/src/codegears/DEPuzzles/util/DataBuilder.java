@@ -113,6 +113,7 @@ public class DataBuilder {
 				}
 				// split line into 3 part
 				Clue clue = new Clue();
+				clue.setData(line);
 				data.add(clue);
 				line = bReader.readLine();
 			}

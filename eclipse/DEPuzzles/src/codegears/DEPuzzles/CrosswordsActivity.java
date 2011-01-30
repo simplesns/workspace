@@ -25,6 +25,10 @@ import freehand.neandroid.GameActivity;
 public class CrosswordsActivity extends Activity implements OnClickListener,
 		CrosswordsTileListener, KeyPadListener, CrosswordsClearDialogListener {
 
+	public static final int REQUEST_CLUE = 1;
+	public static final int REQUEST_HINT = 2;
+	public static final String EXTRA_CLUE = "clue";
+
 	private CrosswordsBoard board;
 	private CrosswordsClue clue;
 	private CrosswordsWord currentWord;
@@ -35,6 +39,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 	private Button right;
 	private Button clear;
 	private Button clueButton;
+	private Button hintButton;
 	private boolean errorDialogShown;
 	private String file;
 
@@ -55,6 +60,8 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		left.setOnClickListener(this);
 		clear = (Button) findViewById(R.id.CrosswordsClear);
 		clear.setOnClickListener(this);
+		hintButton = (Button) findViewById(R.id.CrosswordsHint);
+		hintButton.setOnClickListener(this);
 		clueButton = (Button) findViewById(R.id.CrosswordsClue);
 		clueButton.setOnClickListener(this);
 		hintBar = (Button) findViewById(R.id.CrosswordsHintBar);
@@ -110,7 +117,44 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		} else if (clueButton.equals(view)) {
 			Intent i = new Intent(this, CrosswordsClueActivity.class);
 			i.putExtra(PuzzleSelectActivity.EXTRA_FILE, file);
-			this.startActivity(i);
+			this.startActivityForResult(i, REQUEST_CLUE);
+		} else if (hintButton.equals(view)) {
+			Intent i = new Intent(this, CrosswordsHintActivity.class);
+			i.putExtra(EXTRA_CLUE, currentWord.getClue());
+			this.startActivityForResult(i, REQUEST_HINT);
+		}
+	}
+
+	@Override
+	public void onActivityResult(int requestCode, int resultCode, Intent data) {
+		if ((requestCode == REQUEST_CLUE) && (data != null)) {
+			String id = data.getStringExtra(CrosswordsClueActivity.RESULT_CLUE_ID);
+			currentWord.unselect();
+			currentWord = clue.getWordFromId(id);
+			currentTile = currentWord.getFirstTile();
+			if (!currentTile.isEmpty()) {
+				CrosswordsTile t = currentWord.getNextEmptyTile(currentTile);
+				if (t != null) {
+					currentTile = t;
+				}
+			}
+			currentWord.selected();
+			currentTile.tileSelected();
+			hintBar.setText(currentWord.getClue());
+		}
+		if (requestCode == REQUEST_HINT) {
+			if (resultCode == CrosswordsHintActivity.RESULT_ALL) {
+				clue.reveal();
+				// start timer to set color to tile
+			} else if (resultCode == CrosswordsHintActivity.RESULT_REVEALSINGLE) {
+				currentTile.reveal();
+				// start timer to set color to tile
+			} else if (resultCode == CrosswordsHintActivity.RESULT_SHOWERROR) {
+				currentWord.showError();
+			} else if (resultCode == CrosswordsHintActivity.RESULT_REVEALENTIRE) {
+				currentWord.reveal();
+				// start timer to set color to tile
+			}
 		}
 	}
 
@@ -126,6 +170,28 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 
 	@Override
 	public void onKeyPad(int mode, String key) {
+		if (key == KeyPad.KEY_BACK) {
+			if (!currentTile.isEmpty()) {
+				currentTile.empty();
+				currentTile.tileSelected();
+			} else {
+				currentWord.unselect();
+				CrosswordsTile t = currentWord.getPreviousTile(currentTile);
+				System.out.println("Test 3");
+				if (t == null) {
+					currentWord = clue.getPreviousWord(currentWord);
+					currentTile = currentWord.getLastTile();
+					System.out.println("Test 2");
+				} else {
+					currentTile = t;
+					System.out.println("Test 1");
+				}
+				currentTile.empty();
+				currentWord.selected();
+				currentTile.tileSelected();
+			}
+			return;
+		}
 		currentTile.setText(mode, key);
 		if (mode != CrosswordsTile.TEXT_MULTI) {
 			currentWord.unselect();

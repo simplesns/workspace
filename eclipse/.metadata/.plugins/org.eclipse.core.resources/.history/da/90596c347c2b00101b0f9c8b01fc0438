@@ -1,0 +1,13 @@
+package codegears.DEPuzzles;
+
+import android.app.Activity;
+
+public class CrosswordsHintActivity extends Activity {
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		GameActivity.setFullscreen(this);
+		setContentView(R.layout.crosswordsclue);
+	}
+
+}

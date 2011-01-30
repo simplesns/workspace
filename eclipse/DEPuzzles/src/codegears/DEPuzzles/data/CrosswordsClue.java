@@ -71,6 +71,29 @@ public class CrosswordsClue {
 		return null;
 	}
 
+	public CrosswordsWord getWordFromId(String id) {
+		for (CrosswordsWord w : aWord) {
+			if (w.getClue().startsWith(id)) {
+				return w;
+			}
+		}
+		for (CrosswordsWord w : dWord) {
+			if (w.getClue().startsWith(id)) {
+				return w;
+			}
+		}
+		return null;
+	}
+
+	public void reveal() {
+		for (CrosswordsWord w : aWord) {
+			w.reveal();
+		}
+		for (CrosswordsWord w : dWord) {
+			w.reveal();
+		}
+	}
+
 	public CrosswordsTile getHintBarClickedTile(CrosswordsBoard board,
 			CrosswordsWord word, CrosswordsTile tile) {
 		int position = board.getPosition(tile);
@@ -247,23 +270,23 @@ public class CrosswordsClue {
 			w.showError();
 		}
 	}
-	
-	public void emptyBoard(){
+
+	public void emptyBoard() {
 		for (CrosswordsWord w : aWord) {
 			w.emptyTile();
 		}
 		for (CrosswordsWord w : dWord) {
 			w.emptyTile();
-		}		
+		}
 	}
-	
-	public void clearErrors(){
+
+	public void clearErrors() {
 		for (CrosswordsWord w : aWord) {
 			w.clearErrors();
 		}
 		for (CrosswordsWord w : dWord) {
 			w.clearErrors();
-		}		
+		}
 	}
 
 	public CrosswordsWord getWordFromTouch(CrosswordsWord word,

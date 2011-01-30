@@ -2,6 +2,7 @@ package codegears.DEPuzzles;
 
 import java.util.ArrayList;
 
+import codegears.DEPuzzles.data.Clue;
 import codegears.DEPuzzles.ui.ClueItem;
 import codegears.DEPuzzles.util.DataBuilder;
 
@@ -13,13 +14,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
+import android.widget.AdapterView.OnItemClickListener;
 import android.widget.BaseAdapter;
 import android.widget.Button;
 import android.widget.ListView;
 import android.widget.TextView;
 
-public class CrosswordsClueActivity extends Activity implements OnClickListener {
+public class CrosswordsClueActivity extends Activity implements OnClickListener, OnItemClickListener {
 
+	public static final String RESULT_CLUE_ID = "id";
 	private Button done;
 	private ListView list;
 	private ArrayList<Object> data;
@@ -35,6 +39,7 @@ public class CrosswordsClueActivity extends Activity implements OnClickListener 
 		data = DataBuilder.createClueListFromAsset(this, "CrosswordsPuzzle/"
 				+ file + ".clues.txt");
 		list = (ListView) findViewById(R.id.CrosswordsClueList);
+		list.setOnItemClickListener(this);
 		listAdapter = new ClueListAdapter(this);
 		listAdapter.setData(data);
 		list.setAdapter(listAdapter);
@@ -45,6 +50,20 @@ public class CrosswordsClueActivity extends Activity implements OnClickListener 
 	@Override
 	public void onClick(View v) {
 		finish();
+	}
+
+	@Override
+	public void onItemClick(AdapterView<?> arg0, View view, int arg2, long arg3) {
+		if(view instanceof ClueItem){
+			//finish activity and sent result to CrosswordsActivity
+			ClueItem item = (ClueItem)view;
+			Clue data = item.getData();
+			String id = data.getId();
+			Intent result = new Intent();
+			result.putExtra(RESULT_CLUE_ID, id);
+			setResult(1, result);
+			finish();
+		}
 	}
 
 	private class ClueListAdapter extends BaseAdapter {
@@ -88,11 +107,14 @@ public class CrosswordsClueActivity extends Activity implements OnClickListener 
 				TextView t = new TextView(context);
 				t.setText((String)d);
 				return t;
-			} else {
+			} else if(d instanceof Clue){
 				ClueItem c = new ClueItem(context);
+				c.set((Clue)d);
 				return c;
 			}
+			return null;
 		}
 
 	}
+
 }

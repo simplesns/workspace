@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="codegears.DEPuzzles.ui.PuzzleSelectListItem"/>
 <fullyQualifiedTypeName name="android.content.res.AssetManager"/>
 <fullyQualifiedTypeName name="java.io.InputStream"/>
 <fullyQualifiedTypeName name="java.io.InputStreamReader"/>
@@ -10,7 +9,6 @@
 <fullyQualifiedTypeName name="freehand.neandroid.widget.ClickListener"/>
 <fullyQualifiedTypeName name="android.widget.ImageView"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.data.PuzzleSelectData"/>
-<fullyQualifiedTypeName name="freehand.neandroid.GameActivity"/>
 <fullyQualifiedTypeName name="android.widget.AdapterView.OnItemClickListener"/>
 <fullyQualifiedTypeName name="freehand.neandroid.ui.ImageTransformUI"/>
 <fullyQualifiedTypeName name="android.graphics.Matrix"/>
@@ -30,7 +28,6 @@
 <fullyQualifiedTypeName name="android.widget.EditText"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.R.id"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.R.drawable"/>
-<fullyQualifiedTypeName name="android.content.Intent"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.data.CrosswordsClue"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.data.CrosswordsWord"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.ui.CrosswordsBoard"/>
@@ -46,18 +43,21 @@
 <fullyQualifiedTypeName name="android.content.DialogInterface"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.R"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.ui.dialog.CrosswordsClearDialog"/>
-<fullyQualifiedTypeName name="android.content.DialogInterface.OnClickListener"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.ui.dialog.CrosswordsClearDialogListener"/>
 <fullyQualifiedTypeName name="android.app.Dialog"/>
 <fullyQualifiedTypeName name="android.widget.ListView"/>
-<fullyQualifiedTypeName name="android.widget.Button"/>
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.widget.BaseAdapter"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="android.content.Context"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.util.DataBuilder"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.CrosswordsClueActivity"/>
-<fullyQualifiedTypeName name="codegears.DEPuzzles.data.Clue"/>
-<fullyQualifiedTypeName name="android.widget.TextView"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.ui.ClueItem"/>
+<fullyQualifiedTypeName name="codegears.DEPuzzles.data.Clue"/>
+<fullyQualifiedTypeName name="android.os.Bundle"/>
+<fullyQualifiedTypeName name="freehand.neandroid.GameActivity"/>
+<fullyQualifiedTypeName name="android.widget.Button"/>
+<fullyQualifiedTypeName name="android.content.DialogInterface.OnClickListener"/>
+<fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.content.Intent"/>
 </qualifiedTypeNameHistroy>

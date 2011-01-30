@@ -13,6 +13,28 @@ public class CrosswordsWord {
 		this.clue = clue;
 	}
 
+	public CrosswordsTile getLastTile() {
+		if (tileList != null) {
+			if (tileList.size() > 0) {
+				return tileList.get(tileList.size() - 1);
+			}
+		}
+		return null;
+	}
+
+	public CrosswordsTile getPreviousTile(CrosswordsTile tile) {
+		for (int i = 0; i < tileList.size(); i++) {
+			if (tileList.get(i).equals(tile)) {
+				if (i == 0) {
+					return null;
+				} else {
+					return tileList.get(i - 1);
+				}
+			}
+		}
+		return null;
+	}
+
 	public CrosswordsTile getFirstTile() {
 		if (tileList != null) {
 			if (tileList.size() > 0) {
@@ -65,6 +87,12 @@ public class CrosswordsWord {
 	public void clearErrors() {
 		for (CrosswordsTile t : tileList) {
 			t.clearErrors();
+		}
+	}
+
+	public void reveal() {
+		for (CrosswordsTile t : tileList) {
+			t.reveal();
 		}
 	}
 
