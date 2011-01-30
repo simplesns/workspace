@@ -45,8 +45,9 @@ public class CrosswordsHintActivity extends Activity implements OnClickListener 
 		String[] temp = clue.split(":");
 		String id = temp[0];
 		String direction;
-		String text = temp[1];
-		String length = "N/A";
+		String[] temp2 = clue.split("[(]");
+		String text = temp2[0];
+		String length = "[" + temp2[1].substring(0, temp2[1].length() - 1) + "]";
 		if(id.startsWith("A")){
 			direction = "Across";
 		} else {

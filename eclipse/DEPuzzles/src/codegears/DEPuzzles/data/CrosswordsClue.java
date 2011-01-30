@@ -262,13 +262,15 @@ public class CrosswordsClue {
 		return true;
 	}
 
-	public void showError() {
+	public int showError() {
+		int count = 0;
 		for (CrosswordsWord w : aWord) {
-			w.showError();
+			count += w.showError();
 		}
 		for (CrosswordsWord w : dWord) {
-			w.showError();
+			count += w.showError();
 		}
+		return count;
 	}
 
 	public void emptyBoard() {

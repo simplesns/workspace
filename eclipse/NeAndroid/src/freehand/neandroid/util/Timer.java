@@ -15,14 +15,17 @@ public class Timer {
 	public int getDuration() {
 		return duration;
 	}
+	
+	public void increaseDuration(int amount){
+		duration += amount;
+	}
 
 	public int getElapse() {
 		return elapse;
 	}
-
+	
 	public void start() {
 		currentTime = System.currentTimeMillis();
-		duration = 0;
 		elapse = 0;
 		active = true;
 	}
@@ -35,6 +38,7 @@ public class Timer {
 			duration += elapse;
 		}
 	}
+	
 
 	public void stop() {
 		duration = 0;

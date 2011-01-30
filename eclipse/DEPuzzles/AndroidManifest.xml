@@ -19,6 +19,7 @@
 <activity android:name="CrosswordsActivity"></activity>
 <activity android:name="CrosswordsClueActivity"></activity>
 <activity android:name="CrosswordsHintActivity"></activity>
+<activity android:name="SummaryActivity"></activity>
 </application>
     <uses-sdk android:minSdkVersion="7" />
 

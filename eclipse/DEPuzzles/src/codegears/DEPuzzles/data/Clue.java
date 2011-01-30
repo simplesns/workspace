@@ -9,20 +9,20 @@ public class Clue {
 		// A4:Drinks lacking body? (7)
 		String[] temp = str.split(":");
 		id = temp[0];
-//		String[] temp2 = temp[1].split("(");
-		text = temp[1];
-		length = "N/A";
+		String[] temp2 = temp[1].split("[(]");
+		text = temp2[0];
+		length = "[" + temp2[1].substring(0, temp2[1].length() - 1) + "]";
 	}
-	
-	public String getId(){
+
+	public String getId() {
 		return id;
 	}
-	
-	public String getText(){
+
+	public String getText() {
 		return text;
 	}
-	
-	public String getLength(){
+
+	public String getLength() {
 		return length;
 	}
 }

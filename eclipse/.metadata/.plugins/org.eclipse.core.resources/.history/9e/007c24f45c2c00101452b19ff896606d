@@ -1,0 +1,10 @@
+package codegears.DEPuzzles;
+
+import android.app.Activity;
+import android.os.Bundle;
+
+public class SummaryActivity extends Activity {
+
+	public void onCreate(Bundle bundle){
+	}
+}

@@ -11,6 +11,7 @@ public class CrosswordsBoard extends TableLayout {
 	private LinearLayout[] line;
 	private CrosswordsTile[] tile;
 	private String[] boardData;
+	private int tileCount;
 
 	public CrosswordsBoard(Context context, AttributeSet attrs) {
 		super(context, attrs);
@@ -28,6 +29,28 @@ public class CrosswordsBoard extends TableLayout {
 					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 		}
 		this.invalidate();
+	}
+	
+	public int getTileCount(){
+		return tileCount;
+	}
+	
+	public void setAllTileToNormalState(){
+		for(CrosswordsTile t:tile){
+			if(!t.isBlack()){
+				t.unselect();
+			}
+		}
+	}
+	
+	public int getFilledCount(){
+		int count = 0;
+		for(CrosswordsTile t:tile){
+			if(!t.isBlack() && t.isFilled()){
+				count++;
+			}
+		}
+		return count;
 	}
 
 	public String[] getBoardData() {
@@ -89,6 +112,7 @@ public class CrosswordsBoard extends TableLayout {
 	}
 
 	public void setBoardData(String[] data) {
+		tileCount = 0;
 		boardData = data;
 		for (int i = 0; i < 13; i++) {
 			for (int j = 0; j < 13; j++) {
@@ -96,6 +120,7 @@ public class CrosswordsBoard extends TableLayout {
 					tile[(i * 13) + j].setBlack(true);
 				} else {
 					tile[(i * 13) + j].setResult(data[i].charAt(j));
+					tileCount++;
 				}
 			}
 		}

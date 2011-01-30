@@ -8,6 +8,7 @@ import codegears.DEPuzzles.ui.CrosswordsTile;
 import codegears.DEPuzzles.ui.CrosswordsTileListener;
 import codegears.DEPuzzles.ui.KeyPad;
 import codegears.DEPuzzles.ui.KeyPadListener;
+import codegears.DEPuzzles.ui.TimerButton;
 import codegears.DEPuzzles.ui.dialog.CrosswordsClearDialog;
 import codegears.DEPuzzles.ui.dialog.CrosswordsClearDialogListener;
 import codegears.DEPuzzles.util.DataBuilder;
@@ -29,6 +30,11 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 	public static final int REQUEST_HINT = 2;
 	public static final String EXTRA_CLUE = "clue";
 
+	public static final int PENALTY_REVEAL = 10000;
+	public static final int PENALTY_ERROR = 5000;
+	
+	public static final int DELAY_SETCOLOR = 2500;
+
 	private CrosswordsBoard board;
 	private CrosswordsClue clue;
 	private CrosswordsWord currentWord;
@@ -40,8 +46,12 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 	private Button clear;
 	private Button clueButton;
 	private Button hintButton;
+	private Button backButton;
+	private TimerButton timer;
 	private boolean errorDialogShown;
 	private String file;
+	private String puzzleText;
+	private int penalty;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -49,6 +59,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		GameActivity.setFullscreen(this);
 		setContentView(R.layout.crosswords);
 		errorDialogShown = false;
+		penalty = 0;
 		board = (CrosswordsBoard) findViewById(R.id.CrosswordsBoard);
 		keyPad = (KeyPad) findViewById(R.id.CrosswordsKeyPad);
 		keyPad.setKeyPadListener(this);
@@ -60,6 +71,8 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		left.setOnClickListener(this);
 		clear = (Button) findViewById(R.id.CrosswordsClear);
 		clear.setOnClickListener(this);
+		backButton = (Button) findViewById(R.id.CrosswordsBack);
+		backButton.setOnClickListener(this);
 		hintButton = (Button) findViewById(R.id.CrosswordsHint);
 		hintButton.setOnClickListener(this);
 		clueButton = (Button) findViewById(R.id.CrosswordsClue);
@@ -68,11 +81,26 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		hintBar.setOnClickListener(this);
 		right = (Button) findViewById(R.id.CrosswordsRight);
 		right.setOnClickListener(this);
+		timer = (TimerButton) findViewById(R.id.CrosswordsTimer);
+		timer.setOnClickListener(this);
 		setGameArea();
+	}
+
+	@Override
+	public void onStart() {
+		super.onStart();
+		timer.start();
+	}
+
+	@Override
+	public void onPause() {
+		super.onPause();
+		timer.stop();
 	}
 
 	private void setGameArea() {
 		Intent i = getIntent();
+		puzzleText = i.getStringExtra(PuzzleSelectActivity.EXTRA_TEXT);
 		file = i.getStringExtra(PuzzleSelectActivity.EXTRA_FILE);
 		String[] grid = DataBuilder.createCrosswordsGridFromAsset(this,
 				"CrosswordsPuzzle/" + file + ".grid.txt");
@@ -114,6 +142,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			CrosswordsClearDialog dialog = new CrosswordsClearDialog(this);
 			dialog.setDialogListener(this);
 			dialog.show();
+			timer.stop();
 		} else if (clueButton.equals(view)) {
 			Intent i = new Intent(this, CrosswordsClueActivity.class);
 			i.putExtra(PuzzleSelectActivity.EXTRA_FILE, file);
@@ -122,6 +151,22 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			Intent i = new Intent(this, CrosswordsHintActivity.class);
 			i.putExtra(EXTRA_CLUE, currentWord.getClue());
 			this.startActivityForResult(i, REQUEST_HINT);
+		} else if (backButton.equals(view)) {
+			finish();
+		} else if (timer.equals(view)) {
+			Intent i = new Intent(this, SummaryActivity.class);
+			i.putExtra(SummaryActivity.EXTRA_GAME, "Crosswords");
+			i.putExtra(SummaryActivity.EXTRA_TITLE1, "Puzzle");
+			i.putExtra(SummaryActivity.EXTRA_TEXT1, puzzleText);
+			i.putExtra(SummaryActivity.EXTRA_TITLE2, "Entered fields");
+			i.putExtra(SummaryActivity.EXTRA_TEXT2,
+					String.valueOf(board.getFilledCount()));
+			i.putExtra(SummaryActivity.EXTRA_TITLE3, "Remaining fields");
+			i.putExtra(SummaryActivity.EXTRA_TEXT3,
+					String.valueOf(board.getTileCount() - board.getFilledCount()));
+			i.putExtra(SummaryActivity.EXTRA_TITLE4, "Penalties");
+			i.putExtra(SummaryActivity.EXTRA_TEXT4, "+" + (penalty / 1000) + "s");
+			this.startActivity(i);
 		}
 	}
 
@@ -145,17 +190,44 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		if (requestCode == REQUEST_HINT) {
 			if (resultCode == CrosswordsHintActivity.RESULT_ALL) {
 				clue.reveal();
-				// start timer to set color to tile
+				delaySetColor();
 			} else if (resultCode == CrosswordsHintActivity.RESULT_REVEALSINGLE) {
-				currentTile.reveal();
-				// start timer to set color to tile
+				if (currentTile.reveal()) {
+					penalty += PENALTY_REVEAL;
+					timer.addTime(PENALTY_REVEAL);
+					delaySetColor();
+				}
 			} else if (resultCode == CrosswordsHintActivity.RESULT_SHOWERROR) {
-				currentWord.showError();
+				int count = currentWord.showError();
+				penalty += PENALTY_ERROR * count;
+				timer.addTime(PENALTY_ERROR * count);
 			} else if (resultCode == CrosswordsHintActivity.RESULT_REVEALENTIRE) {
-				currentWord.reveal();
-				// start timer to set color to tile
+				int count = currentWord.reveal();
+				penalty += PENALTY_REVEAL * count;
+				timer.addTime(PENALTY_REVEAL * count);
+				delaySetColor();
 			}
 		}
+	}
+
+	private void delaySetColor() {
+		new Thread() {
+			@Override
+			public void run() {
+				try {
+					sleep(DELAY_SETCOLOR);
+					CrosswordsActivity.this.runOnUiThread(new Runnable() {
+						public void run() {
+							board.setAllTileToNormalState();
+							currentWord.selected();
+							currentTile.tileSelected();
+						}
+					});
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}.start();
 	}
 
 	@Override
@@ -177,14 +249,11 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			} else {
 				currentWord.unselect();
 				CrosswordsTile t = currentWord.getPreviousTile(currentTile);
-				System.out.println("Test 3");
 				if (t == null) {
 					currentWord = clue.getPreviousWord(currentWord);
 					currentTile = currentWord.getLastTile();
-					System.out.println("Test 2");
 				} else {
 					currentTile = t;
-					System.out.println("Test 1");
 				}
 				currentTile.empty();
 				currentWord.selected();
@@ -243,7 +312,9 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		public void onClick(DialogInterface dialog, int which) {
 			dialog.dismiss();
 			if (which == DialogInterface.BUTTON_POSITIVE) {
-				clue.showError();
+				int showCount = clue.showError();
+				penalty += showCount * PENALTY_ERROR;
+				timer.addTime(showCount * PENALTY_ERROR);
 				currentTile.tileSelected();
 			}
 		}
@@ -258,6 +329,9 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		hintBar.setText(currentWord.getClue());
 		currentTile.tileSelected();
 		dialog.dismiss();
+		penalty = 0;
+		timer.reset();
+		timer.start();
 	}
 
 	@Override
@@ -266,6 +340,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		currentWord.selected();
 		currentTile.tileSelected();
 		dialog.dismiss();
+		timer.start();
 	}
 
 	@Override
@@ -274,5 +349,11 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		currentWord.selected();
 		currentTile.tileSelected();
 		dialog.dismiss();
+		timer.start();
+	}
+
+	public void onCancel(Dialog dialog) {
+		dialog.dismiss();
+		timer.start();
 	}
 }

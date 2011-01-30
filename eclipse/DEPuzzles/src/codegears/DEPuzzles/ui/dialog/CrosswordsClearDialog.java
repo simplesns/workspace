@@ -27,6 +27,12 @@ public class CrosswordsClearDialog extends Dialog implements OnClickListener {
 		cancel = (Button) findViewById(R.id.DialogCrosswordsCancel);
 		cancel.setOnClickListener(this);
 	}
+	
+	@Override
+	public void onBackPressed(){
+		super.onBackPressed();
+		listener.onCancel(this);
+	}
 
 	public void setDialogListener(CrosswordsClearDialogListener listener) {
 		this.listener = listener;
@@ -41,7 +47,7 @@ public class CrosswordsClearDialog extends Dialog implements OnClickListener {
 		} else if (clearErrors.equals(view)) {
 			listener.onClearErrors(this);
 		} else if (cancel.equals(view)) {
-			this.dismiss();
+			listener.onCancel(this);
 		}
 	}
 

@@ -90,16 +90,24 @@ public class CrosswordsWord {
 		}
 	}
 
-	public void reveal() {
+	public int reveal() {
+		int count = 0;
 		for (CrosswordsTile t : tileList) {
-			t.reveal();
+			if(t.reveal()){
+				count++;
+			}
 		}
+		return count;
 	}
 
-	public void showError() {
+	public int showError() {
+		int showCount = 0;
 		for (CrosswordsTile t : tileList) {
-			t.errorCheck();
+			if(t.errorCheck()){
+				showCount++;
+			}
 		}
+		return showCount;
 	}
 
 	public boolean isContain(CrosswordsTile tile) {

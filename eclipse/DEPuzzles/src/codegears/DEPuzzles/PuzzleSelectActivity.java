@@ -25,6 +25,8 @@ public class PuzzleSelectActivity extends Activity implements ClickListener,
 		OnItemClickListener {
 
 	public static final String EXTRA_FILE = "file";
+	public static final String EXTRA_TEXT = "name";
+	
 	private ListView list;
 	private PuzzleSelectAdapter adapter;
 	private String game;
@@ -135,6 +137,7 @@ public class PuzzleSelectActivity extends Activity implements ClickListener,
 		} else if (game.equals(MenuActivity.CROSSWORDSGAME)) {
 			Intent i = new Intent(this, CrosswordsActivity.class);
 			i.putExtra(EXTRA_FILE, file);
+			i.putExtra(EXTRA_TEXT, data.getText());
 			this.startActivity(i);
 		}
 	}
