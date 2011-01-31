@@ -21,6 +21,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
+import android.widget.ScrollView;
 import freehand.neandroid.GameActivity;
 
 public class CrosswordsActivity extends Activity implements OnClickListener,
@@ -32,13 +33,14 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 
 	public static final int PENALTY_REVEAL = 10000;
 	public static final int PENALTY_ERROR = 5000;
-	
+
 	public static final int DELAY_SETCOLOR = 2500;
 
 	private CrosswordsBoard board;
 	private CrosswordsClue clue;
 	private CrosswordsWord currentWord;
 	private CrosswordsTile currentTile;
+	private ScrollView scroll;
 	private KeyPad keyPad;
 	private Button left;
 	private Button hintBar;
@@ -83,6 +85,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		right.setOnClickListener(this);
 		timer = (TimerButton) findViewById(R.id.CrosswordsTimer);
 		timer.setOnClickListener(this);
+		scroll = (ScrollView) findViewById(R.id.CrosswordsScroll);
 		setGameArea();
 	}
 
@@ -124,6 +127,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			currentTile = currentWord.getFirstTile();
 			currentTile.tileSelected();
 			hintBar.setText(currentWord.getClue());
+			setScrollPosition();
 		} else if (hintBar.equals(view)) {
 			currentWord.unselect();
 			currentTile = clue.getHintBarClickedTile(board, currentWord, currentTile);
@@ -131,6 +135,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			currentWord.selected();
 			currentTile.tileSelected();
 			hintBar.setText(currentWord.getClue());
+			setScrollPosition();
 		} else if (right.equals(view)) {
 			currentWord.unselect();
 			currentWord = clue.getNextWord(currentWord);
@@ -138,6 +143,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			currentTile = currentWord.getFirstTile();
 			currentTile.tileSelected();
 			hintBar.setText(currentWord.getClue());
+			setScrollPosition();
 		} else if (clear.equals(view)) {
 			CrosswordsClearDialog dialog = new CrosswordsClearDialog(this);
 			dialog.setDialogListener(this);
@@ -170,6 +176,16 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		}
 	}
 
+	public void setScrollPosition() {
+		int position = board.getPosition(currentWord.getFirstTile(),
+				currentWord.getLastTile());
+		if (position == CrosswordsBoard.POSITION_FORCEUPPER) {
+			scroll.scrollTo(0, 0);
+		} else if (position == CrosswordsBoard.POSITION_FORCELOWER) {
+			scroll.scrollTo(0, 1000);
+		}
+	}
+
 	@Override
 	public void onActivityResult(int requestCode, int resultCode, Intent data) {
 		if ((requestCode == REQUEST_CLUE) && (data != null)) {
@@ -186,6 +202,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			currentWord.selected();
 			currentTile.tileSelected();
 			hintBar.setText(currentWord.getClue());
+			setScrollPosition();
 		}
 		if (requestCode == REQUEST_HINT) {
 			if (resultCode == CrosswordsHintActivity.RESULT_ALL) {

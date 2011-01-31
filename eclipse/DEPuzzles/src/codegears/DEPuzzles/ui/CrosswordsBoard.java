@@ -1,5 +1,6 @@
 package codegears.DEPuzzles.ui;
 
+import codegears.DEPuzzles.data.CrosswordsWord;
 import android.content.Context;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
@@ -8,6 +9,9 @@ import android.widget.TableRow;
 
 public class CrosswordsBoard extends TableLayout {
 
+	public static final int POSITION_NORMAL = 0;
+	public static final int POSITION_FORCEUPPER = 1;
+	public static final int POSITION_FORCELOWER = 2;
 	private LinearLayout[] line;
 	private CrosswordsTile[] tile;
 	private String[] boardData;
@@ -41,6 +45,20 @@ public class CrosswordsBoard extends TableLayout {
 				t.unselect();
 			}
 		}
+	}
+	
+	public int getPosition(CrosswordsTile first, CrosswordsTile last){
+		for(int i = 0; i < 13 * 2; i++){
+			if(first.equals(tile[i])){
+				return POSITION_FORCEUPPER;
+			}
+		}
+		for(int i = 13 * 11; i < 13* 13; i++){
+			if(last.equals(tile[i])){
+				return POSITION_FORCELOWER;
+			}
+		}
+		return POSITION_NORMAL;
 	}
 	
 	public int getFilledCount(){
