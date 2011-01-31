@@ -1,7 +1,2 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<typeInfoHistroy>
-<typeInfo handle="=DEPuzzles/src&lt;codegears.DEPuzzles{CrosswordsActivity.java[CrosswordsActivity" modifiers="1" timestamp="1296391828480"/>
-<typeInfo handle="=DEPuzzles/src&lt;codegears.DEPuzzles{CrosswordsClueActivity.java[CrosswordsClueActivity" modifiers="1" timestamp="1296285400641"/>
-<typeInfo handle="=DEPuzzles/src&lt;codegears.DEPuzzles{CrosswordsHintActivity.java[CrosswordsHintActivity" modifiers="1" timestamp="1296376098584"/>
-<typeInfo handle="=DEPuzzles/src&lt;codegears.DEPuzzles{SummaryActivity.java[SummaryActivity" modifiers="1" timestamp="1296389212865"/>
-</typeInfoHistroy>
+<typeInfoHistroy/>

@@ -158,6 +158,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			i.putExtra(EXTRA_CLUE, currentWord.getClue());
 			this.startActivityForResult(i, REQUEST_HINT);
 		} else if (backButton.equals(view)) {
+			// store data
 			finish();
 		} else if (timer.equals(view)) {
 			Intent i = new Intent(this, SummaryActivity.class);
@@ -259,7 +260,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 
 	@Override
 	public void onKeyPad(int mode, String key) {
-		if (key == KeyPad.KEY_BACK) {
+		if (key.equals(KeyPad.KEY_BACK)) {
 			if (!currentTile.isEmpty()) {
 				currentTile.empty();
 				currentTile.tileSelected();
