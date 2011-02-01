@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Q" android:id="@+id/KeyPadQ"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="W" android:id="@+id/KeyPadW"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="E" android:id="@+id/KeyPadE"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="R" android:id="@+id/KeyPadR"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="T" android:id="@+id/KeyPadT"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Y" android:id="@+id/KeyPadY"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="U" android:id="@+id/KeyPadU"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="I" android:id="@+id/KeyPadI"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="O" android:id="@+id/KeyPadO"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="P" android:id="@+id/KeyPadP"></Button>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="A" android:id="@+id/KeyPadA"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="S" android:id="@+id/KeyPadS"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="D" android:id="@+id/KeyPadD"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="F" android:id="@+id/KeyPadF"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="G" android:id="@+id/KeyPadG"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="H" android:id="@+id/KeyPadH"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="J" android:id="@+id/KeyPadJ"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="K" android:id="@+id/KeyPadK"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="L" android:id="@+id/KeyPadL"></Button>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout03"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<Button android:text="+" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/KeyPadMode"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Z" android:id="@+id/KeyPadZ"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="X" android:id="@+id/KeyPadX"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="C" android:id="@+id/KeyPadC"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="V" android:id="@+id/KeyPadV"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="B" android:id="@+id/KeyPadB"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="N" android:id="@+id/KeyPadN"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="M" android:id="@+id/KeyPadM"></Button>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="!" android:id="@+id/KeyPadBack"></Button>
+	</LinearLayout>
+
+</LinearLayout>

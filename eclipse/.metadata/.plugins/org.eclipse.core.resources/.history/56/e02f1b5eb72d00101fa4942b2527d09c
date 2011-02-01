@@ -1,0 +1,7 @@
+package codegears.DEPuzzles.ui;
+
+import android.widget.Button;
+
+public class KeyPadButton extends Button {
+
+}

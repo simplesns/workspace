@@ -2,6 +2,7 @@ package codegears.DEPuzzles;
 
 import java.util.ArrayList;
 
+import codegears.DEPuzzles.ui.CompleteDialogListener;
 import codegears.DEPuzzles.ui.CrosswordsBoard;
 import codegears.DEPuzzles.ui.CrosswordsTile;
 import codegears.DEPuzzles.ui.CrosswordsTileListener;
@@ -13,7 +14,9 @@ import codegears.DEPuzzles.ui.dialog.CrosswordsClearDialogListener;
 import codegears.DEPuzzles.util.DataBuilder;
 import freehand.neandroid.GameActivity;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -31,7 +34,10 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 	private CrosswordsTile currentTile;
 	private ArrayList<CrosswordsTile> sameWordTile;
 	private KeyPad keyPad;
+	private String puzzleText;
 	private char[] answer;
+	private boolean errorDialogShown;
+	private int penalty;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -48,13 +54,13 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 		timerButton.setOnClickListener(this);
 		board = (CrosswordsBoard) findViewById(R.id.CodeWordBoard);
 		CrosswordsTile[] allTile = board.getTile();
-		for(CrosswordsTile t:allTile){
+		errorDialogShown = false;
+		penalty = 0;
+		for (CrosswordsTile t : allTile) {
 			t.setCrosswordsTileListener(this);
 		}
 		keyPad = (KeyPad) findViewById(R.id.CodeWordKeyPad);
 		keyPad.setKeyPadListener(this);
-		currentTile = null;
-		sameWordTile = new ArrayList<CrosswordsTile>();
 		setGameArea();
 	}
 
@@ -72,11 +78,18 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 
 	private void setGameArea() {
 		Intent i = getIntent();
+		puzzleText = i.getStringExtra(PuzzleSelectActivity.EXTRA_TEXT);
 		String file = i.getStringExtra(PuzzleSelectActivity.EXTRA_FILE);
 		String[] grid = DataBuilder.createCrosswordsGridFromAsset(this,
 				"CodeWordsPuzzle/" + file + ".txt");
 		board.setBoardData(grid);
 		answer = board.scanForCodeWordAnswer();
+		sameWordTile = board.getTileFromNumber(1);
+		currentTile = sameWordTile.get(0);
+		for (CrosswordsTile t : sameWordTile) {
+			t.wordSelected();
+		}
+		currentTile.tileSelected();
 	}
 
 	@Override
@@ -85,6 +98,19 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 			// record data
 			finish();
 		} else if (view.equals(hintButton)) {
+			String key = keyPad.getRandomEmptyKey();
+			if (key != null) {
+				ArrayList<CrosswordsTile> tList = board.getTile(key.charAt(0));
+				if (tList.get(0).isFilled()) {
+					keyPad.setNumber(tList.get(0).getText(), 0);
+				}
+				for (CrosswordsTile t : tList) {
+					t.reveal();
+				}
+				keyPad.setNumber(key, tList.get(0).getNumber());
+				delaySetColor();
+				completeCheck();
+			}
 		} else if (view.equals(clearButton)) {
 			CrosswordsClearDialog dialog = new CrosswordsClearDialog(this);
 			dialog.setDialogListener(this);
@@ -94,24 +120,62 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 			Intent i = new Intent(this, SummaryActivity.class);
 			i.putExtra(SummaryActivity.EXTRA_GAME, "Codeword");
 			i.putExtra(SummaryActivity.EXTRA_TITLE1, "Puzzle");
-			i.putExtra(SummaryActivity.EXTRA_TEXT1, "N/A");
+			i.putExtra(SummaryActivity.EXTRA_TEXT1, puzzleText);
 			i.putExtra(SummaryActivity.EXTRA_TITLE2, "Current time");
-			i.putExtra(SummaryActivity.EXTRA_TEXT2, "N/A");
+			i.putExtra(SummaryActivity.EXTRA_TEXT2, timerButton.getText());
 			i.putExtra(SummaryActivity.EXTRA_TITLE3, "Entered fields");
-			i.putExtra(SummaryActivity.EXTRA_TEXT3, "N/A");
+			i.putExtra(SummaryActivity.EXTRA_TEXT3,
+					String.valueOf(board.getFilledCount()));
 			i.putExtra(SummaryActivity.EXTRA_TITLE4, "Remaining fields");
-			i.putExtra(SummaryActivity.EXTRA_TEXT4, "N/A");
+			i.putExtra(SummaryActivity.EXTRA_TEXT4,
+					String.valueOf(board.getTileCount() - board.getFilledCount()));
 			this.startActivity(i);
 		}
 	}
 
+	private void delaySetColor() {
+		new Thread() {
+			@Override
+			public void run() {
+				try {
+					sleep(CrosswordsActivity.DELAY_SETCOLOR);
+					CodeWordActivity.this.runOnUiThread(new Runnable() {
+						public void run() {
+							board.setAllTileToNormalState();
+							if (sameWordTile != null) {
+								for (CrosswordsTile t : sameWordTile) {
+									t.wordSelected();
+								}
+							}
+							if (currentTile != null) {
+								currentTile.tileSelected();
+							}
+						}
+					});
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}.start();
+	}
+
 	@Override
 	public void onReset(Dialog dialog) {
-
+		board.emptyBoard();
+		keyPad.clear();
+		sameWordTile = board.getTileFromNumber(1);
+		currentTile = sameWordTile.get(0);
+		currentTile.tileSelected();
+		dialog.dismiss();
+		penalty = 0;
+		timerButton.reset();
+		timerButton.start();
 	}
 
 	@Override
 	public void onDeleteCurrent(Dialog dialog) {
+		keyPad.press("back");
+		dialog.dismiss();
 	}
 
 	@Override
@@ -126,32 +190,84 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 
 	@Override
 	public void onKeyPad(int mode, String key) {
-		if(key.equals(KeyPad.KEY_BACK)){
-			//remove text from tile
-			//update keyPad
-		}
-		//if key is already pressed
-			//select tile with that key
-		//else
-			//all tile with same number appear same effect
-		for(CrosswordsTile t:sameWordTile){
-			t.setText(mode, key);
-			if(mode == CrosswordsTile.TEXT_PEN){
-				//update keyPad
+		if (key.equals(KeyPad.KEY_BACK)) {
+			for (CrosswordsTile t : sameWordTile) {
+				keyPad.setNumber(t.getText(), 0);
+				t.empty();
+				t.wordSelected();
 			}
+			currentTile.tileSelected();
+			return;
+		}
+		if (keyPad.findButtonByKey(key).getNumber() != 0) {
+			for (CrosswordsTile t : sameWordTile) {
+				t.unselect();
+			}
+			sameWordTile = board.getTileFromNumber(keyPad.findButtonByKey(key)
+					.getNumber());
+			for (CrosswordsTile t : sameWordTile) {
+				t.wordSelected();
+			}
+			currentTile = sameWordTile.get(0);
+			currentTile.tileSelected();
+		} else {
+			if (sameWordTile.get(0).isFilled()) {
+				keyPad.setNumber(sameWordTile.get(0).getText(), 0);
+			}
+			for (CrosswordsTile t : sameWordTile) {
+				t.setText(mode, key);
+			}
+			if (mode == CrosswordsTile.TEXT_PEN) {
+				keyPad.setNumber(key, sameWordTile.get(0).getNumber());
+			}
+		}
+		completeCheck();
+	}
+
+	public void completeCheck() {
+		if (board.isComplete()) {
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			builder = builder.setMessage("Puzzle was successfully completed! Time: "
+					+ timerButton.getText() + ".");
+			builder = builder.setTitle("Puzzle Completed");
+			builder.setPositiveButton("OK", new CompleteDialogListener(this));
+			AlertDialog dialog = builder.create();
+			dialog.show();
+		} else if ((board.isFull()) && (!errorDialogShown)) {
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			builder = builder
+					.setMessage("the puzzle is complete but there are errors"
+							+ "in the solution. Would you like to clear all errors? (Every cleared"
+							+ "letter adds 20 seconds to your score)");
+			builder = builder.setTitle("Puzzle Errors");
+			builder.setPositiveButton("Clear", new ErrorDialogListener());
+			builder.setNegativeButton("Cancel", new ErrorDialogListener());
+			AlertDialog dialog = builder.create();
+			dialog.show();
 		}
 	}
 
 	@Override
 	public void onTouch(CrosswordsTile view) {
 		currentTile = view;
-		for(CrosswordsTile t:sameWordTile){
+		for (CrosswordsTile t : sameWordTile) {
 			t.unselect();
 		}
-		sameWordTile = board.getTile(view.getResult());
-		for(CrosswordsTile t:sameWordTile){
+		sameWordTile = board.getTileFromNumber(view.getNumber());
+		for (CrosswordsTile t : sameWordTile) {
 			t.wordSelected();
 		}
 		currentTile.tileSelected();
 	}
+
+	private class ErrorDialogListener implements DialogInterface.OnClickListener {
+		@Override
+		public void onClick(DialogInterface dialog, int which) {
+			dialog.dismiss();
+			if (which == DialogInterface.BUTTON_POSITIVE) {
+				// clear error
+			}
+		}
+	}
+
 }

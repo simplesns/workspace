@@ -1,0 +1,215 @@
+package codegears.DEPuzzles;
+
+import java.util.ArrayList;
+
+import codegears.DEPuzzles.ui.CrosswordsBoard;
+import codegears.DEPuzzles.ui.CrosswordsTile;
+import codegears.DEPuzzles.ui.CrosswordsTileListener;
+import codegears.DEPuzzles.ui.KeyPad;
+import codegears.DEPuzzles.ui.KeyPadListener;
+import codegears.DEPuzzles.ui.TimerButton;
+import codegears.DEPuzzles.ui.dialog.CrosswordsClearDialog;
+import codegears.DEPuzzles.ui.dialog.CrosswordsClearDialogListener;
+import codegears.DEPuzzles.util.DataBuilder;
+import freehand.neandroid.GameActivity;
+import android.app.Activity;
+import android.app.Dialog;
+import android.content.Intent;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
+
+public class CodeWordActivity extends Activity implements OnClickListener,
+		CrosswordsClearDialogListener, KeyPadListener, CrosswordsTileListener {
+
+	private Button backButton;
+	private Button hintButton;
+	private Button clearButton;
+	private TimerButton timerButton;
+	private CrosswordsBoard board;
+	private CrosswordsTile currentTile;
+	private ArrayList<CrosswordsTile> sameWordTile;
+	private KeyPad keyPad;
+	private String puzzleText;
+	private char[] answer;
+	private boolean errorDialogShown;
+
+	@Override
+	public void onCreate(Bundle savedInstanceState) {
+		super.onCreate(savedInstanceState);
+		GameActivity.setFullscreen(this);
+		setContentView(R.layout.codeword);
+		backButton = (Button) findViewById(R.id.CodeWordBack);
+		backButton.setOnClickListener(this);
+		hintButton = (Button) findViewById(R.id.CodeWordHint);
+		hintButton.setOnClickListener(this);
+		clearButton = (Button) findViewById(R.id.CodeWordClear);
+		clearButton.setOnClickListener(this);
+		timerButton = (TimerButton) findViewById(R.id.CodeWordTimer);
+		timerButton.setOnClickListener(this);
+		board = (CrosswordsBoard) findViewById(R.id.CodeWordBoard);
+		CrosswordsTile[] allTile = board.getTile();
+		errorDialogShown = false;
+		for (CrosswordsTile t : allTile) {
+			t.setCrosswordsTileListener(this);
+		}
+		keyPad = (KeyPad) findViewById(R.id.CodeWordKeyPad);
+		keyPad.setKeyPadListener(this);
+		currentTile = null;
+		sameWordTile = new ArrayList<CrosswordsTile>();
+		setGameArea();
+	}
+
+	@Override
+	public void onPause() {
+		super.onPause();
+		timerButton.stop();
+	}
+
+	@Override
+	public void onResume() {
+		super.onResume();
+		timerButton.start();
+	}
+
+	private void setGameArea() {
+		Intent i = getIntent();
+		puzzleText = i.getStringExtra(PuzzleSelectActivity.EXTRA_TEXT);
+		String file = i.getStringExtra(PuzzleSelectActivity.EXTRA_FILE);
+		String[] grid = DataBuilder.createCrosswordsGridFromAsset(this,
+				"CodeWordsPuzzle/" + file + ".txt");
+		board.setBoardData(grid);
+		answer = board.scanForCodeWordAnswer();
+	}
+
+	@Override
+	public void onClick(View view) {
+		if (view.equals(backButton)) {
+			// record data
+			finish();
+		} else if (view.equals(hintButton)) {
+			String key = keyPad.getRandomEmptyKey();
+			if (key != null) {
+				ArrayList<CrosswordsTile> tList = board.getTile(key.charAt(0));
+				for (CrosswordsTile t : tList) {
+					t.reveal();
+				}
+				keyPad.setNumber(key, tList.get(0).getNumber());
+				delaySetColor();
+			}
+		} else if (view.equals(clearButton)) {
+			CrosswordsClearDialog dialog = new CrosswordsClearDialog(this);
+			dialog.setDialogListener(this);
+			dialog.show();
+			timerButton.stop();
+		} else if (view.equals(timerButton)) {
+			Intent i = new Intent(this, SummaryActivity.class);
+			i.putExtra(SummaryActivity.EXTRA_GAME, "Codeword");
+			i.putExtra(SummaryActivity.EXTRA_TITLE1, "Puzzle");
+			i.putExtra(SummaryActivity.EXTRA_TEXT1, puzzleText);
+			i.putExtra(SummaryActivity.EXTRA_TITLE2, "Current time");
+			i.putExtra(SummaryActivity.EXTRA_TEXT2, timerButton.getText());
+			i.putExtra(SummaryActivity.EXTRA_TITLE3, "Entered fields");
+			i.putExtra(SummaryActivity.EXTRA_TEXT3,
+					String.valueOf(board.getFilledCount()));
+			i.putExtra(SummaryActivity.EXTRA_TITLE4, "Remaining fields");
+			i.putExtra(SummaryActivity.EXTRA_TEXT4,
+					String.valueOf(board.getTileCount() - board.getFilledCount()));
+			this.startActivity(i);
+		}
+	}
+
+	private void delaySetColor() {
+		new Thread() {
+			@Override
+			public void run() {
+				try {
+					sleep(CrosswordsActivity.DELAY_SETCOLOR);
+					CodeWordActivity.this.runOnUiThread(new Runnable() {
+						public void run() {
+							board.setAllTileToNormalState();
+							if (sameWordTile != null) {
+								for (CrosswordsTile t : sameWordTile) {
+									t.wordSelected();
+								}
+							}
+							currentTile.tileSelected();
+						}
+					});
+				} catch (InterruptedException e) {
+					e.printStackTrace();
+				}
+			}
+		}.start();
+	}
+
+	@Override
+	public void onReset(Dialog dialog) {
+
+	}
+
+	@Override
+	public void onDeleteCurrent(Dialog dialog) {
+	}
+
+	@Override
+	public void onClearErrors(Dialog dialog) {
+	}
+
+	@Override
+	public void onCancel(Dialog dialog) {
+		dialog.dismiss();
+		timerButton.start();
+	}
+
+	@Override
+	public void onKeyPad(int mode, String key) {
+		if (key.equals(KeyPad.KEY_BACK)) {
+			for (CrosswordsTile t : sameWordTile) {
+				t.empty();
+				keyPad.setNumber(key, 0);
+			}
+		}
+		if (keyPad.findButtonByKey(key).getNumber() != 0) {
+			for (CrosswordsTile t : sameWordTile) {
+				t.unselect();
+			}
+			sameWordTile = board.getTileFromNumber(keyPad.findButtonByKey(key)
+					.getNumber());
+			for (CrosswordsTile t : sameWordTile) {
+				t.wordSelected();
+			}
+			currentTile = sameWordTile.get(0);
+			currentTile.tileSelected();
+		} else {
+			if (sameWordTile.get(0).isFilled()) {
+				keyPad.setNumber(sameWordTile.get(0).getText(), 0);
+			}
+			for (CrosswordsTile t : sameWordTile) {
+				t.setText(mode, key);
+			}
+			if (mode == CrosswordsTile.TEXT_PEN) {
+				keyPad.setNumber(key, sameWordTile.get(0).getNumber());
+			}
+		}
+		if(board.isComplete()){
+			//show complete dialog
+		} else if((board.isFull()) && (!errorDialogShown)){
+			//show error dialog
+		}
+	}
+
+	@Override
+	public void onTouch(CrosswordsTile view) {
+		currentTile = view;
+		for (CrosswordsTile t : sameWordTile) {
+			t.unselect();
+		}
+		sameWordTile = board.getTileFromNumber(view.getNumber());
+		for (CrosswordsTile t : sameWordTile) {
+			t.wordSelected();
+		}
+		currentTile.tileSelected();
+	}
+}

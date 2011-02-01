@@ -143,6 +143,14 @@ public class CrosswordsTile extends LinearLayout {
 	public void setNumber(String n) {
 		number.setText(n);
 	}
+	
+	public int getNumber(){
+		return Integer.parseInt(number.getText().toString());
+	}
+	
+	public String getText(){
+		return text.getText().toString();
+	}
 
 	public void setCrosswordsTileListener(CrosswordsTileListener listener) {
 		this.listener = listener;

@@ -80,6 +80,14 @@ public class CrosswordsBoard extends TableLayout {
 	public CrosswordsTile[] getTile() {
 		return tile;
 	}
+	
+	public void emptyBoard(){
+		for(CrosswordsTile t:tile){
+			if(!t.isBlack()){
+				t.empty();
+			}
+		}
+	}
 
 	public int getALength(int i, int j) {
 		int length = 0;
@@ -168,14 +176,44 @@ public class CrosswordsBoard extends TableLayout {
 		}
 		return answer;
 	}
-	
-	public ArrayList<CrosswordsTile> getTile(char c){
+
+	public ArrayList<CrosswordsTile> getTile(char c) {
 		ArrayList<CrosswordsTile> tList = new ArrayList<CrosswordsTile>();
-		for(CrosswordsTile t:tile){
-			if(t.getResult() == c){
+		for (CrosswordsTile t : tile) {
+			if (t.getResult() == c) {
 				tList.add(t);
 			}
 		}
 		return tList;
+	}
+
+	public ArrayList<CrosswordsTile> getTileFromNumber(int i) {
+		ArrayList<CrosswordsTile> tList = new ArrayList<CrosswordsTile>();
+		for (CrosswordsTile t : tile) {
+			if (!t.isBlack()) {
+				if (t.getNumber() == i) {
+					tList.add(t);
+				}
+			}
+		}
+		return tList;
+	}
+
+	public boolean isFull() {
+		for (CrosswordsTile t : tile) {
+			if ((!t.isBlack()) && (!t.isFilled())) {
+				return false;
+			}
+		}
+		return true;
+	}
+
+	public boolean isComplete() {
+		for (CrosswordsTile t : tile) {
+			if ((!t.isBlack()) && (!t.isComplete())) {
+				return false;
+			}
+		}
+		return true;
 	}
 }

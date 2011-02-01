@@ -1,0 +1,16 @@
+package codegears.DEPuzzles.ui;
+
+import codegears.DEPuzzles.R;
+import android.content.Context;
+import android.util.AttributeSet;
+import android.view.View;
+import android.widget.Button;
+
+public class KeyPadButton extends Button {
+
+	public KeyPadButton(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		View.inflate(context, R.layout.ui_keypadbutton, this);
+	}
+
+}

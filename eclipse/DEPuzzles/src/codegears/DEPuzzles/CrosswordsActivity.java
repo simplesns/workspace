@@ -90,8 +90,8 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 	}
 
 	@Override
-	public void onStart() {
-		super.onStart();
+	public void onResume() {
+		super.onResume();
 		timer.start();
 	}
 
@@ -306,7 +306,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			// show complete
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
 			builder = builder
-					.setMessage("Puzzle was successfully completed! Time: xx:xx:xx.");
+					.setMessage("Puzzle was successfully completed! Time: " + timer.getText() + ".");
 			builder = builder.setTitle("Puzzle Completed");
 			builder.setPositiveButton("OK", new CompleteDialogListener(this));
 			AlertDialog dialog = builder.create();
@@ -322,19 +322,6 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			AlertDialog dialog = builder.create();
 			dialog.show();
 			errorDialogShown = true;
-		}
-	}
-
-	private class ErrorDialogListener implements DialogInterface.OnClickListener {
-		@Override
-		public void onClick(DialogInterface dialog, int which) {
-			dialog.dismiss();
-			if (which == DialogInterface.BUTTON_POSITIVE) {
-				int showCount = clue.showError();
-				penalty += showCount * PENALTY_ERROR;
-				timer.addTime(showCount * PENALTY_ERROR);
-				currentTile.tileSelected();
-			}
 		}
 	}
 
@@ -374,4 +361,18 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		dialog.dismiss();
 		timer.start();
 	}
+
+	private class ErrorDialogListener implements DialogInterface.OnClickListener {
+		@Override
+		public void onClick(DialogInterface dialog, int which) {
+			dialog.dismiss();
+			if (which == DialogInterface.BUTTON_POSITIVE) {
+				int showCount = clue.showError();
+				penalty += showCount * PENALTY_ERROR;
+				timer.addTime(showCount * PENALTY_ERROR);
+				currentTile.tileSelected();
+			}
+		}
+	}
+
 }
