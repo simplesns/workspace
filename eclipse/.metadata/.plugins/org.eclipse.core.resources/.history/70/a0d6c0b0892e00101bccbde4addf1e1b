@@ -2,7 +2,6 @@ package codegears.DEPuzzles;
 
 import java.util.ArrayList;
 
-import codegears.DEPuzzles.CrosswordsActivity.ErrorDialogListener;
 import codegears.DEPuzzles.ui.CompleteDialogListener;
 import codegears.DEPuzzles.ui.CrosswordsBoard;
 import codegears.DEPuzzles.ui.CrosswordsTile;
@@ -17,6 +16,7 @@ import freehand.neandroid.GameActivity;
 import android.app.Activity;
 import android.app.AlertDialog;
 import android.app.Dialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -37,6 +37,7 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 	private String puzzleText;
 	private char[] answer;
 	private boolean errorDialogShown;
+	private int penalty;
 
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
@@ -54,13 +55,12 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 		board = (CrosswordsBoard) findViewById(R.id.CodeWordBoard);
 		CrosswordsTile[] allTile = board.getTile();
 		errorDialogShown = false;
+		penalty = 0;
 		for (CrosswordsTile t : allTile) {
 			t.setCrosswordsTileListener(this);
 		}
 		keyPad = (KeyPad) findViewById(R.id.CodeWordKeyPad);
 		keyPad.setKeyPadListener(this);
-		currentTile = null;
-		sameWordTile = new ArrayList<CrosswordsTile>();
 		setGameArea();
 	}
 
@@ -84,6 +84,12 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 				"CodeWordsPuzzle/" + file + ".txt");
 		board.setBoardData(grid);
 		answer = board.scanForCodeWordAnswer();
+		sameWordTile = board.getTileFromNumber(1);
+		currentTile = sameWordTile.get(0);
+		for (CrosswordsTile t : sameWordTile) {
+			t.wordSelected();
+		}
+		currentTile.tileSelected();
 	}
 
 	@Override
@@ -95,11 +101,15 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 			String key = keyPad.getRandomEmptyKey();
 			if (key != null) {
 				ArrayList<CrosswordsTile> tList = board.getTile(key.charAt(0));
+				if (tList.get(0).isFilled()) {
+					keyPad.setNumber(tList.get(0).getText(), 0);
+				}
 				for (CrosswordsTile t : tList) {
 					t.reveal();
 				}
 				keyPad.setNumber(key, tList.get(0).getNumber());
 				delaySetColor();
+				completeCheck();
 			}
 		} else if (view.equals(clearButton)) {
 			CrosswordsClearDialog dialog = new CrosswordsClearDialog(this);
@@ -137,7 +147,9 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 									t.wordSelected();
 								}
 							}
-							currentTile.tileSelected();
+							if (currentTile != null) {
+								currentTile.tileSelected();
+							}
 						}
 					});
 				} catch (InterruptedException e) {
@@ -146,18 +158,37 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 			}
 		}.start();
 	}
+	
+	private void clearError(){
+		ArrayList<CrosswordsTile> tList = board.getErrorTile();
+		for(CrosswordsTile t:tList){
+			t.empty();
+		}
+	}
 
 	@Override
 	public void onReset(Dialog dialog) {
-
+		board.emptyBoard();
+		keyPad.clear();
+		sameWordTile = board.getTileFromNumber(1);
+		currentTile = sameWordTile.get(0);
+		currentTile.tileSelected();
+		dialog.dismiss();
+		penalty = 0;
+		timerButton.reset();
+		timerButton.start();
 	}
 
 	@Override
 	public void onDeleteCurrent(Dialog dialog) {
+		keyPad.press("back");
+		dialog.dismiss();
 	}
 
 	@Override
 	public void onClearErrors(Dialog dialog) {
+		clearError();
+		dialog.dismiss();
 	}
 
 	@Override
@@ -170,9 +201,12 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 	public void onKeyPad(int mode, String key) {
 		if (key.equals(KeyPad.KEY_BACK)) {
 			for (CrosswordsTile t : sameWordTile) {
+				keyPad.setNumber(t.getText(), 0);
 				t.empty();
-				keyPad.setNumber(key, 0);
+				t.wordSelected();
 			}
+			currentTile.tileSelected();
+			return;
 		}
 		if (keyPad.findButtonByKey(key).getNumber() != 0) {
 			for (CrosswordsTile t : sameWordTile) {
@@ -196,20 +230,26 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 				keyPad.setNumber(key, sameWordTile.get(0).getNumber());
 			}
 		}
-		if(board.isComplete()){
+		completeCheck();
+	}
+
+	public void completeCheck() {
+		if (board.isComplete()) {
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder = builder
-					.setMessage("Puzzle was successfully completed! Time: xx:xx:xx.");
+			builder = builder.setMessage("Puzzle was successfully completed! Time: "
+					+ timerButton.getText() + ".");
 			builder = builder.setTitle("Puzzle Completed");
 			builder.setPositiveButton("OK", new CompleteDialogListener(this));
 			AlertDialog dialog = builder.create();
 			dialog.show();
-		} else if((board.isFull()) && (!errorDialogShown)){
+		} else if ((board.isFull()) && (!errorDialogShown)) {
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder = builder.setMessage("Puzzle contains errors and it is not "
-					+ "completed. Would you like to reveal them");
-			builder = builder.setTitle("Completed Error");
-			builder.setPositiveButton("Reveal", new ErrorDialogListener());
+			builder = builder
+					.setMessage("the puzzle is complete but there are errors"
+							+ "in the solution. Would you like to clear all errors? (Every cleared"
+							+ "letter adds 20 seconds to your score)");
+			builder = builder.setTitle("Puzzle Errors");
+			builder.setPositiveButton("Clear", new ErrorDialogListener());
 			builder.setNegativeButton("Cancel", new ErrorDialogListener());
 			AlertDialog dialog = builder.create();
 			dialog.show();
@@ -228,4 +268,15 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 		}
 		currentTile.tileSelected();
 	}
+
+	private class ErrorDialogListener implements DialogInterface.OnClickListener {
+		@Override
+		public void onClick(DialogInterface dialog, int which) {
+			dialog.dismiss();
+			if (which == DialogInterface.BUTTON_POSITIVE) {
+				clearError();
+			}
+		}
+	}
+
 }

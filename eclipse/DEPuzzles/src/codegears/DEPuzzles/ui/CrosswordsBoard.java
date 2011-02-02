@@ -216,4 +216,14 @@ public class CrosswordsBoard extends TableLayout {
 		}
 		return true;
 	}
+	
+	public ArrayList<CrosswordsTile> getErrorTile(){
+		ArrayList<CrosswordsTile> tList = new ArrayList<CrosswordsTile>();
+		for(CrosswordsTile t:tile){
+			if(!t.isBlack() && !t.isComplete() && t.isFilled()){
+				tList.add(t);
+			}
+		}
+		return tList;
+	}
 }

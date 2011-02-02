@@ -113,6 +113,7 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 			}
 		} else if (view.equals(clearButton)) {
 			CrosswordsClearDialog dialog = new CrosswordsClearDialog(this);
+			dialog.setSecondButtonText("Delete Current Selection");
 			dialog.setDialogListener(this);
 			dialog.show();
 			timerButton.stop();
@@ -158,6 +159,14 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 			}
 		}.start();
 	}
+	
+	private void clearError(){
+		ArrayList<CrosswordsTile> tList = board.getErrorTile();
+		for(CrosswordsTile t:tList){
+			keyPad.setNumber(t.getText(), 0);
+			t.empty();
+		}
+	}
 
 	@Override
 	public void onReset(Dialog dialog) {
@@ -180,6 +189,8 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 
 	@Override
 	public void onClearErrors(Dialog dialog) {
+		clearError();
+		dialog.dismiss();
 	}
 
 	@Override
@@ -265,7 +276,7 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 		public void onClick(DialogInterface dialog, int which) {
 			dialog.dismiss();
 			if (which == DialogInterface.BUTTON_POSITIVE) {
-				// clear error
+				clearError();
 			}
 		}
 	}
