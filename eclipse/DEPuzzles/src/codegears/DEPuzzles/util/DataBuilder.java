@@ -138,4 +138,50 @@ public class DataBuilder {
 		}
 		return str;
 	}
+
+	public static String[] createGridFromAsset(Context context, String file,
+			int x, int y) {
+		String[] str = new String[y];
+		AssetManager aManager = context.getAssets();
+		try {
+			InputStream iStream = aManager.open(file);
+			BufferedReader bReader = new BufferedReader(
+					new InputStreamReader(iStream));
+			String line = bReader.readLine();
+			String readedData = "";
+			while (line != null) {
+				readedData += line;
+				line = bReader.readLine();
+			}
+			readedData = readedData.replace(" ", "");
+			for (int i = 0; i < str.length; i++) {
+				str[i] = readedData.substring(0, x);
+				readedData = readedData.substring(x);
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return str;
+	}
+
+	public static String[] createWordSearchListFromAsset(Context context,
+			String file) {
+		String[] str = new String[12];
+		AssetManager aManager = context.getAssets();
+		try {
+			InputStream iStream = aManager.open(file);
+			BufferedReader bReader = new BufferedReader(
+					new InputStreamReader(iStream));
+			String line = bReader.readLine();
+			int i = 0;
+			while (line != null) {
+				str[i] = line;
+				line = bReader.readLine();
+				i++;
+			}
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return str;
+	}
 }

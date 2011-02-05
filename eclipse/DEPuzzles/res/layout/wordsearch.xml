@@ -1,67 +1,69 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
 	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:orientation="vertical">
+	android:orientation="vertical" android:id="@+id/WordSearchLayout">
 	<LinearLayout android:id="@+id/LinearLayout01"
 		android:layout_width="wrap_content" android:layout_height="wrap_content">
-		<Button android:text="^" android:id="@+id/Button01"
+		<Button android:text="^" android:id="@+id/WordSearchBack"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-		<Button android:text="H" android:id="@+id/Button02"
+		<Button android:text="H" android:id="@+id/WordSearchHint"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-		<Button android:text="C" android:id="@+id/Button03"
+		<Button android:text="C" android:id="@+id/WordSearchClear"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
-		<codegears.DEPuzzles.ui.TimerButton android:text="T" android:id="@+id/Button04"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"></codegears.DEPuzzles.ui.TimerButton>
+		<codegears.DEPuzzles.ui.TimerButton
+			android:text="T" android:id="@+id/WordSearchTimer" android:layout_width="wrap_content"
+			android:layout_height="wrap_content"></codegears.DEPuzzles.ui.TimerButton>
 	</LinearLayout>
-	<codegears.DEPuzzles.ui.WordSearchBoard android:id="@+id/LinearLayout02"
-		android:layout_height="wrap_content" android:layout_width="fill_parent" android:layout_weight="1"></codegears.DEPuzzles.ui.WordSearchBoard>
+	<codegears.DEPuzzles.ui.WordSearchBoard
+		android:id="@+id/WordSearchBoard" android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:layout_weight="1"></codegears.DEPuzzles.ui.WordSearchBoard>
 	<TableLayout android:id="@+id/TableLayout01"
 		android:layout_width="fill_parent" android:layout_height="wrap_content">
 		<TableRow android:id="@+id/TableRow01" android:layout_width="fill_parent"
 			android:layout_height="wrap_content">
-			<TextView android:text="Word 1" android:id="@+id/TextView01"
+			<TextView android:text="Word 1" android:id="@+id/WordSearchWord1"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
-			<TextView android:text="Word 2" android:id="@+id/TextView01"
+			<TextView android:text="Word 2" android:id="@+id/WordSearchWord2"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
-			<TextView android:text="Word 3" android:id="@+id/TextView01"
-				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
-		</TableRow>
-		<TableRow android:id="@+id/TableRow01" android:layout_width="fill_parent"
-			android:layout_height="wrap_content">
-			<TextView android:text="Word 4" android:id="@+id/TextView01"
-				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
-			<TextView android:text="Word 5" android:id="@+id/TextView01"
-				android:layout_width="wrap_content" android:layout_height="wrap_content"
-				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
-			<TextView android:text="Word 6" android:id="@+id/TextView01"
+			<TextView android:text="Word 3" android:id="@+id/WordSearchWord3"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
 		</TableRow>
 		<TableRow android:id="@+id/TableRow01" android:layout_width="fill_parent"
 			android:layout_height="wrap_content">
-			<TextView android:text="Word 7" android:id="@+id/TextView01"
+			<TextView android:text="Word 4" android:id="@+id/WordSearchWord4"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
-			<TextView android:text="Word 8" android:id="@+id/TextView01"
+			<TextView android:text="Word 5" android:id="@+id/WordSearchWord5"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
-			<TextView android:text="Word 9" android:id="@+id/TextView01"
+			<TextView android:text="Word 6" android:id="@+id/WordSearchWord6"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
 		</TableRow>
 		<TableRow android:id="@+id/TableRow01" android:layout_width="fill_parent"
 			android:layout_height="wrap_content">
-			<TextView android:text="Word 10" android:id="@+id/TextView01"
+			<TextView android:text="Word 7" android:id="@+id/WordSearchWord7"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
-			<TextView android:text="Word 11" android:id="@+id/TextView01"
+			<TextView android:text="Word 8" android:id="@+id/WordSearchWord8"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
-			<TextView android:text="Word 12" android:id="@+id/TextView01"
+			<TextView android:text="Word 9" android:id="@+id/WordSearchWord9"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
+		</TableRow>
+		<TableRow android:id="@+id/TableRow01" android:layout_width="fill_parent"
+			android:layout_height="wrap_content">
+			<TextView android:text="Word 10" android:id="@+id/WordSearchWord10"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
+			<TextView android:text="Word 11" android:id="@+id/WordSearchWord11"
+				android:layout_width="wrap_content" android:layout_height="wrap_content"
+				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
+			<TextView android:text="Word 12" android:id="@+id/WordSearchWord12"
 				android:layout_width="wrap_content" android:layout_height="wrap_content"
 				android:layout_weight="1" android:gravity="center_horizontal"></TextView>
 		</TableRow>

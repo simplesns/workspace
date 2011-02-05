@@ -80,8 +80,8 @@ public class CodeWordActivity extends Activity implements OnClickListener,
 		Intent i = getIntent();
 		puzzleText = i.getStringExtra(PuzzleSelectActivity.EXTRA_TEXT);
 		String file = i.getStringExtra(PuzzleSelectActivity.EXTRA_FILE);
-		String[] grid = DataBuilder.createCrosswordsGridFromAsset(this,
-				"CodeWordsPuzzle/" + file + ".txt");
+		String[] grid = DataBuilder.createGridFromAsset(this,
+				"CodeWordsPuzzle/" + file + ".txt", 13, 13);
 		board.setBoardData(grid);
 		answer = board.scanForCodeWordAnswer();
 		sameWordTile = board.getTileFromNumber(1);

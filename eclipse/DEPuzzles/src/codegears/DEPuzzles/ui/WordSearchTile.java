@@ -1,0 +1,17 @@
+package codegears.DEPuzzles.ui;
+
+import android.content.Context;
+import android.view.MotionEvent;
+import android.widget.TextView;
+
+public class WordSearchTile extends TextView {
+
+	public WordSearchTile(Context context) {
+		super(context);
+	}
+
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		return false;
+	}
+}

@@ -1,0 +1,7 @@
+package codegears.DEPuzzles.ui;
+
+import android.widget.TextView;
+
+public class WordSearchTile extends TextView {
+
+}

@@ -105,8 +105,8 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		Intent i = getIntent();
 		puzzleText = i.getStringExtra(PuzzleSelectActivity.EXTRA_TEXT);
 		file = i.getStringExtra(PuzzleSelectActivity.EXTRA_FILE);
-		String[] grid = DataBuilder.createCrosswordsGridFromAsset(this,
-				"CrosswordsPuzzle/" + file + ".grid.txt");
+		String[] grid = DataBuilder.createGridFromAsset(this, "CrosswordsPuzzle/"
+				+ file + ".grid.txt", 13, 13);
 		board.setBoardData(grid);
 		clue = DataBuilder.createCrosswordsClueFromAsset(this, "CrosswordsPuzzle/"
 				+ file + ".clues.txt");
@@ -305,8 +305,8 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		if (clue.isComplete()) {
 			// show complete
 			AlertDialog.Builder builder = new AlertDialog.Builder(this);
-			builder = builder
-					.setMessage("Puzzle was successfully completed! Time: " + timer.getText() + ".");
+			builder = builder.setMessage("Puzzle was successfully completed! Time: "
+					+ timer.getText() + ".");
 			builder = builder.setTitle("Puzzle Completed");
 			builder.setPositiveButton("OK", new CompleteDialogListener(this));
 			AlertDialog dialog = builder.create();

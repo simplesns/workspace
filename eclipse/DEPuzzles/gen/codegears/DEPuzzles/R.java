@@ -28,10 +28,7 @@ public final class R {
     }
     public static final class id {
         public static final int BgNumberCrunchGame=0x7f05009b;
-        public static final int Button01=0x7f0500b3;
         public static final int Button02=0x7f050015;
-        public static final int Button03=0x7f0500b4;
-        public static final int Button04=0x7f0500b5;
         public static final int Button07=0x7f050011;
         public static final int ButtonNum0=0x7f0500ad;
         public static final int ButtonNum1=0x7f0500a3;
@@ -166,7 +163,7 @@ public final class R {
         public static final int SurfaceMenu=0x7f050028;
         public static final int TableLayout01=0x7f0500a2;
         public static final int TableNumPad=0x7f05002f;
-        public static final int TableRow01=0x7f0500b6;
+        public static final int TableRow01=0x7f0500b9;
         public static final int TextView01=0x7f050016;
         public static final int TextView02=0x7f05001b;
         public static final int TextView03=0x7f050053;
@@ -192,6 +189,24 @@ public final class R {
         public static final int Togglejazz=0x7f050044;
         public static final int Togglepop=0x7f050041;
         public static final int Togglespace=0x7f050047;
+        public static final int WordSearchBack=0x7f0500b4;
+        public static final int WordSearchBoard=0x7f0500b8;
+        public static final int WordSearchClear=0x7f0500b6;
+        public static final int WordSearchHint=0x7f0500b5;
+        public static final int WordSearchLayout=0x7f0500b3;
+        public static final int WordSearchTimer=0x7f0500b7;
+        public static final int WordSearchWord1=0x7f0500ba;
+        public static final int WordSearchWord10=0x7f0500c3;
+        public static final int WordSearchWord11=0x7f0500c4;
+        public static final int WordSearchWord12=0x7f0500c5;
+        public static final int WordSearchWord2=0x7f0500bb;
+        public static final int WordSearchWord3=0x7f0500bc;
+        public static final int WordSearchWord4=0x7f0500bd;
+        public static final int WordSearchWord5=0x7f0500be;
+        public static final int WordSearchWord6=0x7f0500bf;
+        public static final int WordSearchWord7=0x7f0500c0;
+        public static final int WordSearchWord8=0x7f0500c1;
+        public static final int WordSearchWord9=0x7f0500c2;
         public static final int bghead=0x7f050030;
         public static final int bgmusic=0x7f050038;
         public static final int bgmusicbutton=0x7f050039;
