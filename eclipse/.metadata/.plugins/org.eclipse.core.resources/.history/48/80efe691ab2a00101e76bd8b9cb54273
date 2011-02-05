@@ -1,7 +1,0 @@
-package codegears.DEPuzzles.ui.dialog;
-
-import android.app.Dialog;
-
-public class CrosswordsClearDialog extends Dialog {
-
-}

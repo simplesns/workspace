@@ -1,6 +1,0 @@
-package codegears.DEPuzzles.ui;
-
-public interface KeyPadListener {
-
-	public void onKeyPad(String key);
-}

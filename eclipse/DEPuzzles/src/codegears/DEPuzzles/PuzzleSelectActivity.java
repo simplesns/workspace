@@ -144,6 +144,11 @@ public class PuzzleSelectActivity extends Activity implements ClickListener,
 			i.putExtra(EXTRA_FILE, file);
 			i.putExtra(EXTRA_TEXT, data.getText());
 			this.startActivity(i);
+		} else if(game.equals(MenuActivity.WORDSEARCHGAME)){
+			Intent i = new Intent(this, WordSearchActivity.class);
+			i.putExtra(EXTRA_FILE, file);
+			i.putExtra(EXTRA_TEXT, data.getText());
+			this.startActivity(i);			
 		}
 	}
 

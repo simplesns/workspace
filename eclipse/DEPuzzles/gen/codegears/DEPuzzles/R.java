@@ -28,7 +28,10 @@ public final class R {
     }
     public static final class id {
         public static final int BgNumberCrunchGame=0x7f05009b;
+        public static final int Button01=0x7f0500b3;
         public static final int Button02=0x7f050015;
+        public static final int Button03=0x7f0500b4;
+        public static final int Button04=0x7f0500b5;
         public static final int Button07=0x7f050011;
         public static final int ButtonNum0=0x7f0500ad;
         public static final int ButtonNum1=0x7f0500a3;
@@ -163,6 +166,7 @@ public final class R {
         public static final int SurfaceMenu=0x7f050028;
         public static final int TableLayout01=0x7f0500a2;
         public static final int TableNumPad=0x7f05002f;
+        public static final int TableRow01=0x7f0500b6;
         public static final int TextView01=0x7f050016;
         public static final int TextView02=0x7f05001b;
         public static final int TextView03=0x7f050053;
@@ -227,6 +231,7 @@ public final class R {
         public static final int ui_numbercrunchgame=0x7f030010;
         public static final int ui_numpad=0x7f030011;
         public static final int ui_puzzleselectlistitem=0x7f030012;
+        public static final int wordsearch=0x7f030013;
     }
     public static final class string {
         public static final int app_name=0x7f040001;

@@ -1,5 +1,0 @@
-package codegears.DEPuzzles.ui;
-
-public interface CrosswordsTileListener {
-
-}

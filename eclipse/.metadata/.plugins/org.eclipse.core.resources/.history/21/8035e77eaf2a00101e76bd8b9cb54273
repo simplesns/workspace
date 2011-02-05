@@ -1,5 +1,0 @@
-package codegears.DEPuzzles.ui.dialog;
-
-public interface CrosswordsClearDialogListener {
-
-}

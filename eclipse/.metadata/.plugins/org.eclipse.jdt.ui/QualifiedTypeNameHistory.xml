@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="java.io.BufferedReader"/>
-<fullyQualifiedTypeName name="android.widget.ToggleButton"/>
-<fullyQualifiedTypeName name="freehand.neandroid.widget.CompoundButtonGroup"/>
 <fullyQualifiedTypeName name="freehand.neandroid.widget.ClickListener"/>
 <fullyQualifiedTypeName name="android.widget.ImageView"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.data.PuzzleSelectData"/>
@@ -60,4 +57,7 @@
 <fullyQualifiedTypeName name="codegears.DEPuzzles.R"/>
 <fullyQualifiedTypeName name="android.view.View"/>
 <fullyQualifiedTypeName name="android.widget.TextView"/>
+<fullyQualifiedTypeName name="android.graphics.Canvas"/>
+<fullyQualifiedTypeName name="android.graphics.Paint"/>
+<fullyQualifiedTypeName name="android.graphics.Rect"/>
 </qualifiedTypeNameHistroy>
