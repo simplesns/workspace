@@ -26,7 +26,7 @@ public class PuzzleSelectActivity extends Activity implements ClickListener,
 
 	public static final String EXTRA_FILE = "file";
 	public static final String EXTRA_TEXT = "name";
-	
+
 	private ListView list;
 	private PuzzleSelectAdapter adapter;
 	private String game;
@@ -144,11 +144,16 @@ public class PuzzleSelectActivity extends Activity implements ClickListener,
 			i.putExtra(EXTRA_FILE, file);
 			i.putExtra(EXTRA_TEXT, data.getText());
 			this.startActivity(i);
-		} else if(game.equals(MenuActivity.WORDSEARCHGAME)){
+		} else if (game.equals(MenuActivity.WORDSEARCHGAME)) {
 			Intent i = new Intent(this, WordSearchActivity.class);
 			i.putExtra(EXTRA_FILE, file);
 			i.putExtra(EXTRA_TEXT, data.getText());
-			this.startActivity(i);			
+			this.startActivity(i);
+		} else if (game.equals(MenuActivity.WORDPUZZLERGAME)) {
+			Intent i = new Intent(this, WordPuzzlerActivity.class);
+			i.putExtra(EXTRA_FILE, file);
+			i.putExtra(EXTRA_TEXT, data.getText());
+			this.startActivity(i);
 		}
 	}
 

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
-<typeInfo handle="=DEPuzzles/src&lt;codegears.DEPuzzles{WordSearchActivity.java[WordSearchActivity" modifiers="1" timestamp="1296879223384"/>
-<typeInfo handle="=DEPuzzles/C:\/Program Files\/android-sdk-windows\/platforms\/android-7\/android.jar&lt;android.widget(TextView.class[TextView" modifiers="33" timestamp="1292309880193"/>
+<typeInfo handle="=DEPuzzles/src&lt;codegears.DEPuzzles{WordSearchActivity.java[WordSearchActivity" modifiers="1" timestamp="1297073399212"/>
+<typeInfo handle="=DEPuzzles/C:\/Program Files\/android-sdk-windows\/platforms\/android-7\/android.jar&lt;android.app(Activity.class[Activity" modifiers="33" timestamp="1292309880193"/>
+<typeInfo handle="=DEPuzzles/src&lt;codegears.DEPuzzles{WordPuzzlerActivity.java[WordPuzzlerActivity" modifiers="1" timestamp="1297162109399"/>
 </typeInfoHistroy>

@@ -1,0 +1,167 @@
+package codegears.DEPuzzles.ui;
+
+import codegears.DEPuzzles.R;
+import android.content.Context;
+import android.content.res.Resources;
+import android.graphics.Canvas;
+import android.graphics.Paint;
+import android.graphics.Rect;
+import android.util.AttributeSet;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.View.OnTouchListener;
+import android.widget.LinearLayout;
+import android.widget.TextView;
+
+public class WordSearchBoard extends LinearLayout {
+
+	private LinearLayout[] line;
+	private WordSearchTile[] tile;
+	private Line current;
+	private float tileSize;
+	private WordSearchBoardListener listener;
+
+	public WordSearchBoard(Context context, AttributeSet attrs) {
+		super(context, attrs);
+		this.setOrientation(LinearLayout.VERTICAL);
+		Resources res = context.getResources();
+		tileSize = res.getDimension(R.dimen.wordsearch_tile_size);
+		current = new Line();
+		startX = -1f;
+		startY = -1f;
+		line = new LinearLayout[10];
+		tile = new WordSearchTile[10 * 10];
+		for (int i = 0; i < 10; i++) {
+			line[i] = new LinearLayout(context);
+			for (int j = 0; j < 10; j++) {
+				tile[(i * 10) + j] = new WordSearchTile(context);
+				tile[(i * 10) + j].setText("A");
+				LinearLayout.LayoutParams layout = new LinearLayout.LayoutParams(
+						(int) tileSize, (int) tileSize, 1f);
+				layout.setMargins(1, 1, 1, 1);
+				line[i].addView(tile[(i * 10) + j], layout);
+			}
+			this.addView(line[i], new LinearLayout.LayoutParams(
+					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
+		}
+		this.invalidate();
+		setWillNotDraw(false);
+	}
+
+	public void setWordSearchBoardListener(WordSearchBoardListener listener) {
+		this.listener = listener;
+	}
+
+	public void setBoardData(String[] grid) {
+		for (int i = 0; i < 10; i++) {
+			for (int j = 0; j < 10; j++) {
+				tile[(i * 10) + j].setText(String.valueOf(grid[i].charAt(j)));
+			}
+		}
+	}
+
+	@Override
+	public boolean onTouchEvent(MotionEvent event) {
+		if (event.getAction() == MotionEvent.ACTION_DOWN) {
+			endX = event.getX();
+			endY = event.getY();
+			int tileSizeX = this.getWidth() / 10;
+			int tileSizeY = this.getHeight() / 10;
+			startX = ((int) endX / tileSizeX) * tileSizeX + (tileSizeX / 2);
+			startY = ((int) endY / tileSizeY) * tileSizeY + (tileSizeY / 2);
+		} else if (event.getAction() == MotionEvent.ACTION_MOVE) {
+			endX = event.getX();
+			endY = event.getY();
+		} else if (event.getAction() == MotionEvent.ACTION_UP) {
+			String word = processWordSearch();
+			if(listener != null){
+				boolean result = listener.onWord(word);
+				if(result){
+					//add current position to list
+				}
+			}
+			startX = -1f;
+			startY = -1f;
+			endX = -1f;
+			endY = -1f;
+		}
+		invalidate();
+		return true;
+	}
+
+	private String processWordSearch() {
+		String word = "";
+		int tileSizeX = this.getWidth() / 10;
+		int tileSizeY = this.getHeight() / 10;
+		int startTileX = (int) startX / tileSizeX;
+		int startTileY = (int) startY / tileSizeY;
+		int endTileX = (int) endX / tileSizeX;
+		int endTileY = (int) endY / tileSizeY;
+		if (startTileX == endTileX) {
+			if (startTileY < endTileY) {
+				for (int i = startTileY; i < (endTileY + 1); i++) {
+					word += tile[(i * 10) + startTileX].getText();
+				}
+			} else {
+				for (int i = endTileY; i < (startTileY + 1); i++) {
+					word += tile[(i * 10) + startTileX].getText();
+				}
+			}
+		} else if (startTileY == endTileY) {
+			if (startTileX < endTileX) {
+				for (int i = startTileX; i < (endTileX + 1); i++) {
+					word += tile[(startTileY * 10) + i].getText();
+				}
+			} else {
+				for (int i = endTileX; i < (startTileX + 1); i++) {
+					word += tile[(startTileY * 10) + i].getText();
+				}
+			}
+		} else if ((startTileX - startTileY) == (endTileX - endTileY)) {
+			if (startTileX < endTileX) {
+				for (int i = 0; i < (endTileX - startTileX + 1); i++) {
+					word += tile[((startTileY + i) * 10) + startTileX + i].getText();
+				}
+			} else {
+				for (int i = 0; i < (startTileX - endTileX + 1); i++) {
+					word += tile[((endTileY + i) * 10) + endTileX + i].getText();
+				}
+			}
+		} else if ((startTileX + startTileY) == (endTileX + endTileY)) {
+			if (startTileY < endTileY) {
+				for (int i = 0; i < (endTileY - startTileY + 1); i++) {
+					word += tile[((startTileY + i) * 10) + startTileX - i].getText();
+				}
+			} else {
+				for (int i = 0; i < (startTileY - endTileY + 1); i++) {
+					word += tile[((endTileY + i) * 10) + endTileX - i].getText();
+				}
+			}
+		}
+		return word;
+	}
+
+	@Override
+	public void draw(Canvas canvas) {
+		super.draw(canvas);
+		Paint p = new Paint();
+		p.setColor(0x7FFF0000);
+		p.setStrokeWidth(tileSize);
+		p.setStrokeCap(Paint.Cap.ROUND);
+		if ((startX >= 0) && (endY >= 0)) {
+			canvas.drawLine(startX, startY, endX, endY, p);
+		}
+	}
+
+	@Override
+	protected void onDraw(Canvas canvas) {
+	}
+	
+	private class Line {
+		public float startX;
+		public float startY;
+		public float endX;
+		public float endY;
+	}
+
+}

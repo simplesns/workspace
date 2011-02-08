@@ -11,12 +11,13 @@
 		<Button android:text="C" android:id="@+id/WordSearchClear"
 			android:layout_width="wrap_content" android:layout_height="wrap_content"></Button>
 		<codegears.DEPuzzles.ui.TimerButton
-			android:text="T" android:id="@+id/WordSearchTimer" android:layout_width="wrap_content"
-			android:layout_height="wrap_content"></codegears.DEPuzzles.ui.TimerButton>
+			android:text="T" android:id="@+id/WordSearchTimer"
+			android:layout_width="wrap_content" android:layout_height="wrap_content">
+		</codegears.DEPuzzles.ui.TimerButton>
 	</LinearLayout>
 	<codegears.DEPuzzles.ui.WordSearchBoard
 		android:id="@+id/WordSearchBoard" android:layout_height="wrap_content"
-		android:layout_width="fill_parent" android:layout_weight="1"></codegears.DEPuzzles.ui.WordSearchBoard>
+		android:layout_width="fill_parent"></codegears.DEPuzzles.ui.WordSearchBoard>
 	<TableLayout android:id="@+id/TableLayout01"
 		android:layout_width="fill_parent" android:layout_height="wrap_content">
 		<TableRow android:id="@+id/TableRow01" android:layout_width="fill_parent"

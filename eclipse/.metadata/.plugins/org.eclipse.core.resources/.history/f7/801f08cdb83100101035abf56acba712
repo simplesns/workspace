@@ -1,0 +1,12 @@
+package codegears.DEPuzzles.util;
+
+public class Util {
+
+	public String stringReverse(String s){
+		String returnValue = "";
+		for(int i = 0; i < s.length(); i++){
+			returnValue += s.charAt(s.length() - i - 1);
+		}
+		return returnValue;
+	}
+}

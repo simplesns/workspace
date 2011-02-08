@@ -165,8 +165,8 @@ public class DataBuilder {
 	}
 
 	public static String[] createWordSearchListFromAsset(Context context,
-			String file) {
-		String[] str = new String[12];
+			String file, int size) {
+		String[] str = new String[size];
 		AssetManager aManager = context.getAssets();
 		try {
 			InputStream iStream = aManager.open(file);
@@ -183,5 +183,26 @@ public class DataBuilder {
 			e.printStackTrace();
 		}
 		return str;
+	}
+	
+	public static String createWordPuzzlerMessageFromAsset(Context context, String file){
+		String str = "";
+		AssetManager aManager = context.getAssets();
+		try {
+			InputStream iStream = aManager.open(file);
+			BufferedReader bReader = new BufferedReader(
+					new InputStreamReader(iStream));
+			String line = bReader.readLine();
+			int i = 0;
+			while (line != null) {
+				str += line;
+				line = bReader.readLine();
+				i++;
+			}
+			str = str.trim();
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+		return str;		
 	}
 }

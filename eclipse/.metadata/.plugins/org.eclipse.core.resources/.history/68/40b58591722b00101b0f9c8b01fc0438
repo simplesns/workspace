@@ -1,7 +1,0 @@
-package codegears.DEPuzzles.data;
-
-public class Clue {
-		private String id;
-		private String text;
-		private String length;
-}

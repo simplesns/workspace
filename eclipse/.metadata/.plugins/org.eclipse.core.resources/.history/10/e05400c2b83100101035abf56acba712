@@ -1,0 +1,9 @@
+package codegears.DEPuzzles.util;
+
+public class Util {
+
+	public String stringReverse(String s){
+		for(int i = 0; i < s.length(); i++){
+		}
+	}
+}
