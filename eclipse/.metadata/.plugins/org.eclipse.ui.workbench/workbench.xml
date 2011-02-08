@@ -17,7 +17,7 @@
 <coolItem id="org.eclipse.jdt.ui.CompilationUnitEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.jdt.ui.JavaElementCreationActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
 <coolItem id="org.eclipse.search.searchActionSet" itemType="typeToolBarContribution" x="76" y="22"/>
-<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typeToolBarContribution" x="-1" y="-1"/>
+<coolItem id="org.eclipse.ui.DefaultTextEditor" itemType="typePlaceholder" x="-1" y="-1"/>
 <coolItem id="org.eclipse.ui.edit.text.actionSet.presentation" itemType="typeToolBarContribution" x="107" y="22"/>
 <coolItem id="org.eclipse.wst.xml.ui.perspective.NewFileToolBar" itemType="typeToolBarContribution" x="-1" y="-1"/>
 <coolItem id="org.eclipse.wst.xml.ui.design.DesignToolBar" itemType="typeToolBarContribution" x="61" y="22"/>
@@ -40,13 +40,15 @@
 <part id="4"/>
 <part id="5"/>
 <part id="6"/>
+<part id="7"/>
+<part id="8"/>
 </presentation>
 </folder>
 </info>
 </editorArea>
 <editor activePart="true" focus="true" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WordPuzzlerActivity.java" partName="WordPuzzlerActivity.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/WordPuzzlerActivity.java" title="WordPuzzlerActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/WordPuzzlerActivity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/WordPuzzlerActivity.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="2966" selectionTopPixel="1261"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6222" selectionTopPixel="2625"/>
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WordSearchActivity.java" partName="WordSearchActivity.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/WordSearchActivity.java" title="WordSearchActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/WordSearchActivity.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/WordSearchActivity.java"/>
@@ -54,14 +56,10 @@
 </editor>
 <editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataBuilder.java" partName="DataBuilder.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java" title="DataBuilder.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="5287" selectionTopPixel="2577"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="4175" selectionTopPixel="2123"/>
 </editor>
 <editor id="org.eclipse.ui.DefaultTextEditor" name="wordpuz21sols.txt" partName="wordpuz21sols.txt" path="C:/workspace/eclipse/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21sols.txt" title="wordpuz21sols.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21sols.txt" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21sols.txt"/>
-<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
-</editor>
-<editor id="org.eclipse.ui.DefaultTextEditor" name="wordpuz21clues.txt" partName="wordpuz21clues.txt" path="C:/workspace/eclipse/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21clues.txt" title="wordpuz21clues.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21clues.txt" workbook="DefaultEditorWorkbook">
-<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21clues.txt"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
 </editor>
 <editor id="org.eclipse.ui.DefaultTextEditor" name="wordpuz22clues.txt" partName="wordpuz22clues.txt" path="C:/workspace/eclipse/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz22clues.txt" title="wordpuz22clues.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz22clues.txt" workbook="DefaultEditorWorkbook">
@@ -71,6 +69,17 @@
 <editor id="org.eclipse.ui.DefaultTextEditor" name="wordpuz22sols.txt" partName="wordpuz22sols.txt" path="C:/workspace/eclipse/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz22sols.txt" title="wordpuz22sols.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz22sols.txt" workbook="DefaultEditorWorkbook">
 <input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz22sols.txt"/>
 <editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_keypad.xml" partName="ui_keypad.xml" path="C:/workspace/eclipse/DEPuzzles/res/layout/ui_keypad.xml" title="ui_keypad.xml" tooltip="DEPuzzles/res/layout/ui_keypad.xml" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/res/layout/ui_keypad.xml"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SudokuActivity.java" partName="SudokuActivity.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/SudokuActivity.java" title="SudokuActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/SudokuActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/SudokuActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="0" selectionTopPixel="0"/>
+</editor>
+<editor id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PuzzleSelectActivity.java" partName="PuzzleSelectActivity.java" path="C:/workspace/eclipse/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java" title="PuzzleSelectActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java" workbook="DefaultEditorWorkbook">
+<input factoryID="org.eclipse.ui.part.FileEditorInputFactory" path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
+<editorState selectionHorizontalPixel="0" selectionLength="0" selectionOffset="6839" selectionTopPixel="1998"/>
 </editor>
 </editors>
 <views>
@@ -109,10 +118,6 @@
 </view>
 <view id="org.eclipse.ui.views.ProblemView" partName="Problems">
 <viewState PRIMARY_SORT_FIELD="org.eclipse.ui.ide.severityAndDescriptionField" categoryGroup="org.eclipse.ui.ide.severity" markerContentGenerator="org.eclipse.ui.ide.problemsGenerator" partName="Problems">
-<expanded>
-<category IMemento.internal.id="Errors"/>
-<category IMemento.internal.id="Warnings"/>
-</expanded>
 <columnWidths org.eclipse.ui.ide.locationField="0" org.eclipse.ui.ide.markerType="0" org.eclipse.ui.ide.pathField="0" org.eclipse.ui.ide.resourceField="0" org.eclipse.ui.ide.severityAndDescriptionField="0"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.severityAndDescriptionField"/>
 <visible IMemento.internal.id="org.eclipse.ui.ide.resourceField"/>
@@ -160,7 +165,7 @@
 <viewState/>
 </view>
 </views>
-<perspectives activePart="org.eclipse.jdt.ui.CompilationUnitEditor" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
+<perspectives activePart="org.eclipse.jdt.ui.PackageExplorer" activePerspective="org.eclipse.jdt.ui.JavaPerspective">
 <perspective editorAreaTrimState="2" editorAreaVisible="1" fixed="0" version="0.016">
 <descriptor class="org.eclipse.jdt.internal.ui.JavaPerspectiveFactory" id="org.eclipse.jdt.ui.JavaPerspective" label="Java"/>
 <alwaysOnActionSet id="org.eclipse.ui.cheatsheets.actionSet"/>
@@ -250,7 +255,7 @@
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.23099631" ratioLeft="313" ratioRight="1042" relationship="2" relative="left"/>
-<info folder="true" part="bottom" ratio="0.71746033" ratioLeft="452" ratioRight="178" relationship="4" relative="org.eclipse.ui.editorss">
+<info folder="true" part="bottom" ratio="0.8984127" ratioLeft="566" ratioRight="64" relationship="4" relative="org.eclipse.ui.editorss">
 <folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
 <page content="org.eclipse.ui.views.ProblemView" label="Problems"/>
 <page content="org.eclipse.jdt.ui.JavadocView" label="Javadoc"/>
@@ -326,71 +331,50 @@
 <view id="org.eclipse.debug.ui.VariableView"/>
 <view id="org.eclipse.debug.ui.BreakpointView"/>
 <fastViewBars/>
-<layout>
-<mainWindow>
-<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
+<layout>&#x0A;<mainWindow>&#x0A;<info folder="true" part="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.DebugView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.DebugView" label="Debug"/>
 <page content="org.eclipse.ui.views.ResourceNavigator" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.PackageExplorer" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.ui.TypeHierarchy" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
+<info folder="true" part="stickyFolderRight" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.help.ui.HelpView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.internal.introview" label="LabelNotFound"/>
 <page content="org.eclipse.ui.cheatsheets.views.CheatSheetView" label="LabelNotFound"/>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.3825397" ratioLeft="241" ratioRight="389" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">
-<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ConsoleFolderView" ratio="0.3825397" ratioLeft="241" ratioRight="389" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.ui.console.ConsoleView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.console.ConsoleView" label="Console"/>
 <page content="org.eclipse.ui.views.TaskList" label="Tasks"/>
 <page content="org.eclipse.ui.views.BookmarkView" label="LabelNotFound"/>
 <page content="org.eclipse.ui.views.PropertySheet" label="LabelNotFound"/>
 <page content="org.eclipse.jdt.debug.ui.DisplayView" label="LabelNotFound"/>
 <page content="org.eclipse.search.SearchResultView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@7e116d9b" ratio="0.16826569" ratioLeft="228" ratioRight="1127" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">
-<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">
-<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@7e116d9b" ratio="0.16826569" ratioLeft="228" ratioRight="1127" relationship="2" relative="org.eclipse.debug.internal.ui.ConsoleFolderView">&#x0A;<folder activePageID="com.android.ide.eclipse.ddms.views.LogCatView" appearance="2" expanded="2">&#x0A;<page content="com.android.ide.eclipse.ddms.views.LogCatView" label="LogCat"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.ui.internal.ViewStack@2cfd610" ratio="0.38490567" ratioLeft="102" ratioRight="163" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
+<info folder="true" part="org.eclipse.ui.internal.ViewStack@2cfd610" ratio="0.38490567" ratioLeft="102" ratioRight="163" relationship="4" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder activePageID="org.eclipse.debug.ui.VariableView" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.VariableView" label="Variables"/>
 <page content="org.eclipse.debug.ui.BreakpointView" label="Breakpoints"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 <part id="1"/>
 </presentation>
 </folder>
 </info>
-<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.internal.ViewStack@2cfd610">
-<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">
-<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.OutlineFolderView" ratio="0.7496318" ratioLeft="1018" ratioRight="340" relationship="2" relative="org.eclipse.ui.internal.ViewStack@2cfd610">&#x0A;<folder activePageID="org.eclipse.ui.views.ContentOutline" appearance="2" expanded="2">&#x0A;<page content="org.eclipse.ui.views.ContentOutline" label="Outline"/>
 <page content="org.eclipse.ant.ui.views.AntView" label="LabelNotFound"/>
-<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">
-<part id="0"/>
+<presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory">&#x0A;<part id="0"/>
 </presentation>
 </folder>
 </info>
 <info part="org.eclipse.ui.editorss" ratio="0.2413793" ratioLeft="14" ratioRight="44" relationship="4" relative="org.eclipse.ui.internal.ViewStack@2cfd610"/>
-<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">
-<folder appearance="2" expanded="2">
-<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
+<info folder="true" part="org.eclipse.debug.internal.ui.ToolsFolderView" ratio="0.5" ratioLeft="679" ratioRight="679" relationship="2" relative="org.eclipse.debug.internal.ui.NavigatorFolderView">&#x0A;<folder appearance="2" expanded="2">&#x0A;<page content="org.eclipse.debug.ui.ExpressionView" label="LabelNotFound"/>
 <page content="org.eclipse.debug.ui.RegisterView" label="LabelNotFound"/>
 <presentation id="org.eclipse.ui.presentations.WorkbenchPresentationFactory"/>
 </folder>
@@ -403,8 +387,6 @@
 <navigationHistory>
 <editors>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/WordPuzzlerActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/WordSearchActivity.java"/>
-<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21clues.txt"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21sols.txt"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21clues.txt"/>
@@ -412,156 +394,156 @@
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz22sols.txt"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz24clues.txt"/>
 <editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz24sols.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/wordsearch.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/ui_keypad.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" path="/DEPuzzles/res/layout/ui_numpad.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/WordPuzzlerPuzzle/WP_easy.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21blurb.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21clues.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21grid.txt"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/ui/WordSearchBoard.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/SudokuActivity.java"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" path="/DEPuzzles/AndroidManifest.xml"/>
+<editor factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
 </editors>
-<item historyLabel="WordPuzzlerActivity.java" index="0">
-<position info="not_deleted" x="4552" y="0"/>
-</item>
-<item historyLabel="DataBuilder.java" index="2">
-<position info="not_deleted" x="5287" y="0"/>
-</item>
-<item historyLabel="WordSearchActivity.java" index="1">
-<position info="not_deleted" x="3419" y="0"/>
-</item>
-<item historyLabel="WordPuzzlerActivity.java" index="0">
-<position info="not_deleted" x="3786" y="0"/>
-</item>
-<item historyLabel="WordSearchActivity.java" index="1">
-<position info="not_deleted" x="6087" y="401"/>
-</item>
-<item historyLabel="WordPuzzlerActivity.java" index="0">
-<position info="not_deleted" x="4514" y="0"/>
-</item>
-<item historyLabel="wordpuz21clues.txt" index="3">
+<item historyLabel="wordpuz21clues.txt" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21sols.txt" index="4">
+<item historyLabel="wordpuz21sols.txt" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21clues.txt" index="3">
+<item historyLabel="wordpuz21clues.txt" index="1">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21sols.txt" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21clues.txt" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21sols.txt" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21clues.txt" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21sols.txt" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21clues.txt" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21sols.txt" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21clues.txt" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21sols.txt" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21clues.txt" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21sols.txt" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21clues.txt" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21sols.txt" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21clues.txt" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21sols.txt" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21clues.txt" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21sols.txt" index="4">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21clues.txt" index="3">
-<position info="not_deleted" x="0" y="0"/>
-</item>
-<item historyLabel="wordpuz21sols.txt" index="4">
+<item historyLabel="wordpuz21sols.txt" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
 <item historyLabel="WordPuzzlerActivity.java" index="0">
 <position info="not_deleted" x="4514" y="0"/>
 </item>
-<item historyLabel="wordpuz21sols.txt" index="4">
+<item historyLabel="wordpuz21sols.txt" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21clues.txt" index="5">
+<item historyLabel="wordpuz21clues.txt" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21sols.txt" index="4">
+<item historyLabel="wordpuz21sols.txt" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21clues.txt" index="5">
+<item historyLabel="wordpuz21clues.txt" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21sols.txt" index="4">
+<item historyLabel="wordpuz21sols.txt" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21clues.txt" index="5">
+<item historyLabel="wordpuz21clues.txt" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21sols.txt" index="4">
+<item historyLabel="wordpuz21sols.txt" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21clues.txt" index="5">
+<item historyLabel="wordpuz21clues.txt" index="3">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz21sols.txt" index="4">
+<item historyLabel="wordpuz21sols.txt" index="2">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz22clues.txt" index="6">
+<item historyLabel="wordpuz22clues.txt" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz22sols.txt" index="7">
+<item historyLabel="wordpuz22sols.txt" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz22clues.txt" index="6">
+<item historyLabel="wordpuz22clues.txt" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz22sols.txt" index="7">
+<item historyLabel="wordpuz22sols.txt" index="5">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz22clues.txt" index="6">
+<item historyLabel="wordpuz22clues.txt" index="4">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz24clues.txt" index="8">
+<item historyLabel="wordpuz24clues.txt" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz24sols.txt" index="9">
+<item historyLabel="wordpuz24sols.txt" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz24clues.txt" index="8">
+<item historyLabel="wordpuz24clues.txt" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz24sols.txt" index="9">
+<item historyLabel="wordpuz24sols.txt" index="7">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz24clues.txt" index="8">
+<item historyLabel="wordpuz24clues.txt" index="6">
 <position info="not_deleted" x="0" y="0"/>
 </item>
-<item historyLabel="wordpuz22clues.txt" index="6">
+<item historyLabel="wordpuz22clues.txt" index="4">
 <position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="WordPuzzlerActivity.java" index="0">
+<position info="not_deleted" x="4514" y="0"/>
+</item>
+<item historyLabel="wordsearch.xml" index="8"/>
+<item historyLabel="WordPuzzlerActivity.java" index="0">
+<position info="not_deleted" x="3513" y="0"/>
+</item>
+<item historyLabel="ui_keypad.xml" index="9"/>
+<item historyLabel="ui_numpad.xml" index="10"/>
+<item historyLabel="ui_keypad.xml" index="9"/>
+<item historyLabel="WP_easy.txt" index="11">
+<position/>
+</item>
+<item historyLabel="ui_keypad.xml" index="9"/>
+<item historyLabel="WordPuzzlerActivity.java" index="0">
+<position info="not_deleted" x="3151" y="4"/>
+</item>
+<item historyLabel="WP_easy.txt" index="11">
+<position info="not_deleted" x="0" y="9"/>
+</item>
+<item historyLabel="WordPuzzlerActivity.java" index="0">
+<position info="not_deleted" x="3403" y="0"/>
+</item>
+<item historyLabel="wordpuz21blurb.txt" index="12">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="WordPuzzlerActivity.java" index="0">
+<position info="not_deleted" x="3403" y="0"/>
+</item>
+<item historyLabel="wordpuz21clues.txt" index="13">
+<position info="not_deleted" x="143" y="0"/>
+</item>
+<item historyLabel="WordPuzzlerActivity.java" index="0">
+<position info="not_deleted" x="3403" y="0"/>
+</item>
+<item historyLabel="wordpuz21grid.txt" index="14">
+<position info="not_deleted" x="209" y="0"/>
+</item>
+<item historyLabel="WordPuzzlerActivity.java" index="0">
+<position info="not_deleted" x="984" y="0"/>
+</item>
+<item historyLabel="WordSearchBoard.java" index="15">
+<position info="not_deleted" x="1570" y="0"/>
+</item>
+<item historyLabel="WordPuzzlerActivity.java" index="0">
+<position info="not_deleted" x="984" y="0"/>
+</item>
+<item historyLabel="DataBuilder.java" index="16">
+<position info="not_deleted" x="4175" y="0"/>
+</item>
+<item historyLabel="SudokuActivity.java" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="DEPuzzles Manifest" index="18"/>
+<item historyLabel="SudokuActivity.java" index="17">
+<position info="not_deleted" x="0" y="0"/>
+</item>
+<item historyLabel="PuzzleSelectActivity.java" index="19">
+<position info="not_deleted" x="6839" y="0"/>
 </item>
 <item active="true" historyLabel="WordPuzzlerActivity.java" index="0">
-<position info="not_deleted" x="4514" y="0"/>
+<position info="not_deleted" x="984" y="0"/>
 </item>
 </navigationHistory>
 <input factoryID="org.eclipse.ui.internal.model.ResourceFactory" path="/" type="8"/>
@@ -580,6 +562,36 @@
 </trimLayout>
 </window>
 <mruList>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PuzzleSelectActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="DEPuzzles/AndroidManifest.xml">
+<persistable path="/DEPuzzles/AndroidManifest.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="SudokuActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/SudokuActivity.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/SudokuActivity.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WordSearchBoard.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/ui/WordSearchBoard.java">
+<persistable path="/DEPuzzles/src/codegears/DEPuzzles/ui/WordSearchBoard.java"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="wordpuz21grid.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21grid.txt">
+<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21grid.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="wordpuz21blurb.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21blurb.txt">
+<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21blurb.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="WP_easy.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/WP_easy.txt">
+<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/WP_easy.txt"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_numpad.xml" tooltip="DEPuzzles/res/layout/ui_numpad.xml">
+<persistable path="/DEPuzzles/res/layout/ui_numpad.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="ui_keypad.xml" tooltip="DEPuzzles/res/layout/ui_keypad.xml">
+<persistable path="/DEPuzzles/res/layout/ui_keypad.xml"/>
+</file>
+<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.layout.LayoutEditor" name="wordsearch.xml" tooltip="DEPuzzles/res/layout/wordsearch.xml">
+<persistable path="/DEPuzzles/res/layout/wordsearch.xml"/>
+</file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="wordpuz24sols.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz24sols.txt">
 <persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz24sols.txt"/>
 </file>
@@ -594,36 +606,6 @@
 </file>
 <file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="wordpuz21clues.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21clues.txt">
 <persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21clues.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="wordpuz21sols.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21sols.txt">
-<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21sols.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="DataBuilder.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/util/DataBuilder.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="wordpuz21blurb.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21blurb.txt">
-<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/wordpuz21blurb.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WordSearchActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/WordSearchActivity.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/WordSearchActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="PuzzleSelectActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/PuzzleSelectActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="com.android.ide.eclipse.editors.manifest.ManifestEditor" name="AndroidManifest.xml" tooltip="DEPuzzles/AndroidManifest.xml">
-<persistable path="/DEPuzzles/AndroidManifest.xml"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.jdt.ui.CompilationUnitEditor" name="WordPuzzlerActivity.java" tooltip="DEPuzzles/src/codegears/DEPuzzles/WordPuzzlerActivity.java">
-<persistable path="/DEPuzzles/src/codegears/DEPuzzles/WordPuzzlerActivity.java"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="wordpuz22blurb.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/easy/wordpuz22blurb.txt">
-<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/easy/wordpuz22blurb.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="wordpuz21sols.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/easy/wordpuz21sols.txt">
-<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/easy/wordpuz21sols.txt"/>
-</file>
-<file factoryID="org.eclipse.ui.part.FileEditorInputFactory" id="org.eclipse.ui.DefaultTextEditor" name="wordpuz21grid.txt" tooltip="DEPuzzles/assets/WordPuzzlerPuzzle/easy/wordpuz21grid.txt">
-<persistable path="/DEPuzzles/assets/WordPuzzlerPuzzle/easy/wordpuz21grid.txt"/>
 </file>
 </mruList>
 </workbench>

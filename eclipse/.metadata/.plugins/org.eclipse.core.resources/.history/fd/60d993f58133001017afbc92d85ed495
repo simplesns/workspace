@@ -154,11 +154,7 @@ public class PuzzleSelectActivity extends Activity implements ClickListener,
 			i.putExtra(EXTRA_FILE, file);
 			i.putExtra(EXTRA_TEXT, data.getText());
 			this.startActivity(i);
-		} else if(game.equals(MenuActivity.SUDOKUGAME)){
-			Intent i = new Intent(this, WordPuzzlerActivity.class);
-			i.putExtra(EXTRA_FILE, file);
-			i.putExtra(EXTRA_TEXT, data.getText());
-			this.startActivity(i);
+		} else if(game.equals(MenuAcitivity.SUDOKUGAME)){
 		}
 	}
 

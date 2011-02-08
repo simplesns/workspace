@@ -22,7 +22,6 @@
 <activity android:name="SummaryActivity"></activity>
 <activity android:name="WordSearchActivity"></activity>
 <activity android:name="WordPuzzlerActivity"></activity>
-<activity android:name="SudokuActivity"></activity>
 </application>
     <uses-sdk android:minSdkVersion="7" />
 
