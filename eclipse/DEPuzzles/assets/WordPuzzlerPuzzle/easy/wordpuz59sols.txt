@@ -1,0 +1,10 @@
+1. Casserole
+2. Stew
+3. Scramble
+4. Braise
+5. Boil
+6. Simmer
+7. Roast
+8. Steam
+9. Fry
+10. Curry

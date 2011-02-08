@@ -1,0 +1,2 @@
+There are 10 literary animals listed in the grid. We've given you the animal's
+name, you must find the type of animal.

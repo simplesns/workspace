@@ -44,6 +44,15 @@ public class NumberCrunchGame extends LinearLayout implements OnClickListener {
 		bgView = (LinearLayout) this.findViewById(R.id.BgNumberCrunchGame);
 
 	}
+
+	public boolean isComplete(){
+		//compare result with resultView.getText()
+		if(String.valueOf(result).equals(String.valueOf((resultView.getText())))){
+			return true;
+		}else {
+			return false;
+		}
+	}
 	
 	public void setStateToNormal(){
 		state = STATE_NORMAL;
@@ -53,14 +62,13 @@ public class NumberCrunchGame extends LinearLayout implements OnClickListener {
 	
 	public void setStateToCorrect(){
 		state = STATE_CORRECT;
-//		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz_correct);
-		num1View.setText(num1);
+		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz_correct);
+		//num1View.setText(num1);
 	}
 	
 	public void setStateToWrong(){
 		state = STATE_WRONG;
-//		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz_wrong);
-		num1View.setText("?");
+		bgView.setBackgroundResource(R.drawable.numbercrunch_bgquiz_wrong);
 	}
 
 	public String getNum1(){
@@ -94,7 +102,7 @@ public class NumberCrunchGame extends LinearLayout implements OnClickListener {
 		numOpearationView.setText(numopeartion);
 	}
 	
-	public void setResult(int result2){
+	public void setResult(int result){
 		this.result = result;
 	}
 	

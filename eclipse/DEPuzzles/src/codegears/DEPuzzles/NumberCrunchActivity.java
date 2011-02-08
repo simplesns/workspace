@@ -14,6 +14,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewParent;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -32,7 +33,7 @@ public class NumberCrunchActivity extends Activity implements NumPadListener {
 	public static final String EXTRA_FILE = "file";
 	private int[] result;
 	private String[] splitValue;
-	private NumberCrunchGame setValue;
+	private ArrayList<NumberCrunchGame> setValue;
 	
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -46,16 +47,17 @@ public class NumberCrunchActivity extends Activity implements NumPadListener {
 	}
 	
 	private void setGameArea(){
+		setValue = new ArrayList<NumberCrunchGame>();
 		mission = this.getIntent().getStringExtra(PuzzleSelectActivity.EXTRA_FILE);
 		
 		quiz = DataBuilder.createNumberCrunchQuizFromAsset(this,"NumberCrunchPuzzle/quiz/"+mission+".txt");
 		int j = 0;
 		for(int i = 0; i < quiz.length; i+=2){
 			if(i == 0){
-				setValue = new NumberCrunchGame(this);
-				setValue.setNum1(quiz[0]);
-				setValue.setNumOperation(quiz[1]);
-				setValue.setNum2(quiz[2]);
+				NumberCrunchGame t = new NumberCrunchGame(this);
+				t.setNum1(quiz[0]);
+				t.setNumOperation(quiz[1]);
+				t.setNum2(quiz[2]);
 				
 				if(quiz[0].indexOf("/") > 0){
 					splitValue = quiz[0].split("/");
@@ -72,12 +74,12 @@ public class NumberCrunchActivity extends Activity implements NumPadListener {
 					result[j] = (int) ((Double.valueOf(quiz[0])*Double.valueOf(quiz[2]))/100);
 				}else if(quiz[1].equals("^")){
 					result[j] = (int) Math.pow(Double.valueOf(quiz[0]), 2);
-					setValue.setNumOperation("squared");
-					setValue.setNum2("");
+					t.setNumOperation("squared");
+					t.setNum2("");
 				}else if(quiz[1].equals("rt")){
 					result[j] = (int) Math.sqrt(Double.valueOf(quiz[0]));
-					setValue.setNumOperation("√");
-					setValue.setNum2("");
+					t.setNumOperation("√");
+					t.setNum2("");
 				}else if(quiz[1].equals("+")){
 					result[j] = (int) (Double.valueOf(quiz[0])+Double.valueOf(quiz[2]));
 				}else if(quiz[1].equals("-")){
@@ -86,12 +88,16 @@ public class NumberCrunchActivity extends Activity implements NumPadListener {
 					result[j] = (int) (Double.valueOf(quiz[0])/Double.valueOf(quiz[2]));
 				}
 				i++;
-				setValue.setResult(result[j]);
+				t.setResult(result[j]);
+				game.addView(t);
+				setValue.add(t);
 			}else {
-				setValue = new NumberCrunchGame(this);
-				setValue.setNum1(String.valueOf(result[j-1]));
-				setValue.setNumOperation(quiz[i]);
-				setValue.setNum2(quiz[i+1]);
+				NumberCrunchGame t = new NumberCrunchGame(this);
+				t.setNum1(String.valueOf(result[j-1]));
+				
+				t.setStateToNormal();
+				t.setNumOperation(quiz[i]);
+				t.setNum2(quiz[i+1]);
 				
 				if(quiz[i+1].indexOf("/") > 0){
 					splitValue = quiz[i+1].split("/");
@@ -105,12 +111,12 @@ public class NumberCrunchActivity extends Activity implements NumPadListener {
 					result[j] = (int) ((result[j-1]*Double.valueOf(quiz[i+1]))/100);
 				}else if(quiz[i].equals("^")){
 					result[j] = (int) Math.pow(result[j-1], 2);
-					setValue.setNumOperation("squared");
-					setValue.setNum2("");
+					t.setNumOperation("squared");
+					t.setNum2("");
 				}else if(quiz[i].equals("rt")){
 					result[j] = (int) Math.sqrt(result[j-1]);
-					setValue.setNumOperation("√");
-					setValue.setNum2("");
+					t.setNumOperation("√");
+					t.setNum2("");
 				}else if(quiz[i].equals("+")){
 					result[j] = (int) (result[j-1]+Double.valueOf(quiz[i+1]));
 				}else if(quiz[i].equals("-")){
@@ -118,10 +124,11 @@ public class NumberCrunchActivity extends Activity implements NumPadListener {
 				}else if(quiz[i].equals("/")){
 					result[j] = (int) (result[j-1]/Double.valueOf(quiz[i+1]));
 				}
-				setValue.setResult(result[j]);
+				t.setResult(result[j]);	
+				game.addView(t);
+				setValue.add(t);
 			}
 			j++;
-			game.addView(setValue);
 		}
 	}
 
@@ -133,20 +140,40 @@ public class NumberCrunchActivity extends Activity implements NumPadListener {
 			return;
 		}
 		//add text on that EditText
-		EditText editText = (EditText)view;
-		//calculate for correct answer
+		EditText editText = (EditText) view;
+		View v = (View) editText.getParent().getParent().getParent();
+		
+		NumberCrunchGame game = null;
+		if(v instanceof NumberCrunchGame){
+			game = (NumberCrunchGame) v;
+		}
+		
+		//check edit num answer
 		char c = NumPad.getChar(keyCode); //Chatchai
 		if(keyCode == NumPad.NUMPAD_x){
 			//delete the last one
+			String editNum = editText.getText().toString();
+			if(editNum.length()==0){
+				editText.setText("");
+			}else {
+				editNum = editNum.substring(0, editNum.length()-1);
+				editText.setText(editNum);
+			}
 		} else {
 			editText.append(String.valueOf(c));
 		}
-		String text = editText.getText().toString();
-		//if correct
-		if(text.equals(text)){	//Chatchai
-			//cursor move or finish game
-			//change ui_numbercrunchgame state
-		}
 		
+		if(game.isComplete()){
+			game.setStateToCorrect();
+			//game.requestFocus(game.FOCUS_UP);
+		}
+		//isComplete
+		//if true
+			//change stage
+			//change focus
+			//if no next focus
+				//check all NumberCrunchGame
+		//false
+			//do nothings
 	}
 }

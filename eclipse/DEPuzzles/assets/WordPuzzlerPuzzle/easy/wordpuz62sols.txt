@@ -1,0 +1,10 @@
+1. Drachma
+2. Dollar
+3. Krona
+4. Mark
+5. Pound
+6. Peso
+7. Yen
+8. Escudo
+9. Franc
+10. Lira

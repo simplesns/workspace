@@ -1,0 +1,4 @@
+There are 10 numbers
+hidden in the grid. Work
+out the sum and find the
+number.
