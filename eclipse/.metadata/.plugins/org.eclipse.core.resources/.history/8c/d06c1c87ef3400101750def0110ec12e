@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent" android:layout_height="fill_parent"
+	android:orientation="vertical">
+
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="wrap_content" android:layout_height="wrap_content"
+		android:background="@drawable/game_headergame" android:orientation="horizontal">
+		<Button android:layout_height="wrap_content" android:text="back"
+			android:layout_width="fill_parent" android:layout_gravity="center_vertical"
+			android:id="@+id/NumberCrunchBack"></Button>
+		<Button android:layout_height="wrap_content" android:text="hint"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:layout_gravity="center_vertical" android:id="@+id/NumberCrunchHint"></Button>
+		<Button android:layout_height="wrap_content" android:text="reset"
+			android:layout_width="fill_parent" android:layout_weight="1"
+			android:layout_gravity="center_vertical" android:id="@+id/NumberCrunchResetGame"></Button>
+		<codegears.DEPuzzles.ui.TimerButton android:layout_height="wrap_content" android:text="time"
+			android:layout_width="fill_parent" android:layout_gravity="center_vertical"
+			android:id="@+id/NumberCrunchTimer"></Button>
+	</LinearLayout>
+	<ScrollView android:layout_width="fill_parent"
+		android:id="@+id/NumberCrunchScrollView" android:layout_height="wrap_content" android:layout_weight="1">
+		
+	<LinearLayout android:layout_height="wrap_content" android:id="@+id/LinearNumberCrunchArea" android:orientation="vertical" android:layout_width="fill_parent"></LinearLayout>
+</ScrollView>
+	<codegears.DEPuzzles.ui.NumPad android:layout_height="wrap_content"
+		android:layout_width="fill_parent" android:id="@+id/TableNumPad">
+	</codegears.DEPuzzles.ui.NumPad>
+</LinearLayout>

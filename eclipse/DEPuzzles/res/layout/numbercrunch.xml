@@ -15,9 +15,9 @@
 		<Button android:layout_height="wrap_content" android:text="reset"
 			android:layout_width="fill_parent" android:layout_weight="1"
 			android:layout_gravity="center_vertical" android:id="@+id/NumberCrunchResetGame"></Button>
-		<Button android:layout_height="wrap_content" android:text="time"
+		<codegears.DEPuzzles.ui.TimerButton android:layout_height="wrap_content" android:text="time"
 			android:layout_width="fill_parent" android:layout_gravity="center_vertical"
-			android:id="@+id/NumberCrunchTimer"></Button>
+			android:id="@+id/NumberCrunchTimer"></codegears.DEPuzzles.ui.TimerButton>
 	</LinearLayout>
 	<ScrollView android:layout_width="fill_parent"
 		android:id="@+id/NumberCrunchScrollView" android:layout_height="wrap_content" android:layout_weight="1">
