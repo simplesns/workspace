@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-<fullyQualifiedTypeName name="android.R.layout"/>
 <fullyQualifiedTypeName name="java.lang.Float"/>
 <fullyQualifiedTypeName name="java.lang.Double"/>
 <fullyQualifiedTypeName name="android.view.ViewGroup.LayoutParams"/>
@@ -60,4 +59,5 @@
 <fullyQualifiedTypeName name="android.view.View.OnClickListener"/>
 <fullyQualifiedTypeName name="android.view.View.OnFocusChangeListener"/>
 <fullyQualifiedTypeName name="codegears.DEPuzzles.ui.NumberCrunchGame"/>
+<fullyQualifiedTypeName name="android.content.SharedPreferences"/>
 </qualifiedTypeNameHistroy>

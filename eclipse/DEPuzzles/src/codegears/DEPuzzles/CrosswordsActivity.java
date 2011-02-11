@@ -17,6 +17,7 @@ import android.app.AlertDialog;
 import android.app.Dialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -87,6 +88,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 		timer.setOnClickListener(this);
 		scroll = (ScrollView) findViewById(R.id.CrosswordsScroll);
 		setGameArea();
+		load();
 	}
 
 	@Override
@@ -98,6 +100,7 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 	@Override
 	public void onPause() {
 		super.onPause();
+		save();
 		timer.stop();
 	}
 
@@ -158,7 +161,6 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 			i.putExtra(EXTRA_CLUE, currentWord.getClue());
 			this.startActivityForResult(i, REQUEST_HINT);
 		} else if (backButton.equals(view)) {
-			// store data
 			finish();
 		} else if (timer.equals(view)) {
 			Intent i = new Intent(this, SummaryActivity.class);
@@ -360,6 +362,24 @@ public class CrosswordsActivity extends Activity implements OnClickListener,
 	public void onCancel(Dialog dialog) {
 		dialog.dismiss();
 		timer.start();
+	}
+
+	private void save() {
+		SharedPreferences sPreferences = this.getSharedPreferences(file,
+				MODE_PRIVATE);
+		SharedPreferences.Editor editor = sPreferences.edit();
+		board.save(editor);
+		timer.save(editor);
+		editor.putInt("penalty", penalty);
+		editor.commit();
+	}
+
+	private void load() {
+		SharedPreferences sPreferences = this.getSharedPreferences(file,
+				MODE_PRIVATE);
+		board.load(sPreferences);
+		timer.load(sPreferences);
+		penalty = sPreferences.getInt("penalty", penalty);
 	}
 
 	private class ErrorDialogListener implements DialogInterface.OnClickListener {

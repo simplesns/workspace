@@ -2,6 +2,7 @@ package codegears.DEPuzzles.ui;
 
 import codegears.DEPuzzles.R;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.view.MotionEvent;
 import android.view.View;
 import android.widget.LinearLayout;
@@ -62,7 +63,36 @@ public class CrosswordsTile extends LinearLayout {
 		text.setText("");
 		inner = (LinearLayout) findViewById(R.id.CrosswordsTileInner);
 	}
+	
+	public void save(SharedPreferences.Editor editor, int number){
+		editor.putString("tile-" + number + "-text", text.getText().toString());
+		editor.putString("tile-" + number + "-multi1", multi1.getText().toString());
+		editor.putString("tile-" + number + "-multi2", multi2.getText().toString());
+		editor.putString("tile-" + number + "-multi3", multi3.getText().toString());
+		editor.putInt("tile-" + number + "-textMode", textMode);
+	}
 
+	public void load(SharedPreferences sPreferences, int number){
+		String str = sPreferences.getString("tile-" + number + "-text", "");
+		text.setText(str);
+		str = sPreferences.getString("tile-" + number + "-multi1", "");
+		multi1.setText(str);
+		str = sPreferences.getString("tile-" + number + "-multi2", "");
+		multi2.setText(str);
+		str = sPreferences.getString("tile-" + number + "-multi3", "");
+		multi3.setText(str);
+		textMode = sPreferences.getInt("tile-" + number + "-textMode", textMode);
+		if(textMode == TEXT_PEN){
+			text.setTextColor(TEXTCOLOR_PEN);
+			text.setVisibility(View.VISIBLE);
+		} else if(textMode == TEXT_PENCIL){
+			text.setTextColor(TEXTCOLOR_PENCIL);
+			text.setVisibility(View.VISIBLE);
+		} else if(textMode == TEXT_MULTI){
+			text.setVisibility(View.GONE);
+		}
+	}
+	
 	public boolean isComplete() {
 		if ((textMode == TEXT_PEN)
 				&& (text.getText().toString().equals(String.valueOf(result)))) {

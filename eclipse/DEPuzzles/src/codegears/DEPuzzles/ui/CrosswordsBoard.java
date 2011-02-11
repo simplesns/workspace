@@ -4,6 +4,7 @@ import java.util.ArrayList;
 
 import codegears.DEPuzzles.data.CrosswordsWord;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.AttributeSet;
 import android.widget.LinearLayout;
 import android.widget.TableLayout;
@@ -35,6 +36,18 @@ public class CrosswordsBoard extends TableLayout {
 					LayoutParams.FILL_PARENT, LayoutParams.WRAP_CONTENT));
 		}
 		this.invalidate();
+	}
+	
+	public void save(SharedPreferences.Editor editor){
+		for(int i = 0; i < tile.length; i++){
+			tile[i].save(editor, i);
+		}
+	}
+	
+	public void load(SharedPreferences sPreferences){
+		for(int i = 0; i < tile.length; i++){
+			tile[i].load(sPreferences, i);
+		}
 	}
 
 	public int getTileCount() {

@@ -2,6 +2,7 @@ package codegears.DEPuzzles.ui;
 
 import freehand.neandroid.util.Timer;
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.util.AttributeSet;
 import android.widget.Button;
 
@@ -17,6 +18,17 @@ public class TimerButton extends Button {
 	
 	public void addTime(int time){
 		timer.increaseDuration(time);
+	}
+	
+	public void save(SharedPreferences.Editor editor){
+		editor.putInt("timer", timer.getDuration());
+	}
+	
+	public void load(SharedPreferences sPreferences){
+		stop();
+		start();
+		int loadData = sPreferences.getInt("timer", 0);
+		timer.increaseDuration(loadData);
 	}
 	
 	public void reset(){
