@@ -105,6 +105,8 @@ public class CrosswordsClueActivity extends Activity implements OnClickListener,
 			Object d = data.get(position);
 			if(d instanceof String){
 				TextView t = new TextView(context);
+				t.setBackgroundResource(R.drawable.clue_bar);
+				t.setTextColor(0xFFFFFFFF);
 				t.setText((String)d);
 				return t;
 			} else if(d instanceof Clue){

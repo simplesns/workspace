@@ -17,8 +17,9 @@ public class KeyPadButton extends LinearLayout {
 		View.inflate(context, R.layout.ui_keypadbutton, this);
 		number = (TextView) findViewById(R.id.KeyPadButtonNumber);
 		key = (TextView) findViewById(R.id.KeyPadButtonText);
-		number.setVisibility(View.INVISIBLE);
+		number.setVisibility(View.GONE);
 		number.setText("0");
+		invalidate();
 	}
 
 	public void setKey(String key) {

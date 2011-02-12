@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="vertical" android:background="@drawable/keypad_bg" android:layout_width="fill_parent" android:layout_height="wrap_content">
+	<LinearLayout android:id="@+id/LinearLayout01"
+		android:layout_width="fill_parent" android:layout_height="wrap_content">
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Q" android:id="@+id/KeyPadQ"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="W" android:id="@+id/KeyPadW"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="E" android:id="@+id/KeyPadE"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="R" android:id="@+id/KeyPadR"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="T" android:id="@+id/KeyPadT"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Y" android:id="@+id/KeyPadY"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="U" android:id="@+id/KeyPadU"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="I" android:id="@+id/KeyPadI"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="O" android:id="@+id/KeyPadO"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="P" android:id="@+id/KeyPadP"></codegears.DEPuzzles.ui.KeyPadButton>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout02"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="A" android:id="@+id/KeyPadA"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="S" android:id="@+id/KeyPadS"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="D" android:id="@+id/KeyPadD"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="F" android:id="@+id/KeyPadF"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="G" android:id="@+id/KeyPadG"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="H" android:id="@+id/KeyPadH"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="J" android:id="@+id/KeyPadJ"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="K" android:id="@+id/KeyPadK"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="L" android:id="@+id/KeyPadL"></codegears.DEPuzzles.ui.KeyPadButton>
+	</LinearLayout>
+	<LinearLayout android:id="@+id/LinearLayout03"
+		android:layout_width="wrap_content" android:layout_height="wrap_content">
+		<Button android:text="+" android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:id="@+id/KeyPadMode"></Button>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="Z" android:id="@+id/KeyPadZ"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="X" android:id="@+id/KeyPadX"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="C" android:id="@+id/KeyPadC"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="V" android:id="@+id/KeyPadV"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="B" android:id="@+id/KeyPadB"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="N" android:id="@+id/KeyPadN"></codegears.DEPuzzles.ui.KeyPadButton>
+		<codegears.DEPuzzles.ui.KeyPadButton android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="M" android:id="@+id/KeyPadM"></codegears.DEPuzzles.ui.KeyPadButton>
+		<Button android:layout_width="wrap_content"
+			android:layout_height="wrap_content" android:text="!" android:id="@+id/KeyPadBack" android:background="@drawable/keypad_x"></Button>
+	</LinearLayout>
+
+</LinearLayout>

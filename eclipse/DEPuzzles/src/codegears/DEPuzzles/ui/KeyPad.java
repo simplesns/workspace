@@ -346,13 +346,13 @@ public class KeyPad extends LinearLayout implements OnClickListener {
 		if (v.equals(b_mode)) {
 			if (mode == CrosswordsTile.TEXT_PEN) {
 				mode = CrosswordsTile.TEXT_PENCIL;
-				b_mode.setText("-");
+				b_mode.setBackgroundResource(R.drawable.keypad_pencil);
 			} else if (mode == CrosswordsTile.TEXT_PENCIL) {
 				mode = CrosswordsTile.TEXT_MULTI;
-				b_mode.setText("*");
+				b_mode.setBackgroundResource(R.drawable.keypad_multi);
 			} else if (mode == CrosswordsTile.TEXT_MULTI) {
 				mode = CrosswordsTile.TEXT_PEN;
-				b_mode.setText("+");
+				b_mode.setBackgroundResource(R.drawable.keypad_pen);
 			}
 			return;
 		} else if (v.equals(b_back)) {
