@@ -1,5 +1,6 @@
 package codegears.DEPuzzles;
 
+import freehand.neandroid.GameActivity;
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
@@ -34,6 +35,7 @@ public class SummaryActivity extends Activity implements OnClickListener {
 	@Override
 	public void onCreate(Bundle bundle) {
 		super.onCreate(bundle);
+		GameActivity.setFullscreen(this);
 		setContentView(R.layout.summary);
 		Intent i = getIntent();
 		game = (TextView) findViewById(R.id.SummaryGame);

@@ -1,38 +1,34 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-	android:layout_width="fill_parent" android:layout_height="fill_parent"
-	android:orientation="vertical">
+	android:layout_width="fill_parent" android:orientation="vertical" android:background="@drawable/all_empty_bg" android:layout_height="wrap_content" android:paddingRight="35dip" android:paddingLeft="35dip">
 	<Button android:text="Back" android:id="@+id/SummaryBack"
 		android:layout_width="fill_parent" android:layout_height="wrap_content"></Button>
 	<TextView android:text="Game" android:id="@+id/SummaryGame"
-		android:layout_width="fill_parent" android:layout_height="wrap_content"></TextView>
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_marginTop="150dip" android:textSize="16dip" android:textStyle="bold" android:textColor="#FF485369"></TextView>
+	<LinearLayout android:layout_height="wrap_content" android:layout_width="fill_parent" android:background="@drawable/sumary_frame_top" android:id="@+id/LinearLayout01" android:gravity="center_vertical" android:paddingLeft="10dip" android:paddingRight="10dip" android:layout_marginTop="10dip"><TextView android:id="@+id/SummaryTitle1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:textColor="#FF000000" android:textStyle="bold" android:textSize="16dip" android:text="Title 1"></TextView>
+<TextView android:id="@+id/SummaryText1" android:layout_height="wrap_content" android:layout_width="wrap_content" android:layout_weight="1" android:gravity="right" android:text="Text 1" android:textSize="16dip"></TextView>
+</LinearLayout>
 	<LinearLayout android:id="@+id/LinearLayout01"
-		android:layout_width="fill_parent" android:layout_height="wrap_content">
-		<TextView android:text="@+id/TextView02" android:id="@+id/SummaryTitle1"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-		<TextView android:text="@+id/TextView03" android:id="@+id/SummaryText1"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/summary_frame_middle" android:gravity="center_vertical" android:paddingLeft="10dip" android:paddingRight="10dip">
+		<TextView android:id="@+id/SummaryTitle2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FF000000" android:textStyle="bold" android:textSize="16dip" android:text="Title 2"></TextView>
+		<TextView android:id="@+id/SummaryText2"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:gravity="right" android:layout_weight="1" android:text="Text 2" android:textSize="16dip"></TextView>
 	</LinearLayout>
 	<LinearLayout android:id="@+id/LinearLayout01"
-		android:layout_width="fill_parent" android:layout_height="wrap_content">
-		<TextView android:text="@+id/TextView02" android:id="@+id/SummaryTitle2"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-		<TextView android:text="@+id/TextView03" android:id="@+id/SummaryText2"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/summary_frame_middle" android:gravity="center_vertical" android:paddingLeft="10dip" android:paddingRight="10dip">
+		<TextView android:id="@+id/SummaryTitle3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FF000000" android:textStyle="bold" android:textSize="16dip" android:text="Title 3"></TextView>
+		<TextView android:id="@+id/SummaryText3"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="right" android:text="Text 3" android:textSize="16dip"></TextView>
 	</LinearLayout>
 	<LinearLayout android:id="@+id/LinearLayout01"
-		android:layout_width="fill_parent" android:layout_height="wrap_content">
-		<TextView android:text="@+id/TextView02" android:id="@+id/SummaryTitle3"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-		<TextView android:text="@+id/TextView03" android:id="@+id/SummaryText3"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
+		android:layout_width="fill_parent" android:layout_height="wrap_content" android:background="@drawable/summary_frame_bottom" android:gravity="center_vertical" android:paddingLeft="10dip" android:paddingRight="10dip">
+		<TextView android:id="@+id/SummaryTitle4"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:textColor="#FF000000" android:textStyle="bold" android:textSize="16dip" android:text="Title 4"></TextView>
+		<TextView android:id="@+id/SummaryText4"
+			android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="right" android:text="Text 4" android:textSize="16dip"></TextView>
 	</LinearLayout>
-	<LinearLayout android:id="@+id/LinearLayout01"
-		android:layout_width="fill_parent" android:layout_height="wrap_content">
-		<TextView android:text="@+id/TextView02" android:id="@+id/SummaryTitle4"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-		<TextView android:text="@+id/TextView03" android:id="@+id/SummaryText4"
-			android:layout_width="wrap_content" android:layout_height="wrap_content"></TextView>
-	</LinearLayout>
+
 
 </LinearLayout>
